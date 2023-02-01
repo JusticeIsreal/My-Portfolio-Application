@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
+}
+
+.StartingLoading-main-container {
+  border: 2px solid red;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+.StartingLoading-main-container .loading-animation {
+  border: 2px solid red;
+  height: 100px;
+  margin-top: 65vh;
+}
+.StartingLoading-main-container .loading-animation .loading-bar {
+  border: 2px solid blue;
+  height: 50%;
+}
+.StartingLoading-main-container .loading-animation .loading-bar .first-load-line {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 10px;
+  padding: 2px;
+}
+.StartingLoading-main-container .loading-animation .loading-bar .first-load-line .second-load-line {
+  border: 2px solid red;
+  background: red;
+  height: 90%;
+  width: 100%;
+  -webkit-animation: loadline 5s linear;
+          animation: loadline 5s linear;
+}
+@-webkit-keyframes loadline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loadline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.StartingLoading-main-container .ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+.StartingLoading-main-container .ocean .wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+.StartingLoading-main-container .ocean .wave:nth-of-type(2) {
+  top: -175px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@-webkit-keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}/*# sourceMappingURL=Style.css.map */
