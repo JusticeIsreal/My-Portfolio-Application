@@ -20,14 +20,16 @@
   background-color: royalblue;
 }
 
-$shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.301);
-$border: 2px solid rgb(214, 214, 214);
-$cardsj-bg: rgb(224, 223, 230);
-$hover-Color: whitesmoke;
-$hover-Text-Color: #444444;
+$border: 1px solid #015871;
+$background-gradient: radial-gradient(
+  ellipse at center,
+  rgba(255, 254, 234, 1) 0%,
+  rgba(255, 254, 234, 1) 35%,
+  #b7e8eb 100%
+);
+$border-radius: 5px;
+$background: #015871;
 $text-Color: rgb(68, 68, 68);
-$special-text-Color: royalblue;
-$special-Color: #4c5eff;
 
 @mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
   display: flex;
@@ -68,46 +70,79 @@ body {
   height: 100%;
 }
 body {
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 254, 234, 1) 0%,
-    rgba(255, 254, 234, 1) 35%,
-    #b7e8eb 100%
-  );
-  // overflow: hidden;
+  background: $background-gradient;
+  overflow: hidden;
 }
 
 // Starting page loader
 .StartingLoading-main-container {
-  border: 2px solid red;
+  // border: 2px solid red;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   padding: 10px;
+  animation: closepage 1s 5s linear;
+
+  @keyframes closepage {
+    0% {
+      width: 100vw;
+      height: 100vh;
+      // transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      width: 100vw;
+      height: 0vh;
+
+      // transform: scale(10);
+      opacity: 0;
+    }
+  }
 
   .loading-animation {
-    border: 2px solid red;
-    height: 100px;
-    margin-top: 65vh;
+    margin-top: 45vh;
+    @include responsive(bigphone) {
+      margin-top: 40vh;
+    }
 
     .loading-number {
+      font-weight: bolder;
+      font-size: 100px;
+      color: $background;
+
+      @include responsive(bigphone) {
+        font-size: 200px;
+      }
     }
+
+    .loading-skill {
+      font-size: 20px;
+      color: $background;
+      overflow: hiddden;
+      height: 30px;
+      margin-bottom: 10px;
+
+      @include responsive(bigphone) {
+        font-size: 30px;
+      }
+    }
+
     .loading-bar {
-      border: 2px solid blue;
+      border: $border;
+      border-radius: $border-radius;
       height: 50%;
+
       .first-load-line {
-        border: 2px solid blue;
         @include flexDisplay(center, flex-start, column);
         height: 10px;
         padding: 2px;
-        // @include responsive(bigphone) {
-        //   top: 90%;
-        // }
 
         .second-load-line {
-          border: 2px solid red;
-          background: red;
+          border: $background;
+          border-radius: $border-radius;
+          background: $background;
           height: 90%;
           width: 100%;
           animation: loadline 5s linear;
