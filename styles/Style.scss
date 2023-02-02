@@ -89,21 +89,21 @@ body {
   padding: 10px;
   animation: closepage 1s 5s linear;
 
-  @keyframes closepage {
-    0% {
-      width: 100vw;
-      height: 100vh;
-      // transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      // width: 100vw;
-      height: 0vh;
+  // @keyframes closepage {
+  //   0% {
+  //     width: 100vw;
+  //     height: 100vh;
+  //     // transform: scale(1);
+  //     opacity: 1;
+  //   }
+  //   100% {
+  //     // width: 100vw;
+  //     height: 0vh;
 
-      transform: scale(0);
-      opacity: 0;
-    }
-  }
+  //     transform: scale(0);
+  //     opacity: 0;
+  //   }
+  // }
 
   .loading-animation {
     margin-top: 45vh;
