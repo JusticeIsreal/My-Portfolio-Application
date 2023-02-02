@@ -24,7 +24,7 @@ export default function Home() {
     return () => {
       loadingPageOut();
     };
-  }, []);
+  }, [viewLoading]);
   return (
     <>
       <Head>
@@ -40,7 +40,7 @@ export default function Home() {
           <>
             <HomePage />
           </>
-        )}{" "}
+        )}
       </main>
     </>
   );
