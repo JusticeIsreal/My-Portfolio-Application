@@ -424,22 +424,28 @@ body {
         width: 85%;
         max-width: 1200px;
       }
+      .scrolling-text {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: scroll-left 20s linear infinite;
+        font-size: 10px;
+        color: $paragraph-Color;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        margin-top: 2px;
+        @include responsive(bigphone) {
+          font-size: 13px;
+          letter-spacing: 3px;
+          word-spacing: 5px;
+        }
+      }
 
-      .slideCon {
-        animation: 20s linear infinite;
-        @include flexDisplay(space-between, center, row);
-        padding-top: 5px;
-
-        p {
-          font-size: 10px;
-          color: $paragraph-Color;
-          word-spacing: 2px;
-          letter-spacing: 1px;
-          @include responsive(bigphone) {
-            font-size: 13px;
-            letter-spacing: 3px;
-            word-spacing: 5px;
-          }
+      @keyframes scroll-left {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
         }
       }
     }

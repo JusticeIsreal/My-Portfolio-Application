@@ -101,20 +101,15 @@ function Banner() {
         </div>
       </section>
       <div className="pun">
-        <marquee className="slideCon">
+        <div className="scrolling-text">
           <p>
-            {"❖ Full Stack Developer "}
-            {
-              "❖ IBM Engineering Systems Design Rhapsody for Model Based Systems Engineering (IBM) ❖"
-            }
-            {" Scrum Fundamentals Certified (SFC) ❖"}
-            {" Desktop Application Development ❖"}
-            {
-              " Master Project Manager - International Project Management Board Certification (MPM) ❖"
-            }
-            {" Project management fundamentals (IBM) ❖"}
+            ❖ Full Stack Developer ❖ IBM Engineering Systems Design Rhapsody for
+            Model Based Systems Engineering (IBM) ❖ Scrum Fundamentals Certified
+            (SFC) ❖ Desktop Application Development ❖ Master Project Manager -
+            International Project Management Board Certification (MPM) ❖ Project
+            management fundamentals (IBM) ❖
           </p>
-        </marquee>
+        </div>
       </div>
 
       {/* statistics section  */}

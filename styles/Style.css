@@ -440,26 +440,38 @@ body {
     max-width: 1200px;
   }
 }
-.Homepage .Banner-main-con .pun .slideCon {
-  -webkit-animation: 20s linear infinite;
-          animation: 20s linear infinite;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding-top: 5px;
-}
-.Homepage .Banner-main-con .pun .slideCon p {
+.Homepage .Banner-main-con .pun .scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: scroll-left 20s linear infinite;
+          animation: scroll-left 20s linear infinite;
   font-size: 10px;
   color: #37a1a7;
   word-spacing: 2px;
   letter-spacing: 1px;
+  margin-top: 2px;
 }
 @media only screen and (min-width: 800px) {
-  .Homepage .Banner-main-con .pun .slideCon p {
+  .Homepage .Banner-main-con .pun .scrolling-text {
     font-size: 13px;
     letter-spacing: 3px;
     word-spacing: 5px;
+  }
+}
+@-webkit-keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
 .Homepage .Banner-main-con .statistics-con {
