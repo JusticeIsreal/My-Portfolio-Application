@@ -17,13 +17,13 @@ export default function Home() {
   const loadingPageOut = () => {
     setTimeout(() => {
       setViewLoading(false);
-    }, 6000);
+    }, 600);
   };
 
   useEffect(() => {
-    return () => {
+   
       loadingPageOut();
-    };
+    
   }, []);
   return (
     <>
