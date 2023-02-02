@@ -97,10 +97,10 @@ body {
       opacity: 1;
     }
     100% {
-      width: 100vw;
+      // width: 100vw;
       height: 0vh;
 
-      // transform: scale(10);
+      transform: scale(0);
       opacity: 0;
     }
   }

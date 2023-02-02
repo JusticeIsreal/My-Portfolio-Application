@@ -24,7 +24,7 @@ export default function Home() {
     return () => {
       loadingPageOut();
     };
-  }, [viewLoading]);
+  }, []);
   return (
     <>
       <Head>
@@ -34,13 +34,16 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <main>
-        {viewLoading ? (
-          <StartingLoader />
-        ) : (
+        {viewLoading && (
+          <>
+            <StartingLoader />
+          </>
+        )}
+       
           <>
             <HomePage />
           </>
-        )}
+       
       </main>
     </>
   );
