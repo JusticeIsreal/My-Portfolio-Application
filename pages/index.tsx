@@ -17,13 +17,11 @@ export default function Home() {
   const loadingPageOut = () => {
     setTimeout(() => {
       setViewLoading(false);
-    }, 600);
+    }, 6000);
   };
 
   useEffect(() => {
-   
-      loadingPageOut();
-    
+    loadingPageOut();
   }, []);
   return (
     <>
@@ -34,16 +32,15 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <main>
-        {viewLoading && (
+        {viewLoading ? (
           <>
             <StartingLoader />
           </>
-        )}
-       
+        ) : (
           <>
             <HomePage />
           </>
-       
+        )}
       </main>
     </>
   );

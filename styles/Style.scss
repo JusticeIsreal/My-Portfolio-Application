@@ -80,7 +80,7 @@ body {
 
 // Starting page loader
 .StartingLoading-main-container {
-  // border: 2px solid red;
+  background: $background-gradient;
   overflow: hidden;
   position: absolute;
   z-index: 2;
@@ -89,21 +89,17 @@ body {
   padding: 10px;
   animation: closepage 1s 5s linear;
 
-  // @keyframes closepage {
-  //   0% {
-  //     width: 100vw;
-  //     height: 100vh;
-  //     // transform: scale(1);
-  //     opacity: 1;
-  //   }
-  //   100% {
-  //     // width: 100vw;
-  //     height: 0vh;
-
-  //     transform: scale(0);
-  //     opacity: 0;
-  //   }
-  // }
+  @keyframes closepage {
+    0% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+    }
+    100% {
+      height: 0vh;
+      opacity: 0;
+    }
+  }
 
   .loading-animation {
     margin-top: 45vh;
