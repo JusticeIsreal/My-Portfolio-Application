@@ -18,7 +18,6 @@
 
 body {
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
-  border: 2px solid red;
   padding-bottom: 60px;
 }
 @media only screen and (min-width: 800px) {
@@ -420,6 +419,7 @@ body {
 }
 .Homepage .Banner-main-con .myStaticsCon .statCard p {
   font-size: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #37a1a7;
 }
 @media only screen and (min-width: 800px) {
@@ -481,9 +481,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 90%;
   max-width: 1500px;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .statistics-con {
+    margin-top: 50px;
+  }
 }
 .Homepage .Banner-main-con .statistics-con .statistics {
   display: flex;
@@ -513,6 +518,7 @@ body {
 }
 .Homepage .Banner-main-con .statistics-con .statistics .statistis-unmber {
   font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgba(0, 91, 96, 0.9019607843);
 }
 @media only screen and (min-width: 800px) {

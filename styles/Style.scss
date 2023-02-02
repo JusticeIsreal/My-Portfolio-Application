@@ -70,7 +70,7 @@ $paragraph-Color: #37a1a7;
 
 body {
   background: $background-gradient;
-  border: 2px solid red;
+  // border: 2px solid red;
   padding-bottom: 60px;
   @include responsive(bigphone) {
     padding-bottom: 0;
@@ -406,6 +406,9 @@ body {
         }
         p {
           font-size: 8px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+
           color: $paragraph-Color;
           @include responsive(bigphone) {
             font-size: 20px;
@@ -438,14 +441,14 @@ body {
           letter-spacing: 3px;
           word-spacing: 5px;
         }
-      }
 
-      @keyframes scroll-left {
-        from {
-          transform: translateX(100%);
-        }
-        to {
-          transform: translateX(-100%);
+        @keyframes scroll-left {
+          from {
+            transform: translateX(100%);
+          }
+          to {
+            transform: translateX(-100%);
+          }
         }
       }
     }
@@ -454,9 +457,12 @@ body {
       @include flexDisplay(space-between, center, row);
       flex-wrap: wrap;
       margin: 0 auto;
-      margin-top: 50px;
+      margin-top: 10px;
       width: 90%;
       max-width: 1500px;
+      @include responsive(bigphone) {
+        margin-top: 50px;
+      }
 
       .statistics {
         @include flexDisplay(space-between, center, column);
@@ -477,8 +483,12 @@ body {
             width: 100%;
           }
         }
+
         .statistis-unmber {
           font-size: 100px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+
           color: $card-bg;
           @include responsive(bigphone) {
             font-size: 160px;
