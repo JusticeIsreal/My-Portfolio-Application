@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function About() {
+function StartingLoader() {
   // state for loadung page count number
   const initialCount: number = 0;
   const [count, setCount] = useState<number>(initialCount);
@@ -63,4 +63,4 @@ function About() {
   );
 }
 
-export default About;
+export default StartingLoader;

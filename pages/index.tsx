@@ -9,11 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 // pages
 import StartingLoader from "../pages/StartingLoader";
+import HomePage from "./HomePage";
 
 export default function Home() {
   const [viewLoading, setViewLoading] = useState<boolean>(true);
 
-  const oo = () => {
+  const loadingPageOut = () => {
     setTimeout(() => {
       setViewLoading(false);
     }, 6000);
@@ -21,7 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     return () => {
-      oo();
+      loadingPageOut();
     };
   }, []);
   return (
@@ -32,7 +33,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <main>{viewLoading ? <StartingLoader /> : <h1>dghhgcjgh</h1>} </main>
+      <main>
+        {viewLoading ? (
+          <StartingLoader />
+        ) : (
+          <>
+            <HomePage />
+          </>
+        )}{" "}
+      </main>
     </>
   );
 }

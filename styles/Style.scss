@@ -13,23 +13,24 @@
 }
 
 *::-webkit-scrollbar-track {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: royalblue;
+  background-color: rgba(65, 105, 225, 0);
 }
 
 $border: 1px solid #015871;
+$card-bg: #005b60e6;
 $background-gradient: radial-gradient(
   ellipse at center,
   rgba(255, 254, 234, 1) 0%,
   rgba(255, 254, 234, 1) 35%,
   #b7e8eb 100%
 );
-$border-radius: 5px;
+$border-radius: 10px;
 $background: #015871;
-$text-Color: rgb(68, 68, 68);
+$text-Color: #b7e8eb;
 
 @mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
   display: flex;
@@ -71,7 +72,7 @@ body {
 }
 body {
   background: $background-gradient;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 // Starting page loader
@@ -201,6 +202,137 @@ body {
       }
       50% {
         transform: translate3d(0, 5px, 0);
+      }
+    }
+  }
+}
+.Homepage {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+
+  .navbar-main-con {
+    border: #b7e8eb;
+    background: #b7e8eb;
+    width: 98%;
+    border-radius: $border-radius;
+    margin: 0 auto;
+    padding: 5px;
+    bottom: 0px;
+    position: fixed;
+    @include flexDisplay(space-between, center, column);
+    // border: 2px solid red;
+
+    @include responsive(bigphone) {
+      @include flexDisplay(center, center, row);
+      width: 600px;
+      height: 70px;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .nav {
+      width: 100%;
+
+      .ul {
+        @include flexDisplay(center, center, row);
+        @include responsive(bigphone) {
+          @include flexDisplay(center, center, row);
+        }
+
+        li {
+          width: 100%;
+          height: 50px;
+          border-radius: 7px;
+          cursor: pointer;
+          @include flexDisplay(space-around, center, column);
+          @include responsive(bigphone) {
+            width: 120px;
+            height: 50px;
+            border: none;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+            background: $card-bg;
+            a {
+              color: $text-Color;
+            }
+          }
+          a {
+            @include flexDisplay(center, center, row);
+
+            color: $card-bg;
+            font-weight: bolder;
+            font-size: 10px;
+            width: 100%;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+              sans-serif;
+
+            @include responsive(bigphone) {
+              font-size: 20px;
+            }
+          }
+
+          .menu-icon {
+            font-size: 30px;
+            color: $card-bg;
+            @include responsive(bigphone) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // banner  style
+  .Banner-main-con {
+    // border: 2px solid red;
+    margin-top: 50px;
+    .full-name {
+      margin: 0 auto;
+      color: $card-bg;
+      @include flexDisplay(space-around, center, column);
+
+      h3 {
+        font-size: 17px;
+
+        @include responsive(bigphone) {
+          font-size: 30px;
+          margin-bottom: -20px;
+        }
+
+        @include responsive(desktop) {
+          font-size: 6rem;
+        }
+      }
+      h1 {
+        font-size: 45px;
+        @include flexDisplay(space-around, center, column);
+        @include responsive(bigphone) {
+          font-size: 80px;
+        }
+      }
+    }
+    .banner-img {
+      // border: 2px solid red;
+      width: 80%;
+      // height: 500px;
+      margin: 0 auto;
+      margin-top: -10px;
+      @include flexDisplay(space-around, center, column);
+
+      @include responsive(bigphone) {
+        margin-top: -20px;
+      }
+      .my-img {
+        //  border: 2px solid red;
+        margin-top: 0;
+        @include responsive(bigphone) {
+          font-size: 50px;
+        }
       }
     }
   }
