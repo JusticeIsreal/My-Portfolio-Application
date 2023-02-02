@@ -31,6 +31,7 @@ $background-gradient: radial-gradient(
 $border-radius: 10px;
 $background: #015871;
 $text-Color: #b7e8eb;
+$paragraph-Color: #37a1a7;
 
 @mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
   display: flex;
@@ -66,12 +67,14 @@ $text-Color: #b7e8eb;
 }
 
 // General page gradient
-html,
-body {
-  height: 100%;
-}
+
 body {
   background: $background-gradient;
+  border: 2px solid red;
+  padding-bottom: 60px;
+  @include responsive(bigphone) {
+    padding-bottom: 0;
+  }
   // overflow: hidden;
 }
 
@@ -211,6 +214,7 @@ body {
   overflow: hidden;
   margin-top: 10px;
   position: relative;
+  // border: 2px solid red;
 
   .navbar-main-con {
     border: #b7e8eb;
@@ -221,6 +225,7 @@ body {
     padding: 5px;
     bottom: 0px;
     position: fixed;
+    z-index: 20;
     @include flexDisplay(space-between, center, column);
     // border: 2px solid red;
 
@@ -297,22 +302,18 @@ body {
       @include flexDisplay(space-around, center, column);
 
       h3 {
-        font-size: 17px;
-
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         @include responsive(bigphone) {
-          font-size: 30px;
+          font-size: 50px;
           margin-bottom: -20px;
-        }
-
-        @include responsive(desktop) {
-          font-size: 6rem;
         }
       }
       h1 {
         font-size: 45px;
         @include flexDisplay(space-around, center, column);
         @include responsive(bigphone) {
-          font-size: 80px;
+          font-size: 100px;
         }
       }
     }
@@ -332,6 +333,159 @@ body {
         margin-top: 0;
         @include responsive(bigphone) {
           font-size: 50px;
+        }
+      }
+    }
+    .pitch-con {
+      // border: 2px solid red;
+      margin: 0 auto;
+      width: 90%;
+      @include flexDisplay(center, center, column);
+
+      @include responsive(bigphone) {
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      .pitch {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        line-height: 25px;
+        color: $paragraph-Color;
+
+        a {
+          // border: $border;
+          padding: 0 3px;
+          border-radius: $border-radius;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          color: $card-bg;
+          cursor: pointer;
+          font-weight: bolder;
+        }
+
+        @include responsive(bigphone) {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .myStaticsCon {
+      @include flexDisplay(space-around, top, row);
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 90%;
+
+      @include responsive(bigphone) {
+        width: 90%;
+        margin-top: 50px;
+        max-width: 1200px;
+      }
+      .statCard {
+        @include flexDisplay(center, top, column);
+        border: $border;
+        box-shadow: $background-gradient;
+        border-radius: $border-radius;
+        width: 30%;
+        margin-bottom: auto;
+        text-align: center;
+        padding: 5px 0;
+
+        @include responsive(bigphone) {
+          height: 170px;
+          border-radius: 10px;
+          padding: 0 0 15px 0;
+        }
+
+        h1 {
+          font-size: 50px;
+          color: $card-bg;
+          @include responsive(bigphone) {
+            font-size: 100px;
+          }
+        }
+        p {
+          font-size: 8px;
+          color: $paragraph-Color;
+          @include responsive(bigphone) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .pun {
+      height: 30px;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 85%;
+      z-index: 0;
+
+      @include responsive(bigphone) {
+        width: 85%;
+        max-width: 1200px;
+      }
+
+      .slideCon {
+        animation: 20s linear infinite;
+        @include flexDisplay(space-between, center, row);
+        padding-top: 5px;
+
+        p {
+          font-size: 10px;
+          color: $paragraph-Color;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+          @include responsive(bigphone) {
+            font-size: 13px;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+          }
+        }
+      }
+    }
+
+    .statistics-con {
+      @include flexDisplay(space-between, center, row);
+      flex-wrap: wrap;
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 90%;
+      max-width: 1500px;
+
+      .statistics {
+        @include flexDisplay(space-between, center, column);
+        width: 45%;
+        margin: 5px;
+        position: relative;
+        @include responsive(bigphone) {
+          width: 23%;
+        }
+        .line {
+          width: 90%;
+          top: 52%;
+          position: absolute;
+          border: 1px solid rgba(245, 245, 245, 0.366);
+
+          @include responsive(bigphone) {
+            top: 50%;
+            width: 100%;
+          }
+        }
+        .statistis-unmber {
+          font-size: 100px;
+          color: $card-bg;
+          @include responsive(bigphone) {
+            font-size: 160px;
+          }
+        }
+        .statistics-name {
+          text-align: center;
+          font-size: 12px;
+          margin-top: -19px;
+          color: $paragraph-Color;
+          @include responsive(bigphone) {
+            font-size: 20px;
+          }
         }
       }
     }

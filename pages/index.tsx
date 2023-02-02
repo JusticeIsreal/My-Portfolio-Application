@@ -12,7 +12,7 @@ import StartingLoader from "../pages/StartingLoader";
 import HomePage from "./HomePage";
 
 export default function Home() {
-  const [viewLoading, setViewLoading] = useState<boolean>(true);
+  const [viewLoading, setViewLoading] = useState<boolean>(false);
 
   const loadingPageOut = () => {
     setTimeout(() => {

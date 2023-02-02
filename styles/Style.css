@@ -16,13 +16,15 @@
   background-color: rgba(65, 105, 225, 0);
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
+  border: 2px solid red;
+  padding-bottom: 60px;
+}
+@media only screen and (min-width: 800px) {
+  body {
+    padding-bottom: 0;
+  }
 }
 
 .StartingLoading-main-container {
@@ -199,6 +201,7 @@ body {
   padding: 5px;
   bottom: 0px;
   position: fixed;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -294,17 +297,13 @@ body {
   flex-direction: column;
 }
 .Homepage .Banner-main-con .full-name h3 {
-  font-size: 17px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media only screen and (min-width: 800px) {
   .Homepage .Banner-main-con .full-name h3 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: -20px;
-  }
-}
-@media only screen and (min-width: 1750px) {
-  .Homepage .Banner-main-con .full-name h3 {
-    font-size: 6rem;
   }
 }
 .Homepage .Banner-main-con .full-name h1 {
@@ -316,7 +315,7 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .Homepage .Banner-main-con .full-name h1 {
-    font-size: 80px;
+    font-size: 100px;
   }
 }
 .Homepage .Banner-main-con .banner-img {
@@ -339,5 +338,184 @@ body {
 @media only screen and (min-width: 800px) {
   .Homepage .Banner-main-con .banner-img .my-img {
     font-size: 50px;
+  }
+}
+.Homepage .Banner-main-con .pitch-con {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .pitch-con {
+    width: 90%;
+    max-width: 1000px;
+  }
+}
+.Homepage .Banner-main-con .pitch-con .pitch {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  line-height: 25px;
+  color: #37a1a7;
+}
+.Homepage .Banner-main-con .pitch-con .pitch a {
+  padding: 0 3px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(0, 91, 96, 0.9019607843);
+  cursor: pointer;
+  font-weight: bolder;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .pitch-con .pitch {
+    font-size: 17px;
+  }
+}
+.Homepage .Banner-main-con .myStaticsCon {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .myStaticsCon {
+    width: 90%;
+    margin-top: 50px;
+    max-width: 1200px;
+  }
+}
+.Homepage .Banner-main-con .myStaticsCon .statCard {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-direction: column;
+  border: 1px solid #015871;
+  box-shadow: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: auto;
+  text-align: center;
+  padding: 5px 0;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .myStaticsCon .statCard {
+    height: 170px;
+    border-radius: 10px;
+    padding: 0 0 15px 0;
+  }
+}
+.Homepage .Banner-main-con .myStaticsCon .statCard h1 {
+  font-size: 50px;
+  color: rgba(0, 91, 96, 0.9019607843);
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .myStaticsCon .statCard h1 {
+    font-size: 100px;
+  }
+}
+.Homepage .Banner-main-con .myStaticsCon .statCard p {
+  font-size: 8px;
+  color: #37a1a7;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .myStaticsCon .statCard p {
+    font-size: 20px;
+  }
+}
+.Homepage .Banner-main-con .pun {
+  height: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 85%;
+  z-index: 0;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .pun {
+    width: 85%;
+    max-width: 1200px;
+  }
+}
+.Homepage .Banner-main-con .pun .slideCon {
+  -webkit-animation: 20s linear infinite;
+          animation: 20s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5px;
+}
+.Homepage .Banner-main-con .pun .slideCon p {
+  font-size: 10px;
+  color: #37a1a7;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .pun .slideCon p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+}
+.Homepage .Banner-main-con .statistics-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 1500px;
+}
+.Homepage .Banner-main-con .statistics-con .statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  margin: 5px;
+  position: relative;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .statistics-con .statistics {
+    width: 23%;
+  }
+}
+.Homepage .Banner-main-con .statistics-con .statistics .line {
+  width: 90%;
+  top: 52%;
+  position: absolute;
+  border: 1px solid rgba(245, 245, 245, 0.366);
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .statistics-con .statistics .line {
+    top: 50%;
+    width: 100%;
+  }
+}
+.Homepage .Banner-main-con .statistics-con .statistics .statistis-unmber {
+  font-size: 100px;
+  color: rgba(0, 91, 96, 0.9019607843);
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .statistics-con .statistics .statistis-unmber {
+    font-size: 160px;
+  }
+}
+.Homepage .Banner-main-con .statistics-con .statistics .statistics-name {
+  text-align: center;
+  font-size: 12px;
+  margin-top: -19px;
+  color: #37a1a7;
+}
+@media only screen and (min-width: 800px) {
+  .Homepage .Banner-main-con .statistics-con .statistics .statistics-name {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=Style.css.map */
