@@ -8,14 +8,11 @@ import Banner from "../components/Banner";
 function HomePage() {
   return (
     <div className="Homepage">
-      {/* <div className="menu-btn" onClick={toggleMenu}>
-        {menuOpen ? <BsFillMenuButtonFill /> : <BsFillMenuButtonWideFill />}
-      </div> */}
-
       <div className="navbar-main-con">
         <NavBar />
       </div>
-      <Banner />
+          <Banner />
+          
     </div>
   );
 }
