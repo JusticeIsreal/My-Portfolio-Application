@@ -13,7 +13,7 @@ import HomePage from "./HomePage";
 import Services from "./Services";
 
 export default function Home() {
-  const [viewLoading, setViewLoading] = useState<boolean>(false);
+  const [viewLoading, setViewLoading] = useState<boolean>(true);
 
   const loadingPageOut = () => {
     setTimeout(() => {

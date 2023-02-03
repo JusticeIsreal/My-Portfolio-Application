@@ -510,11 +510,11 @@ body {
 .service-main-com {
   // border: 2px solid red;
   margin-top: 50px;
+  padding: 5px;
 
   .what-i-do {
     font-size: 50px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: -6px;
     color: $card-bg;
     @include responsive(bigphone) {
       font-size: 130px;
@@ -542,14 +542,50 @@ body {
       color: $paragraph-Color;
       transition: all 0.5s ease;
 
-      &:hover {
-        border-bottom: 3px solid $background;
+      .hover-line-rule {
+        opacity: 0;
+        border: 2px solid $background;
       }
 
+      &:hover {
+        .hover-line-rule {
+          opacity: 1;
+          animation: ll 0.3s linear;
+
+          @keyframes ll {
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
       @include responsive(bigphone) {
         width: 200px;
         font-size: 30px;
       }
+    }
+  }
+
+  .service-details-com {
+    border: 2px solid red;
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden;
+
+    width: 90%;
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: 20px;
+    @include responsive(bigphone) {
+      width: 700px;
+      max-width: 700px;
+    }
+
+    .service-each-box {
+      border: 2px solid green;
     }
   }
 }

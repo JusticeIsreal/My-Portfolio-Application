@@ -41,9 +41,10 @@ function Services() {
       <h1 className="what-i-do">SERVICES</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (
-          <p key={item} onClick={(e) => test(e)} className="service-btn-txt">
-            {item}
-          </p>
+          <span key={item} onClick={(e) => test(e)} className="service-btn-txt">
+                {item}
+                <hr className="hover-line-rule"/>
+          </span>
         ))}
       </div>
       <div className="service-details-com">
@@ -51,7 +52,7 @@ function Services() {
           <ServicesCategory
             key={item.id}
             {...item}
-            className="service-each-box"
+           
           />
         ))}
       </div>
@@ -67,10 +68,10 @@ interface ServicesCategoryProps {
 
 function ServicesCategory({ service, statement }: ServicesCategoryProps) {
   return (
-    <>
+    <div className="service-each-box">
       <h3>{service}</h3>
       <p>{statement}</p>
-    </>
+    </div>
   );
 }
 

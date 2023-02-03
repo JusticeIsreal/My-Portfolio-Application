@@ -539,11 +539,11 @@ body {
 
 .service-main-com {
   margin-top: 50px;
+  padding: 5px;
 }
 .service-main-com .what-i-do {
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  letter-spacing: -6px;
   color: rgba(0, 91, 96, 0.9019607843);
 }
 @media only screen and (min-width: 800px) {
@@ -576,12 +576,53 @@ body {
   color: #37a1a7;
   transition: all 0.5s ease;
 }
-.service-main-com .service-btn-con .service-btn-txt:hover {
-  border-bottom: 3px solid #015871;
+.service-main-com .service-btn-con .service-btn-txt .hover-line-rule {
+  opacity: 0;
+  border: 2px solid #015871;
+}
+.service-main-com .service-btn-con .service-btn-txt:hover .hover-line-rule {
+  opacity: 1;
+  -webkit-animation: ll 0.3s linear;
+          animation: ll 0.3s linear;
+}
+@-webkit-keyframes ll {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ll {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-btn-con .service-btn-txt {
     width: 200px;
     font-size: 30px;
   }
+}
+.service-main-com .service-details-com {
+  border: 2px solid red;
+  margin-top: 20px;
+  height: 500px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 330px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-details-com {
+    width: 700px;
+    max-width: 700px;
+  }
+}
+.service-main-com .service-details-com .service-each-box {
+  border: 2px solid green;
 }/*# sourceMappingURL=Style.css.map */
