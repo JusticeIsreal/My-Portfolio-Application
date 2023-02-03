@@ -42,18 +42,14 @@ function Services() {
       <div className="service-btn-con">
         {category.map((item: any) => (
           <span key={item} onClick={(e) => test(e)} className="service-btn-txt">
-                {item}
-                <hr className="hover-line-rule"/>
+            {item}
+            {/* <div className="hover-line-rule"></div> */}
           </span>
         ))}
       </div>
       <div className="service-details-com">
         {displayService.map((item: any) => (
-          <ServicesCategory
-            key={item.id}
-            {...item}
-           
-          />
+          <ServicesCategory key={item.id} {...item} />
         ))}
       </div>
     </div>

@@ -358,7 +358,7 @@ body {
   line-height: 25px;
   color: #37a1a7;
 }
-.Homepage .Banner-main-con .pitch-con .pitch a {
+.Homepage .Banner-main-con .pitch-con .pitch button {
   padding: 0 3px;
   border-radius: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -541,7 +541,12 @@ body {
   background: #b7e8eb;
   margin-top: 100px;
   padding: 5px;
-  height: 100vh;
+  height: 85vh;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com {
+    height: 100vh;
+  }
 }
 .service-main-com .what-i-do {
   font-size: 50px;
@@ -574,6 +579,8 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   padding: 2px 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
   font-weight: bold;
   text-align: center;
   color: #37a1a7;
@@ -581,7 +588,11 @@ body {
 }
 .service-main-com .service-btn-con .service-btn-txt .hover-line-rule {
   opacity: 0;
-  border: 2px solid #015871;
+  border: 2px solid #b7e8eb;
+}
+.service-main-com .service-btn-con .service-btn-txt:hover {
+  background: rgba(0, 91, 96, 0.9019607843);
+  color: #b7e8eb;
 }
 .service-main-com .service-btn-con .service-btn-txt:hover .hover-line-rule {
   opacity: 1;

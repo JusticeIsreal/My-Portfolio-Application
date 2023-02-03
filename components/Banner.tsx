@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useReducer } from "react";
 import Image from "next/image";
 
 // import icons
@@ -35,6 +35,15 @@ function Banner() {
     }, 50);
     return () => clearInterval(intervalId);
   }, [countDegree, countExperience, countProject, countAward]);
+
+  // read more function
+  const [readPitch, setReadPitch] = useState<boolean>(false);
+  const myPitch: string =
+    "I am a graduate of Maritime Academy of Nigeria with a First Class in Marine Engineering. I am a dedicated, results-oriented, and technically-insightful Software Engineer polished in optimizing systems to address dynamic needs. I am a strong Tech enthusiast, and I am currently pursuing my passion in the Tech industry . Over the years, I have honed my analytical thinking skills and collaboration skills, also acquiring certifications as a Project Manager, Scrum master, Full stack web developer, Enterprise thinking Practitioner , amongst others to develope strong relationship-building skills to ensure client satisfaction in the workplace. My goal is to secure a career opportunity that will allow me to expand upon my current skill set while contributing to the success of a  company. I am passionate about learning new things and collaborating with teammates, So, if you would like to know a little more about me feel free to contact me ";
+
+  const readAll = () => {
+    setReadPitch(!readPitch);
+  };
   return (
     <div className="Banner-main-con">
       <div className="full-name">
@@ -54,30 +63,11 @@ function Banner() {
 
       <div className="pitch-con">
         <p className="pitch">
-          Hi, <br /> {'" '}I am JUSTICE ISREAL AGBONMA . I am a graduate of
-          Maritime Academy of Nigeria with a First Class in Marine Engineering.
-          I am a dedicated, results-oriented, and technically-insightful
-          Software Engineer polished in optimizing systems to address dynamic
-          needs. <br /> I am a strong Tech enthusiast, and I am currently
-          pursuing my passion in the Tech industry . Over the years, I have
-          honed my analytical thinking skills and collaboration skills, also
-          acquiring certifications as a Project Manager, Scrum master, Full
-          stack web developer, Enterprise thinking Practitioner , amongst others
-          to develope strong relationship-building skills to ensure client
-          satisfaction in the workplace. <br />
-          My goal is to secure a career opportunity that will allow me to expand
-          upon my current skill set while contributing to the success of a
-          company.
-          <br />I am passionate about learning new things and collaborating with
-          teammates, So, if you would like to know a little more about me feel
-          free to contact me directly{' " '}
-          <a
-            href="http://Justiceyba@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            CONTACT-ME
-          </a>
+          {"Hi,I am JUSTICE ISREAL AGBONMA ."} <br/>
+          {readPitch ? <>{myPitch}</> : <>{myPitch.substring(0, 320)} ...</>}
+          <button className="readMore" onClick={readAll}>
+            {readPitch ? "Read less" : "Read more"}
+          </button>
         </p>
       </div>
       <section className="myStaticsCon">

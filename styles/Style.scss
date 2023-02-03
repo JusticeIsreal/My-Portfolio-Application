@@ -351,7 +351,7 @@ body {
         line-height: 25px;
         color: $paragraph-Color;
 
-        a {
+        button {
           // border: $border;
           padding: 0 3px;
           border-radius: $border-radius;
@@ -512,7 +512,10 @@ body {
   background: $text-Color;
   margin-top: 100px;
   padding: 5px;
-  height: 100vh;
+  height: 85vh;
+  @include responsive(bigphone) {
+    height: 100vh;
+  }
 
   .what-i-do {
     font-size: 50px;
@@ -530,6 +533,7 @@ body {
     max-width: 330px;
     margin: 0 auto;
     margin-top: 50px;
+
     @include responsive(bigphone) {
       width: 700px;
       max-width: 700px;
@@ -537,10 +541,11 @@ body {
 
     .service-btn-txt {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      // border: $border;
+      // border-bottom: $border;
       text-transform: uppercase;
       padding: 2px 5px;
-      // width: 28%;
+      padding: 5px 10px;
+      border-radius: 5px;
       font-weight: bold;
       text-align: center;
       color: $paragraph-Color;
@@ -548,10 +553,13 @@ body {
 
       .hover-line-rule {
         opacity: 0;
-        border: 2px solid $background;
+        border: 2px solid $text-Color;
       }
 
       &:hover {
+        background: $card-bg;
+        color: $text-Color;
+
         .hover-line-rule {
           opacity: 1;
           animation: ll 0.3s linear;
