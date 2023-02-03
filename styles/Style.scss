@@ -509,24 +509,26 @@ body {
 // SERVICES
 .service-main-com {
   // border: 2px solid red;
-  margin-top: 50px;
+  background: $text-Color;
+  margin-top: 100px;
   padding: 5px;
 
   .what-i-do {
     font-size: 50px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: $card-bg;
+    text-align: center;
+    // margin-top: 100px;
     @include responsive(bigphone) {
       font-size: 130px;
     }
   }
   .service-btn-con {
-    // border-bottom: $border;
     @include flexDisplay(space-between, center, row);
     width: 90%;
     max-width: 330px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
     @include responsive(bigphone) {
       width: 700px;
       max-width: 700px;
@@ -537,7 +539,7 @@ body {
       // border: $border;
       text-transform: uppercase;
       padding: 2px 5px;
-      width: 28%;
+      // width: 28%;
       text-align: center;
       color: $paragraph-Color;
       transition: all 0.5s ease;
@@ -563,29 +565,57 @@ body {
         }
       }
       @include responsive(bigphone) {
-        width: 200px;
+        // width: 200px;
         font-size: 30px;
       }
     }
   }
 
   .service-details-com {
-    border: 2px solid red;
-    margin-top: 20px;
-    height: 500px;
-    overflow: hidden;
-
+    // border: 2px solid red;
     width: 90%;
     max-width: 330px;
     margin: 0 auto;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
     @include responsive(bigphone) {
       width: 700px;
       max-width: 700px;
+      margin-top: 50px;
     }
 
     .service-each-box {
-      border: 2px solid green;
+      border: $border;
+      width: 50%;
+      height: 200px;
+      overflow-y: scroll;
+      text-align: center;
+      padding: 5px;
+
+      &:hover{
+        background: $background;
+        h3{
+          color: $paragraph-Color;
+        }
+        p{
+          color: $text-Color;
+        }
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: $card-bg;
+        font-size: 15px;
+        @include responsive(bigphone) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: $paragraph-Color;
+      }
     }
   }
 }

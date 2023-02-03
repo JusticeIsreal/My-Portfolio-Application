@@ -538,13 +538,15 @@ body {
 }
 
 .service-main-com {
-  margin-top: 50px;
+  background: #b7e8eb;
+  margin-top: 100px;
   padding: 5px;
 }
 .service-main-com .what-i-do {
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgba(0, 91, 96, 0.9019607843);
+  text-align: center;
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .what-i-do {
@@ -559,7 +561,7 @@ body {
   width: 90%;
   max-width: 330px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-btn-con {
@@ -571,7 +573,6 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   padding: 2px 5px;
-  width: 28%;
   text-align: center;
   color: #37a1a7;
   transition: all 0.5s ease;
@@ -603,26 +604,53 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-btn-con .service-btn-txt {
-    width: 200px;
     font-size: 30px;
   }
 }
 .service-main-com .service-details-com {
-  border: 2px solid red;
-  margin-top: 20px;
-  height: 500px;
-  overflow: hidden;
   width: 90%;
   max-width: 330px;
   margin: 0 auto;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-details-com {
     width: 700px;
     max-width: 700px;
+    margin-top: 50px;
   }
 }
 .service-main-com .service-details-com .service-each-box {
-  border: 2px solid green;
+  border: 1px solid #015871;
+  width: 50%;
+  height: 200px;
+  overflow-y: scroll;
+  text-align: center;
+  padding: 5px;
+}
+.service-main-com .service-details-com .service-each-box:hover {
+  background: #015871;
+}
+.service-main-com .service-details-com .service-each-box:hover h3 {
+  color: #37a1a7;
+}
+.service-main-com .service-details-com .service-each-box:hover p {
+  color: #b7e8eb;
+}
+.service-main-com .service-details-com .service-each-box h3 {
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(0, 91, 96, 0.9019607843);
+  font-size: 15px;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-details-com .service-each-box h3 {
+    font-size: 20px;
+  }
+}
+.service-main-com .service-details-com .service-each-box p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #37a1a7;
 }/*# sourceMappingURL=Style.css.map */

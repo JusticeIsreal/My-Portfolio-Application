@@ -2,7 +2,7 @@ const ServiceData = [
   // SERVICES
   {
     id: 1,
-    service: "ENTERPRISE SOFTWARE DEVELOPMENT",
+    service: "SOFTWARE DEVELOPMENT",
     statement:
       "Leverage our 13-year expertise in enterprise software development, API integration, modernising legacy systems, and consolidating app portfolios. We help large organizations become a lasting success in the global arena by re-engineering solutions of different complexity.",
     category: "service",
@@ -35,7 +35,7 @@ const ServiceData = [
   },
   {
     id: 2,
-    service: "MOBILE APPLICATION DEVELOPMENT",
+    service: "APP / WEB DEVELOPMENT",
     statement:
       "We offer a full cycle of application design, integration and management services. Whether it is a consumer oriented app or a transformative enterprise-class solution, the company leads the entire mobile app development process from ideation and concept to delivery, and to ongoing support",
     category: "service",
@@ -67,7 +67,7 @@ const ServiceData = [
   },
   {
     id: 3,
-    service: "DEDICATED DEVELOPMENT TEAM",
+    service: "DEVELOPMENT COLLABORATION",
     statement:
       "A dedicated, customized, and secure Team Extension model follows our client's internal development practices, methodologies, and culture.Scale your delivery capacity with intelligent dedicated developers. Our clients succeed by leveraging Intellectsoft's process of building, motivating, and managing software development teams.",
     category: "service",
@@ -99,77 +99,10 @@ const ServiceData = [
       },
     ],
   },
-  {
-    id: 4,
-    service: "IT Consulting Services",
-    statement:
-      "We offer IT consulting services that will help you improve your software architecture, create a tech-driven digital strategy, and improve operations by optimising your software portfolio. Our software engineers will finish your digital transformation journey through careful planning and effective execution of the outlined IT strategy.",
-    category: "service",
-    subservice: [
-      {
-        subService1: "Analysis",
-        subStatement1:
-          "Our IT consulting advisors study your existing software solutions and the ways in which your employees use them, identifying problems in workflows and automation.",
 
-        subService2: "Strategy",
-        subStatement2:
-          "The advisors design a roadmap and strategy that will help your business leverage the latest technologies and de-clutter your software infrastructure. Then, they set software and employee KPIs.",
-
-        subService3: "Performance",
-        subStatement3:
-          "Impactful IT consulting services rely on collaboration between the client and the IT consulting company. Our experts will closely analyse your workflows, tracking the performance to discover the pain points. Our software engineers will then eliminate the impeding elements.",
-
-        subService4: "Enterprise Architecture Advisory",
-        subStatement4:
-          "Our Enterprise Architecture experts can help you make the transition from outdated and ineffective IT delivery systems and architectures to a cloud-based infrastructure that streamlines delivery and allows for implementation of new technologies into your software strategy.",
-
-        subService5: "IT Strategy Consulting",
-        subStatement5:
-          "Today, you need to ensure the consistent delivery of high-quality IT products and services for your enterprise workflow and your customers. You also need to implement new technologies to stay competitive and meet the demands of modern users. Our IT solutions consulting will help your strike the balance between these two objectives, ensuring they don’t conflict between one another.",
-
-        subService6: "Software Portfolio Consulting",
-        subStatement6:
-          "Our IT consulting advisors will conduct a deep analysis of how your business and employees use your existing enterprise software, as well as of your enterprise mobile strategy. Then, they will provide suggestions for the required changes, new developments, and integration of third-party solutions to remove the existing roadblocks.",
-
-        subService7: "Improvements",
-        subStatement7:
-          "After completing the initially set goals, our IT consulting advisors and software engineers recommend steps for future improvements, as well as assist with implementing them.",
-      },
-    ],
-  },
-  {
-    id: 5,
-    service: "UX / UI Design",
-    statement:
-      "When you choose our services, you get everything to realise your product idea properly, from experience of working with Fortune 500 clients to design standards that will help us deliver your product quicker and without loss in quality.",
-    category: "service",
-    subservice: [
-      {
-        subService1: "Decade in Design",
-        subStatement1:
-          "From basic event apps to scalable enterprise software for Fortune 500 companies, our long-standing design team can help your any idea come into being with the latest tools and tech. Our well-established process and standardised approach to design will ensure the final product looks and works as you required.",
-
-        subService2: "In-House Standard",
-        subStatement2:
-          "To ensure high quality and timely delivery of your product, we created a set of standards for our every designer to follow. We use design systems, perform comprehensive design reviews, re-use the most impactful practices and tools, and constantly mentor our designers. As a result, you get a skillful and organized team that knows what to do.",
-
-        subService3: "Broad Expertise",
-        subStatement3:
-          "Our design team has created different types of apps and software systems for all major industries. You can count on their careful root cause analysis, interface architecture and animation design experience, in-depth post-analysis, and more. You will get a polished final product that is equally beautiful and easy-to-use across all platforms.",
-
-        subService4: "UX DESIGN PROCESS",
-        subStatement4:
-          "Analysis , Interface architecture,Sketching & Wireframes,Dynamic prototype,Editing",
-
-        subService5: "UI DESIGN PROCESS",
-        subStatement5:
-          "Design references,Graphic interface,Animation prototype,UI guidelines and kit,Design review",
-      },
-    ],
-  },
   {
     id: 6,
-    service: "GRAPHICS DESIGN",
+    service: "PROJECT MANAGEMENT",
     statement:
       "Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software company that will help you build an engaging product easily and quickly.",
     category: "service",
@@ -321,40 +254,7 @@ const ServiceData = [
       },
     ],
   },
-  {
-    id: 11,
-    service: "Construction",
-    statement:
-      "We Create complex enterprise software, ensure reliable software integration, modernise your legacy system.",
-    category: "industry",
-    subservice: [
-      {
-        subService1: "Custom Enterprise Software Development",
-        subStatement1:
-          "Support your business infrastructure with scalable software that improves key facets of your enterprise. Get access to our industry-specific knowledge to design, build, and scale your new enterprise software solution.",
 
-        subService2: "Enterprise Mobility Services",
-        subStatement2:
-          "Our end-to-end enterprise mobility solutions allow organizations to safely and efficiently manage the extensive use of mobile devices that can support a large number of users in their business environment.",
-
-        subService3: "Digital Transformation Services",
-        subStatement3:
-          "Intellectsoft is your reliable digital transformation partner. Leverage our expertise in using digital technologies to create new or modify existing business processes to meet changing market requirements.",
-
-        subService4: "Data Management",
-        subStatement4:
-          "Stay ahead with effective data management strategy, predictive analytics, and intelligent automation using our in-depth knowledge of emerging technologies such as Big Data, Data Science, Cognitive Computing, Blockchain and more.",
-
-        subService5: "Software Integration",
-        subStatement5:
-          "Improve your software infrastructure with well-built microservices, reliable API, and data integration. Launch your business strategy with our comprehensive enterprise application development, or use our enterprise app integration solutions.",
-
-        subService6: "Legacy Application Modernization",
-        subStatement6:
-          "Outdated software comes with much bigger risks and can be expensive to maintain. Hire our top minds to perform an in-depth feature and technical analysis of your legacy solution and improve it with the latest tools and technologies.",
-      },
-    ],
-  },
   {
     id: 12,
     service: "Healthcare",
