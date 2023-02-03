@@ -134,125 +134,26 @@ const ServiceData = [
   {
     id: 7,
     service: "FRONTEND DEVELOPMENT",
-    statement:
-      "Cloud environments have not only revolutionized IT, but how businesses operate. Embracing cloud computing solutions can be challenging. Intellectsoft is uniquely positioned to help you define and implement smart cloud software strategy and optimize your cloud environment.",
+    statement: "HTML, CSS, SCSS, BootStrap, JavaScript, React js, Next js",
     category: "technology",
-    subservice: [
-      {
-        subService1: "More scale, Speed & Agility",
-        subStatement1:
-          "Cloud computing solutions will make your business more responsive and efficient. Use SaaS to significantly decrease the role of manual maintenance, increase productivity, and improve the end user experience in your business. Implement the PaaS solution to quickly design, deploy, and scale. Lower costs on storage, server, and in-house maintenance with IaaS. Intellectsoft can help you leverage any solution on the most popular and reliable cloud storages.Microsoft Azure, IaaS, Amazon Web Services, PaaS, Google Cloud Platform, SaaS",
-
-        subService2: "Select any Model & Stay Flexible",
-        subStatement2:
-          "Your business may rely on different cloud models. Migrate all of your operations to cloud to cut costs dramatically. If you want to be sure your sensitive data is locked down tight, combine cloud and on-premises approach in a hybrid model. Your enterprise cooperates with several cloud platform vendors? We will help your business adopt the multi-cloud model properly. Public Cloud, Private On-premises Cloud, Hybrid Cloud, Multi-cloud",
-
-        subService3: "Cloud & Digital Transformation",
-        subStatement3:
-          "Every successful effort in Digital Transformation relies on Big Data, and the fastest way to implement Big Data is on Cloud Technology. Whether you need to manage data for your Machine Learning and Deep Learning models, or ingest and process a large volume of IoT events — we can help you create, integrate, and tune the right cloud services, as well as ensure continuous operation of a high-load system with Architecture, Implementation, DevOps, Continuous Integration, and Delivery. Internet of Things Integration, Blockchain Solutions Integration, Data Management for AI models, Customer Engagement Solutions Integration, Augmented Reality Solutions Management, Management of Mobile Apps",
-      },
-    ],
   },
   {
     id: 8,
     service: "BACKEND DEVELOPMENT",
-    statement:
-      "At Intellectsoft Blockchain Lab we believe that Distributed Ledger Technologies (DLTs) carry the potential to introduce a new level of transparency, automation, and efficiency in businesses and nonprofits. Most organizations find it challenging to understand and apply the full power of Blockchain and DLTs to get tangible business results. Our team is passionate about utilizing our technical capabilities, experience, and product mindset to help our clients effectively extract real business value by implementing blockchain and DLT across their organization. As part of Intellectsoft Group, Intellectsoft Blockchain Lab has access to the biggest pool of blockchain engineering, cryptography, and cybersecurity talent in Eastern Europe. Our expertise has already helped dozens of SMBs and enterprises including E&Y, London Stock Exchange, The World Bank, Nestle, and Shell.",
+    statement: "Node js, Express js, Firebase",
     category: "technology",
-    subservice: [
-      {
-        subService1: "BlockChain for StartUps",
-        subStatement1: [
-          { child1: "Product design workshop" },
-          { child2: "Public blockchain network integration" },
-          { child3: "Permissioned and Permissionless blockchain development" },
-          { child4: "Distributed applications (DApps) development" },
-          {
-            child5:
-              "Smart Contracts development and audit within a project scope",
-          },
-          {
-            child6:
-              "Hybrid centralized systems development with blockchain components",
-          },
-          { child7: "Blockchain technology consulting" },
-        ],
-        subService2: "BlockChain for Enterprise",
-        subStatement2: [
-          { child1: "Proof of Concept design workshop" },
-          { child2: "Proof of Concept development" },
-          { child3: "Private and permissioned blockchain development" },
-          { child4: "Consortium networks" },
-          {
-            child5: "Integrating blockchain into legacy infrastructure",
-          },
-          {
-            child6: "Migrating to blockchain infrastructure",
-          },
-          { child7: "Blockchain technology consulting" },
-        ],
-      },
-    ],
   },
   {
     id: 9,
-    service: "UX / UI Design",
-    statement:
-      "When you choose our services, you get everything to realise your product idea properly, from experience of working with Fortune 500 clients to design standards that will help us deliver your product quicker and without loss in quality.",
+    service: "SCHEMA Design",
+    statement: "MicroSoft Visio, Draw.io, Corel Draw",
     category: "technology",
-    subservice: [
-      {
-        subService1: "Decade in Design",
-        subStatement1:
-          "From basic event apps to scalable enterprise software for Fortune 500 companies, our long-standing design team can help your any idea come into being with the latest tools and tech. Our well-established process and standardised approach to design will ensure the final product looks and works as you required.",
-
-        subService2: "In-House Standard",
-        subStatement2:
-          "To ensure high quality and timely delivery of your product, we created a set of standards for our every designer to follow. We use design systems, perform comprehensive design reviews, re-use the most impactful practices and tools, and constantly mentor our designers. As a result, you get a skillful and organized team that knows what to do.",
-
-        subService3: "Broad Expertise",
-        subStatement3:
-          "Our design team has created different types of apps and software systems for all major industries. You can count on their careful root cause analysis, interface architecture and animation design experience, in-depth post-analysis, and more. You will get a polished final product that is equally beautiful and easy-to-use across all platforms.",
-
-        subService4: "UX DESIGN PROCESS",
-        subStatement4:
-          "Analysis , Interface architecture,Sketching & Wireframes,Dynamic prototype,Editing",
-
-        subService5: "UI DESIGN PROCESS",
-        subStatement5:
-          "Design references,Graphic interface,Animation prototype,UI guidelines and kit,Design review",
-      },
-    ],
   },
   {
     id: 10,
     service: "DATABASE MANAGEMENT",
-    statement:
-      "The engineers of Intellectsoft IoT Lab have the experience of working with all technical platforms, languages, and frameworks to help you create a secure and scalable IoT solution that fits your business needs. From creating the solution’s architecture to sensors to building cloud infrastructure, Intellectsoft IoT Lab can help you every step of the way with both hardware and software.The experience of many members of the Lab amounts to ten years, and with Intellectsoft’s decade-long expertise in building custom software products, the unit has all it takes to deliver impactful IoT solutions to enterprises across industries.",
+    statement: "MongoDB, MySQL, PostgreSQL, Firebase",
     category: "technology",
-    subservice: [
-      {
-        subService1: "Decade in Design",
-        subStatement1:
-          "From basic event apps to scalable enterprise software for Fortune 500 companies, our long-standing design team can help your any idea come into being with the latest tools and tech. Our well-established process and standardised approach to design will ensure the final product looks and works as you required.",
-
-        subService2: "In-House Standard",
-        subStatement2:
-          "To ensure high quality and timely delivery of your product, we created a set of standards for our every designer to follow. We use design systems, perform comprehensive design reviews, re-use the most impactful practices and tools, and constantly mentor our designers. As a result, you get a skillful and organized team that knows what to do.",
-
-        subService3: "Broad Expertise",
-        subStatement3:
-          "Our design team has created different types of apps and software systems for all major industries. You can count on their careful root cause analysis, interface architecture and animation design experience, in-depth post-analysis, and more. You will get a polished final product that is equally beautiful and easy-to-use across all platforms.",
-
-        subService4: "UX DESIGN PROCESS",
-        subStatement4:
-          "Analysis , Interface architecture,Sketching & Wireframes,Dynamic prototype,Editing",
-
-        subService5: "UI DESIGN PROCESS",
-        subStatement5:
-          "Design references,Graphic interface,Animation prototype,UI guidelines and kit,Design review",
-      },
-    ],
   },
 
   {
@@ -279,9 +180,9 @@ const ServiceData = [
   },
   {
     id: 13,
-    service: "Retail & E-Commerce",
+    service: "E-Commerce",
     statement:
-      "Create new opportunities for your business and for your customers with the help of specialized software. Transform the shopping experience with an engaging mobile app or improve business operations with a comprehensive enterprise software suite.",
+      "Create new opportunities for your business and for your customers with the help e-commerce. Transform the shopping experience and improve sales with a competitive advantage.",
     category: "industry",
     subservice: [
       {
@@ -303,7 +204,7 @@ const ServiceData = [
     id: 14,
     service: "FinTech",
     statement:
-      "Accelerate innovation using the power of Intellectsoft software development for banking and financial services. Advance your efficiency, customer experience, and business performance with our future-proof solutions.",
+      "Web application for banking and financial services. Advance your efficiency, customer experience, and business performance.",
     category: "industry",
     subservice: [
       {
@@ -335,9 +236,9 @@ const ServiceData = [
   },
   {
     id: 15,
-    service: "Travel and Hospitality",
+    service: "socials",
     statement:
-      "Meet your customers' and partners’ needs with our end-to-end technology solutions for hospitality. From impactful mobile applications to comprehensive custom-made systems, leading brands rely on Intellectsoft expertise and engineering experience.",
+      "End-to-End technology solutions for Hospitality, Social Interactions and Event Engagement. from impactful mobile experience to comprehensive custom-made systems.",
     category: "industry",
     subservice: [
       {

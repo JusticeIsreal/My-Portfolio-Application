@@ -512,6 +512,7 @@ body {
   background: $text-Color;
   margin-top: 100px;
   padding: 5px;
+  height: 100vh;
 
   .what-i-do {
     font-size: 50px;
@@ -615,7 +616,7 @@ body {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         color: $text-Color;
         font-size: 15px;
-        
+
         @include responsive(bigphone) {
           font-size: 20px;
         }
@@ -625,7 +626,7 @@ body {
         color: #b7e9eba2;
         font-size: 13px;
         height: 82%;
-        position: absolute;
+        // position: absolute;
         padding: 0 3px;
         padding-top: 10px;
         bottom: 0px;
