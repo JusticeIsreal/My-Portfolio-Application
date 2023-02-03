@@ -535,4 +535,53 @@ body {
   .Homepage .Banner-main-con .statistics-con .statistics .statistics-name {
     font-size: 20px;
   }
+}
+
+.service-main-com {
+  margin-top: 50px;
+}
+.service-main-com .what-i-do {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: -6px;
+  color: rgba(0, 91, 96, 0.9019607843);
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .what-i-do {
+    font-size: 130px;
+  }
+}
+.service-main-com .service-btn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  max-width: 330px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-btn-con {
+    width: 700px;
+    max-width: 700px;
+  }
+}
+.service-main-com .service-btn-con .service-btn-txt {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  width: 28%;
+  text-align: center;
+  color: #37a1a7;
+  transition: all 0.5s ease;
+}
+.service-main-com .service-btn-con .service-btn-txt:hover {
+  border-bottom: 3px solid #015871;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-btn-con .service-btn-txt {
+    width: 200px;
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=Style.css.map */

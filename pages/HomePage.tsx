@@ -11,8 +11,7 @@ function HomePage() {
       <div className="navbar-main-con">
         <NavBar />
       </div>
-          <Banner />
-          
+      <Banner />
     </div>
   );
 }

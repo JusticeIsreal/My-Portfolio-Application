@@ -203,7 +203,7 @@ const ServiceData = [
     service: "CLOUD COMPUTING SOLUTIONS",
     statement:
       "Cloud environments have not only revolutionized IT, but how businesses operate. Embracing cloud computing solutions can be challenging. Intellectsoft is uniquely positioned to help you define and implement smart cloud software strategy and optimize your cloud environment.",
-    category: "technologies",
+    category: "technology",
     subservice: [
       {
         subService1: "More scale, Speed & Agility",
@@ -225,7 +225,7 @@ const ServiceData = [
     service: "BLOCKCHAIN DEVELOPMENT & TECH CONSULTING",
     statement:
       "At Intellectsoft Blockchain Lab we believe that Distributed Ledger Technologies (DLTs) carry the potential to introduce a new level of transparency, automation, and efficiency in businesses and nonprofits. Most organizations find it challenging to understand and apply the full power of Blockchain and DLTs to get tangible business results. Our team is passionate about utilizing our technical capabilities, experience, and product mindset to help our clients effectively extract real business value by implementing blockchain and DLT across their organization. As part of Intellectsoft Group, Intellectsoft Blockchain Lab has access to the biggest pool of blockchain engineering, cryptography, and cybersecurity talent in Eastern Europe. Our expertise has already helped dozens of SMBs and enterprises including E&Y, London Stock Exchange, The World Bank, Nestle, and Shell.",
-    category: "technologies",
+    category: "technology",
     subservice: [
       {
         subService1: "BlockChain for StartUps",
@@ -266,7 +266,7 @@ const ServiceData = [
     service: "UX / UI Design",
     statement:
       "When you choose our services, you get everything to realise your product idea properly, from experience of working with Fortune 500 clients to design standards that will help us deliver your product quicker and without loss in quality.",
-    category: "technologies",
+    category: "technology",
     subservice: [
       {
         subService1: "Decade in Design",
@@ -296,7 +296,7 @@ const ServiceData = [
     service: "Internet of Things",
     statement:
       "The engineers of Intellectsoft IoT Lab have the experience of working with all technical platforms, languages, and frameworks to help you create a secure and scalable IoT solution that fits your business needs. From creating the solution’s architecture to sensors to building cloud infrastructure, Intellectsoft IoT Lab can help you every step of the way with both hardware and software.The experience of many members of the Lab amounts to ten years, and with Intellectsoft’s decade-long expertise in building custom software products, the unit has all it takes to deliver impactful IoT solutions to enterprises across industries.",
-    category: "technologies",
+    category: "technology",
     subservice: [
       {
         subService1: "Decade in Design",

@@ -37,22 +37,40 @@ function Services() {
   };
 
   return (
-    <div>
-      <div>
+    <div className="service-main-com">
+      <h1 className="what-i-do">SERVICES</h1>
+      <div className="service-btn-con">
         {category.map((item: any) => (
-          <h3 key={item} onClick={(e) => test(e)}>
+          <p key={item} onClick={(e) => test(e)} className="service-btn-txt">
             {item}
-          </h3>
+          </p>
         ))}
       </div>
-      <div>
+      <div className="service-details-com">
         {displayService.map((item: any) => (
-          <h3 key={item.id} >
-            {item.service}
-          </h3>
+          <ServicesCategory
+            key={item.id}
+            {...item}
+            className="service-each-box"
+          />
         ))}
       </div>
     </div>
+  );
+}
+
+import React from "react";
+interface ServicesCategoryProps {
+  service: string;
+  statement: string;
+}
+
+function ServicesCategory({ service, statement }: ServicesCategoryProps) {
+  return (
+    <>
+      <h3>{service}</h3>
+      <p>{statement}</p>
+    </>
   );
 }
 
