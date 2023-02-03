@@ -359,6 +359,7 @@ body {
   color: #37a1a7;
 }
 .Homepage .Banner-main-con .pitch-con .pitch button {
+  border: 1px solid #015871;
   padding: 0 3px;
   border-radius: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -541,12 +542,7 @@ body {
   background: #b7e8eb;
   margin-top: 100px;
   padding: 5px;
-  height: 85vh;
-}
-@media only screen and (min-width: 800px) {
-  .service-main-com {
-    height: 100vh;
-  }
+  padding-bottom: 10px;
 }
 .service-main-com .what-i-do {
   font-size: 50px;
@@ -582,6 +578,7 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 14px;
   text-align: center;
   color: #37a1a7;
   transition: all 0.5s ease;
@@ -640,11 +637,16 @@ body {
   border: 1px solid #b7e8eb;
   background: rgba(0, 91, 96, 0.9019607843);
   width: 50%;
-  height: 200px;
+  height: 180px;
   overflow-y: scroll;
   text-align: center;
   padding: 5px;
   position: relative;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-details-com .service-each-box {
+    height: 200px;
+  }
 }
 .service-main-com .service-details-com .service-each-box:hover {
   background: #015871;
@@ -680,5 +682,30 @@ body {
 @media only screen and (min-width: 800px) {
   .service-main-com .service-details-com .service-each-box p {
     font-size: 17px;
+  }
+}
+.service-main-com .tech-icons {
+  background: #b7e8eb;
+  border: 2px solid #b7e8eb;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .tech-icons {
+    margin-top: 80px;
+  }
+}
+.service-main-com .tech-icons .icon {
+  color: #37a1a7;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .tech-icons .icon {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=Style.css.map */

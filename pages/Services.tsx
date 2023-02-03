@@ -1,7 +1,30 @@
 import { useState } from "react";
-
 // import component
 import ServiceData from "../components/ServiceData";
+
+// import react icons
+
+import {
+  FaBootstrap,
+  FaSass,
+  FaGithubSquare,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
+import { CgFigma } from "react-icons/cg";
+import {
+  SiFirebase,
+  SiMysql,
+  SiPostgresql,
+  SiKubernetes,
+  SiDocker,
+  SiJquery,
+  SiHtml5,
+  SiCss3,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
 
 function Services() {
   interface Service {
@@ -51,6 +74,25 @@ function Services() {
         {displayService.map((item: any) => (
           <ServicesCategory key={item.id} {...item} />
         ))}
+      </div>
+
+      <div className="tech-icons">
+        <SiHtml5 className="icon " />
+        <SiCss3 className="icon " />
+        <FaBootstrap className="icon " />
+        <FaSass className="icon " />
+        <DiJavascript className="icon " />
+        <SiJquery className="icon " />
+        <FaGithubSquare className="icon " />
+        <FaReact className="icon " />
+        <FaNodeJs className="icon " />
+        <SiExpress className="icon " />
+        <SiMongodb className="icon " />
+        <SiMysql className="icon " />
+        <SiPostgresql className="icon " />
+        <SiDocker className="icon " />
+        <SiKubernetes className="icon " />
+        <SiFirebase className="icon " />
       </div>
     </div>
   );

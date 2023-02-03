@@ -352,7 +352,7 @@ body {
         color: $paragraph-Color;
 
         button {
-          // border: $border;
+          border: $border;
           padding: 0 3px;
           border-radius: $border-radius;
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
@@ -512,9 +512,10 @@ body {
   background: $text-Color;
   margin-top: 100px;
   padding: 5px;
-  height: 85vh;
+  padding-bottom: 10px;
+  // height: 90vh;
   @include responsive(bigphone) {
-    height: 100vh;
+    // height: 100vh;
   }
 
   .what-i-do {
@@ -533,7 +534,8 @@ body {
     max-width: 330px;
     margin: 0 auto;
     margin-top: 50px;
-
+    // margin: 0 auto;
+    // border: 2px solid red;
     @include responsive(bigphone) {
       width: 700px;
       max-width: 700px;
@@ -547,6 +549,7 @@ body {
       padding: 5px 10px;
       border-radius: 5px;
       font-weight: bold;
+      font-size: 14px;
       text-align: center;
       color: $paragraph-Color;
       transition: all 0.5s ease;
@@ -600,11 +603,14 @@ body {
       border: 1px solid $text-Color;
       background: $card-bg;
       width: 50%;
-      height: 200px;
+      height: 180px;
       overflow-y: scroll;
       text-align: center;
       padding: 5px;
       position: relative;
+      @include responsive(bigphone) {
+        height: 200px;
+      }
 
       &:hover {
         background: $background;
@@ -641,6 +647,31 @@ body {
         @include responsive(bigphone) {
           font-size: 17px;
         }
+      }
+    }
+  }
+  .tech-icons {
+    // border: 2px solid red;
+    background: $text-Color;
+    border: 2px solid $text-Color;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    @include flexDisplay(space-between, center, row);
+    @include responsive(bigphone) {
+      margin-top: 80px;
+    }
+
+    .icon {
+      color: $paragraph-Color;
+      // font-size: 50px;
+      // border: 2px solid red;
+      // margin: 5px;
+      // width: 6%;
+      // height: 10px;
+      @include responsive(bigphone) {
+        font-size: 50px;
       }
     }
   }
