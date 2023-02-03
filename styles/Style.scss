@@ -540,6 +540,7 @@ body {
       text-transform: uppercase;
       padding: 2px 5px;
       // width: 28%;
+      font-weight: bold;
       text-align: center;
       color: $paragraph-Color;
       transition: all 0.5s ease;
@@ -587,18 +588,24 @@ body {
 
     .service-each-box {
       border: $border;
+      border: 1px solid $text-Color;
+      background: $card-bg;
       width: 50%;
       height: 200px;
       overflow-y: scroll;
       text-align: center;
       padding: 5px;
+      position: relative;
 
-      &:hover{
+      &:hover {
         background: $background;
-        h3{
+        transform: scale(0.97);
+        // transform: translateY(-5px);
+        z-index: 2;
+        h3 {
           color: $paragraph-Color;
         }
-        p{
+        p {
           color: $text-Color;
         }
       }
@@ -606,15 +613,25 @@ body {
       h3 {
         text-transform: uppercase;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        color: $card-bg;
+        color: $text-Color;
         font-size: 15px;
+        
         @include responsive(bigphone) {
           font-size: 20px;
         }
       }
       p {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        color: $paragraph-Color;
+        color: #b7e9eba2;
+        font-size: 13px;
+        height: 82%;
+        position: absolute;
+        padding: 0 3px;
+        padding-top: 10px;
+        bottom: 0px;
+        @include responsive(bigphone) {
+          font-size: 17px;
+        }
       }
     }
   }

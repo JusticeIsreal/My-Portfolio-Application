@@ -573,6 +573,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   padding: 2px 5px;
+  font-weight: bold;
   text-align: center;
   color: #37a1a7;
   transition: all 0.5s ease;
@@ -624,14 +625,19 @@ body {
 }
 .service-main-com .service-details-com .service-each-box {
   border: 1px solid #015871;
+  border: 1px solid #b7e8eb;
+  background: rgba(0, 91, 96, 0.9019607843);
   width: 50%;
   height: 200px;
   overflow-y: scroll;
   text-align: center;
   padding: 5px;
+  position: relative;
 }
 .service-main-com .service-details-com .service-each-box:hover {
   background: #015871;
+  transform: scale(0.97);
+  z-index: 2;
 }
 .service-main-com .service-details-com .service-each-box:hover h3 {
   color: #37a1a7;
@@ -642,7 +648,7 @@ body {
 .service-main-com .service-details-com .service-each-box h3 {
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgba(0, 91, 96, 0.9019607843);
+  color: #b7e8eb;
   font-size: 15px;
 }
 @media only screen and (min-width: 800px) {
@@ -652,5 +658,16 @@ body {
 }
 .service-main-com .service-details-com .service-each-box p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #37a1a7;
+  color: rgba(183, 233, 235, 0.6352941176);
+  font-size: 13px;
+  height: 82%;
+  position: absolute;
+  padding: 0 3px;
+  padding-top: 10px;
+  bottom: 0px;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com .service-details-com .service-each-box p {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=Style.css.map */

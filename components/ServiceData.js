@@ -4,13 +4,13 @@ const ServiceData = [
     id: 1,
     service: "SOFTWARE DEVELOPMENT",
     statement:
-      "Leverage our 13-year expertise in enterprise software development, API integration, modernising legacy systems, and consolidating app portfolios. We help large organizations become a lasting success in the global arena by re-engineering solutions of different complexity.",
+      "I help large organizations become a lasting success in the global arena by re-engineering solutions for software of different complexity.",
     category: "service",
     subservice: [
       {
         subService1: "Custom Enterprise Software Development",
         subStatement1:
-          "Support your business infrastructure with scalable software that improves key facets of your enterprise. Get access to our industry-specific knowledge to design, build, and scale your new enterprise software solution.",
+          "API integration, modernising legacy systems, and consolidating app portfolios.Support your business infrastructure with scalable software that improves key facets of your enterprise. Get access to our industry-specific knowledge to design, build, and scale your new enterprise software solution.",
         subService2: "Enterprise Mobility Services",
         subStatement2:
           "Our end-to-end enterprise mobility solutions allow organizations to safely and efficiently manage the extensive use of mobile devices that can support a large number of users in their business environment.",
@@ -35,9 +35,9 @@ const ServiceData = [
   },
   {
     id: 2,
-    service: "APP / WEB DEVELOPMENT",
+    service: "WEB / APP DEVELOPMENT",
     statement:
-      "We offer a full cycle of application design, integration and management services. Whether it is a consumer oriented app or a transformative enterprise-class solution, the company leads the entire mobile app development process from ideation and concept to delivery, and to ongoing support",
+      "I offer a full cycle of application design, integration and management services for consumer oriented app or a world-class website.",
     category: "service",
     subservice: [
       {
@@ -67,9 +67,9 @@ const ServiceData = [
   },
   {
     id: 3,
-    service: "DEVELOPMENT COLLABORATION",
+    service: "COLLABORATION",
     statement:
-      "A dedicated, customized, and secure Team Extension model follows our client's internal development practices, methodologies, and culture.Scale your delivery capacity with intelligent dedicated developers. Our clients succeed by leveraging Intellectsoft's process of building, motivating, and managing software development teams.",
+      "As a team member, I establish a clear design process, meets deadlines, and delivers a spot-on end result to help you build an engaging product easily and quickly.",
     category: "service",
     subservice: [
       {
@@ -102,9 +102,9 @@ const ServiceData = [
 
   {
     id: 6,
-    service: "PROJECT MANAGEMENT",
+    service: "SCRUM MASTER",
     statement:
-      "Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software company that will help you build an engaging product easily and quickly.",
+      "I implement Agile Methodologies to follow client internal development practices to deliver capacity with intelligent dedicated developers.",
     category: "service",
     subservice: [
       {
@@ -133,7 +133,7 @@ const ServiceData = [
   //   TECHNOLOGIES
   {
     id: 7,
-    service: "CLOUD COMPUTING SOLUTIONS",
+    service: "FRONTEND DEVELOPMENT",
     statement:
       "Cloud environments have not only revolutionized IT, but how businesses operate. Embracing cloud computing solutions can be challenging. Intellectsoft is uniquely positioned to help you define and implement smart cloud software strategy and optimize your cloud environment.",
     category: "technology",
@@ -155,7 +155,7 @@ const ServiceData = [
   },
   {
     id: 8,
-    service: "BLOCKCHAIN DEVELOPMENT & TECH CONSULTING",
+    service: "BACKEND DEVELOPMENT",
     statement:
       "At Intellectsoft Blockchain Lab we believe that Distributed Ledger Technologies (DLTs) carry the potential to introduce a new level of transparency, automation, and efficiency in businesses and nonprofits. Most organizations find it challenging to understand and apply the full power of Blockchain and DLTs to get tangible business results. Our team is passionate about utilizing our technical capabilities, experience, and product mindset to help our clients effectively extract real business value by implementing blockchain and DLT across their organization. As part of Intellectsoft Group, Intellectsoft Blockchain Lab has access to the biggest pool of blockchain engineering, cryptography, and cybersecurity talent in Eastern Europe. Our expertise has already helped dozens of SMBs and enterprises including E&Y, London Stock Exchange, The World Bank, Nestle, and Shell.",
     category: "technology",
@@ -226,7 +226,7 @@ const ServiceData = [
   },
   {
     id: 10,
-    service: "Internet of Things",
+    service: "DATABASE MANAGEMENT",
     statement:
       "The engineers of Intellectsoft IoT Lab have the experience of working with all technical platforms, languages, and frameworks to help you create a secure and scalable IoT solution that fits your business needs. From creating the solution’s architecture to sensors to building cloud infrastructure, Intellectsoft IoT Lab can help you every step of the way with both hardware and software.The experience of many members of the Lab amounts to ten years, and with Intellectsoft’s decade-long expertise in building custom software products, the unit has all it takes to deliver impactful IoT solutions to enterprises across industries.",
     category: "technology",
