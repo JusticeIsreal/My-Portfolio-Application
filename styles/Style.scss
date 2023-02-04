@@ -695,10 +695,13 @@ body {
 
     .project-con {
       position: relative;
-      // border: $border;
+      transform: scale(0.9);
+      @include responsive(bigphone) {
+        transform: scale(1);
+      }
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(0.95);
         z-index: 3;
       }
 

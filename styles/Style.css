@@ -732,9 +732,15 @@ body {
 }
 .project-main-con .general-project-con .project-con {
   position: relative;
+  transform: scale(0.9);
+}
+@media only screen and (min-width: 800px) {
+  .project-main-con .general-project-con .project-con {
+    transform: scale(1);
+  }
 }
 .project-main-con .general-project-con .project-con:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
   z-index: 3;
 }
 .project-main-con .general-project-con .project-con .lower-project-con {
