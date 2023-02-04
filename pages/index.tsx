@@ -14,7 +14,7 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 
 export default function Home() {
-  const [viewLoading, setViewLoading] = useState<boolean>(true);
+  const [viewLoading, setViewLoading] = useState<boolean>(false);
 
   const loadingPageOut = () => {
     setTimeout(() => {

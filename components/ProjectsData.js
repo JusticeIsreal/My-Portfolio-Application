@@ -180,7 +180,7 @@ const Projects = [
       "This is a task manager that enable users to register, login in and create individual tasks. Each task can be edited, deleted and created. ",
   },
   {
-    id: 9,
+    id: 90,
     project: "DIGITAL IV",
     role: "Full stack Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1670800770/My%20portfolio%20Project/Screenshot_2022-12-12_at_00.19.10_m1el4x.png",
