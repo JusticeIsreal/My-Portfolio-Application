@@ -11,9 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 import StartingLoader from "../pages/StartingLoader";
 import HomePage from "./HomePage";
 import Services from "./Services";
+import Portfolio from "./Portfolio";
 
 export default function Home() {
-  const [viewLoading, setViewLoading] = useState<boolean>(false);
+  const [viewLoading, setViewLoading] = useState<boolean>(true);
 
   const loadingPageOut = () => {
     setTimeout(() => {
@@ -41,6 +42,7 @@ export default function Home() {
           <>
             <HomePage />
             <Services />
+            <Portfolio />
           </>
         )}
       </main>
