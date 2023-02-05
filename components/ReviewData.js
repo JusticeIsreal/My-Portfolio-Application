@@ -4,7 +4,7 @@ const ReviewData = [
     img: "https://res.cloudinary.com/isreal/image/upload/v1675563367/My%20portfolio%20Project/1655630846604_lpqtm8.jpg",
     job: "Software Developer",
     comment:
-      "I highly recommend Justice Israel A. for full stack roles. he's amazing at his job. He knows his way around people, he's good with the clients, does whatever it takes to assist colleagues and gets things done. His collaboration and communication with others is top notch. he's highly focused on the user stories and a decent team player.",
+      "I highly recommend Justice Israel A. for full stack roles. he's amazing at his job. does whatever it takes to assist colleagues and gets things done. he's highly focused on the user stories and a decent team player.",
     rating: "5",
   },
   {

@@ -696,11 +696,34 @@ body {
     .project-con {
       position: relative;
       transform: scale(0.9);
+
+      &:hover {
+        .lower-project-con {
+          background: $card-bg;
+
+          .project-name {
+            color: $text-Color;
+          }
+          .project-role {
+            color: #4ec6cd;
+          }
+          .project-details {
+            color: $text-Color;
+          }
+          .project-tech {
+            p {
+              color: $background;
+              background: $text-Color;
+            }
+          }
+        }
+      }
       @include responsive(bigphone) {
         transform: scale(1);
       }
 
       .lower-project-con {
+        border-radius: 0 0 10px 10px;
         border: $border;
         height: 230px;
         padding: 5px;
@@ -783,6 +806,8 @@ body {
           height: 250px;
           border: $border;
 
+          border-radius: 10px 10px 0 0;
+
           @include responsive(bigphone) {
             width: 800px;
             height: 400px;
@@ -803,6 +828,7 @@ body {
   background: $text-Color;
   margin: 0 auto;
   margin-top: 50px;
+  height: 80vh;
 
   h1 {
     font-size: 50px;
@@ -820,12 +846,12 @@ body {
 
     .carousel {
       border: $border;
+      border-radius: $border-radius;
       padding: 10px;
       margin: 5px;
       background: $background-gradient;
-      // transition: all 0.0001s ease;
       transform: scale(0.9);
-      
+
       // width: 100px;
       @include flexDisplay(space-between, center, column);
       @include responsive(bigphone) {
@@ -833,7 +859,31 @@ body {
       }
       .review-img {
         border-radius: 50%;
-        // width: 100%;
+        border: 2px solid $card-bg;
+      }
+      h3 {
+        @include flexDisplay(center, center, column);
+        color: $card-bg;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-transform: uppercase;
+      }
+      i {
+        font-style: normal;
+        text-transform: capitalize;
+        color: $paragraph-Color;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 12px;
+      }
+      p {
+        font-style: italic;
+        text-align: center;
+        color: $paragraph-Color;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 13px;
+        margin-top: 20px;
+        @include responsive(bigphone) {
+          font-size: 17px;
+        }
       }
     }
   }

@@ -734,12 +734,29 @@ body {
   position: relative;
   transform: scale(0.9);
 }
+.project-main-con .general-project-con .project-con:hover .lower-project-con {
+  background: rgba(0, 91, 96, 0.9019607843);
+}
+.project-main-con .general-project-con .project-con:hover .lower-project-con .project-name {
+  color: #b7e8eb;
+}
+.project-main-con .general-project-con .project-con:hover .lower-project-con .project-role {
+  color: #4ec6cd;
+}
+.project-main-con .general-project-con .project-con:hover .lower-project-con .project-details {
+  color: #b7e8eb;
+}
+.project-main-con .general-project-con .project-con:hover .lower-project-con .project-tech p {
+  color: #015871;
+  background: #b7e8eb;
+}
 @media only screen and (min-width: 800px) {
   .project-main-con .general-project-con .project-con {
     transform: scale(1);
   }
 }
 .project-main-con .general-project-con .project-con .lower-project-con {
+  border-radius: 0 0 10px 10px;
   border: 1px solid #015871;
   height: 230px;
   padding: 5px;
@@ -821,6 +838,7 @@ body {
   width: 100vw;
   height: 250px;
   border: 1px solid #015871;
+  border-radius: 10px 10px 0 0;
 }
 @media only screen and (min-width: 800px) {
   .project-main-con .general-project-con .project-con .top-project-con .project-img {
@@ -840,6 +858,7 @@ body {
   background: #b7e8eb;
   margin: 0 auto;
   margin-top: 50px;
+  height: 80vh;
 }
 .reviews h1 {
   font-size: 50px;
@@ -854,6 +873,7 @@ body {
 }
 .reviews .review-container .carousel {
   border: 1px solid #015871;
+  border-radius: 10px;
   padding: 10px;
   margin: 5px;
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
@@ -870,4 +890,34 @@ body {
 }
 .reviews .review-container .carousel .review-img {
   border-radius: 50%;
+  border: 2px solid rgba(0, 91, 96, 0.9019607843);
+}
+.reviews .review-container .carousel h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(0, 91, 96, 0.9019607843);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.reviews .review-container .carousel i {
+  font-style: normal;
+  text-transform: capitalize;
+  color: #37a1a7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+}
+.reviews .review-container .carousel p {
+  font-style: italic;
+  text-align: center;
+  color: #37a1a7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .reviews .review-container .carousel p {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=Style.css.map */

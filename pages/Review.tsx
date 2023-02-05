@@ -34,8 +34,10 @@ function Review() {
               width={200}
               height={200}
             ></Image>
-            <h3>{item.name}</h3>
-            <i>{item.job}</i>
+            <h3>
+              {item.name} <i>{item.job}</i>
+            </h3>
+
             <p>{item.comment}</p>
             <Group position="center">
               <Rating value={item.rating} fractions={2} readOnly />
