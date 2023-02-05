@@ -857,10 +857,16 @@ body {
   padding: 10px;
   margin: 5px;
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
+  transform: scale(0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+@media only screen and (min-width: 800px) {
+  .reviews .review-container .carousel {
+    transform: scale(1);
+  }
 }
 .reviews .review-container .carousel .review-img {
   border-radius: 50%;

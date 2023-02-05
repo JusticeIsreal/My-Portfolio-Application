@@ -823,9 +823,14 @@ body {
       padding: 10px;
       margin: 5px;
       background: $background-gradient;
+      // transition: all 0.0001s ease;
+      transform: scale(0.9);
+      
       // width: 100px;
       @include flexDisplay(space-between, center, column);
-
+      @include responsive(bigphone) {
+        transform: scale(1);
+      }
       .review-img {
         border-radius: 50%;
         // width: 100%;

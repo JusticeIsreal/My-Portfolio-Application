@@ -17,7 +17,7 @@ function Review() {
         slideSize="50%"
         slideGap="md"
         breakpoints={[
-        //   { maxWidth: "lg", slideSize: "50%" },
+          //   { maxWidth: "lg", slideSize: "50%" },
           { maxWidth: "md", slideSize: "50%" },
           { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
         ]}

@@ -21,24 +21,24 @@ const Projects = [
     details:
       "This is a real estate website where users can buy lands and mak reservations for site inspections",
   },
-  {
-    id: 40,
-    project: "CRYPTO",
-    role: "Frontend Developer",
-    img: "https://res.cloudinary.com/isreal/image/upload/v1675470782/My%20portfolio%20Project/Screenshot_2023-02-04_at_00.59.09_oaceud.png",
-    source_code: "",
-    live_project: "https://shitcoinaires.com",
-    Technology: [
-      "HTML",
-      "SCSS",
-      "JavaScript",
-      "Node js",
-      "Express js",
-      "MySQL",
-    ],
-    details:
-      "On this website, you will find the latest updates, airdrops, trading tutorials, and expert tips to help you be a profitable Shitcoin trader.",
-  },
+  // {
+  //   id: 40,
+  //   project: "CRYPTO",
+  //   role: "Frontend Developer",
+  //   img: "https://res.cloudinary.com/isreal/image/upload/v1675470782/My%20portfolio%20Project/Screenshot_2023-02-04_at_00.59.09_oaceud.png",
+  //   source_code: "",
+  //   live_project: "https://shitcoinaires.com",
+  //   Technology: [
+  //     "HTML",
+  //     "SCSS",
+  //     "JavaScript",
+  //     "Node js",
+  //     "Express js",
+  //     "MySQL",
+  //   ],
+  //   details:
+  //     "On this website, you will find the latest updates, airdrops, trading tutorials, and expert tips to help you be a profitable Shitcoin trader.",
+  // },
   {
     id: 6,
     project: "MOVIE APP",
@@ -109,8 +109,7 @@ const Projects = [
       "https://github.com/JusticeIsreal/Periodic-table-with-CSS-grid.git",
     live_project: "https://justiceperiodictable.netlify.app/",
     Technology: ["HTML", "CSS", "JavaScript"],
-    details:
-      "All the elements of the periodic table and their properties",
+    details: "All the elements of the periodic table and their properties",
   },
   {
     id: 8,
