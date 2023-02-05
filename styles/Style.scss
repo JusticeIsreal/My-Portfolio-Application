@@ -698,10 +698,6 @@ body {
       transform: scale(0.9);
       @include responsive(bigphone) {
         transform: scale(1);
-        &:hover {
-          transform: scale(0.95);
-          z-index: 3;
-        }
       }
 
       .lower-project-con {
@@ -758,9 +754,7 @@ body {
           width: 90%;
           position: absolute;
           right: 6%;
-          // margin: 0 auto;
-          // display: flex;
-          // margin-top: 97px;
+
           bottom: 270px;
           a {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
@@ -784,10 +778,6 @@ body {
         }
       }
       .top-project-con {
-        // border: 2px solid blue;
-        // width: 100vh;
-        // width: 60%;
-
         .project-img {
           width: 100vw;
           height: 250px;
@@ -802,6 +792,43 @@ body {
             height: 150px;
           }
         }
+      }
+    }
+  }
+}
+
+// REVIEWS
+.reviews {
+  border: 2px solid rgba(255, 0, 0, 0);
+  background: $text-Color;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  h1 {
+    font-size: 50px;
+    color: $card-bg;
+    text-align: center;
+    margin: 40px 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .review-container {
+    // border: $border;
+    max-width: 800px;
+    margin: 0 auto;
+    // padding: 5px;
+
+    .carousel {
+      border: $border;
+      padding: 10px;
+      margin: 5px;
+      background: $background-gradient;
+      // width: 100px;
+      @include flexDisplay(space-between, center, column);
+
+      .review-img {
+        border-radius: 50%;
+        // width: 100%;
       }
     }
   }

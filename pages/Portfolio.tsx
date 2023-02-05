@@ -59,14 +59,14 @@ function Portfolio() {
                   {item.source_code ? (
                     "Source Code"
                   ) : (
-                    <span>Source Code Not avaliable</span>
+                    <span style={{ fontSize: "13px" }}>Not avaliable</span>
                   )}
                 </a>
                 <a href={item.live_project} className="project-link">
                   {item.live_project ? (
                     "Live Project"
                   ) : (
-                    <span>Live Project Not avaliable</span>
+                    <span style={{ fontSize: "13px" }}>Not avaliable</span>
                   )}
                 </a>
               </div>

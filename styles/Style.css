@@ -738,10 +738,6 @@ body {
   .project-main-con .general-project-con .project-con {
     transform: scale(1);
   }
-  .project-main-con .general-project-con .project-con:hover {
-    transform: scale(0.95);
-    z-index: 3;
-  }
 }
 .project-main-con .general-project-con .project-con .lower-project-con {
   border: 1px solid #015871;
@@ -837,4 +833,35 @@ body {
     width: 100vw;
     height: 150px;
   }
+}
+
+.reviews {
+  border: 2px solid rgba(255, 0, 0, 0);
+  background: #b7e8eb;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.reviews h1 {
+  font-size: 50px;
+  color: rgba(0, 91, 96, 0.9019607843);
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.reviews .review-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reviews .review-container .carousel {
+  border: 1px solid #015871;
+  padding: 10px;
+  margin: 5px;
+  background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews .review-container .carousel .review-img {
+  border-radius: 50%;
 }/*# sourceMappingURL=Style.css.map */

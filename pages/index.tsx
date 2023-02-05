@@ -12,6 +12,7 @@ import StartingLoader from "../pages/StartingLoader";
 import HomePage from "./HomePage";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
+import Review from "./Review";
 
 export default function Home() {
   const [viewLoading, setViewLoading] = useState<boolean>(false);
@@ -43,6 +44,7 @@ export default function Home() {
             <HomePage />
             <Services />
             <Portfolio />
+            <Review />
           </>
         )}
       </main>
