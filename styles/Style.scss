@@ -698,16 +698,15 @@ body {
       transform: scale(0.9);
       @include responsive(bigphone) {
         transform: scale(1);
-      }
-
-      &:hover {
-        transform: scale(0.95);
-        z-index: 3;
+        &:hover {
+          transform: scale(0.95);
+          z-index: 3;
+        }
       }
 
       .lower-project-con {
         border: $border;
-        height: 250px;
+        height: 230px;
         padding: 5px;
 
         .project-name {
@@ -756,17 +755,20 @@ body {
         .project-link-con {
           // border: 2px solid blue;
           @include flexDisplay(space-between, center, row);
-          // width: 38%;
-          // position: absolute;
+          width: 90%;
+          position: absolute;
+          right: 6%;
+          // margin: 0 auto;
+          // display: flex;
           // margin-top: 97px;
-          // bottom: 0;
+          bottom: 270px;
           a {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
             border: $border;
             border-radius: 5px;
-            height: 40px;
-            // width: 150px;
+            height: 50px;
+            width: 40%;
             // margin-top: 5px;
             color: $text-Color;
             background: $background;
@@ -776,8 +778,8 @@ body {
           span {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
-            // @include flexDisplay(center, center, row);
-            // width: 80px;
+            @include flexDisplay(center, center, row);
+            width: 80px;
           }
         }
       }

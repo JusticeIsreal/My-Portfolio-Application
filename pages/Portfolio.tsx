@@ -47,12 +47,7 @@ function Portfolio() {
                 <span>Role : </span> {item.role}
               </p>
               <p className="project-details">
-                {" "}
-                {readPitch ? (
-                  <> {item.details}</>
-                ) : (
-                  <>{item.details.substring(0, 100)} ...</>
-                )}
+                <> {item.details}</>
               </p>
               <div className="project-tech">
                 {item.Technology.map((item: any) => (
