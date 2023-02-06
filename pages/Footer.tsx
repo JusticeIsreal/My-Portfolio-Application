@@ -11,7 +11,11 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 function Footer() {
-  let visitorInfo = JSON.parse(sessionStorage.getItem("visitorInfo")!);
+  // let visitorInfo = JSON.parse(sessionStorage.getItem("visitorInfo")!);
+let visitorInfo =
+  typeof window !== "undefined"
+    ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+    : {};
 
   // console.log(visitorInfo.name);
   return (
