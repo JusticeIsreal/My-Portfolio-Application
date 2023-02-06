@@ -32,7 +32,7 @@ const Home: React.FC = () => {
   }, [loadingPageOut]);
 
   useEffect(() => {
-    const visitorInfo = localStorage.getItem("visitorInfo");
+    const visitorInfo = sessionStorage.getItem("visitorInfo");
     if (visitorInfo) {
       setUserDetails(true);
     }
