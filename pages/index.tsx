@@ -62,7 +62,7 @@ const Home: React.FC = () => {
 
             <Contact />
 
-            <Footer />
+            {/* <Footer /> */}
           </>
         )}
       </main>
