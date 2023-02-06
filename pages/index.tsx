@@ -14,18 +14,29 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 // import styles from "../styles/Home.module.css";
 const Home: React.FC = () => {
-  const [viewLoading, setViewLoading] = useState<boolean>(false);
+  const [viewLoading, setViewLoading] = useState<boolean>(true);
 
+  const [userDetails, setUserDetails] = useState<boolean>(false);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadingPageOut = () => {
     setTimeout(() => {
-      setViewLoading(false);
+      if (userDetails) {
+        setViewLoading(false);
+      }
     }, 6000);
   };
 
   useEffect(() => {
     loadingPageOut();
-  }, []);
+  }, [loadingPageOut]);
 
+  useEffect(() => {
+    const visitorInfo = localStorage.getItem("visitorInfo");
+    if (visitorInfo) {
+      setUserDetails(true);
+    }
+  }, [userDetails]);
   return (
     <>
       <Head>
@@ -37,7 +48,7 @@ const Home: React.FC = () => {
       <main>
         {viewLoading ? (
           <>
-            <StartingLoader />
+            <StartingLoader userDetails={userDetails} />
           </>
         ) : (
           <>
