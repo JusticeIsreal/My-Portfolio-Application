@@ -119,7 +119,7 @@ function Footer() {
         }}
       >
         <span>&copy;{new Date().getFullYear()}</span>
-        <span style={{ padding: "2px 5px" }}>justice isreal agbonma</span>
+        <span style={{ padding: "2px 5px" }}>Justice Isreal Agbonma</span>
       </p>
     </div>
   );
