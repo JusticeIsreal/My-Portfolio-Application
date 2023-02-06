@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import styles from "../styles/Home.module.css";
 // import component
 import ServiceData from "../components/ServiceData";
+import { useInView } from "react-intersection-observer";
 
 // import react icons
 
@@ -59,8 +61,14 @@ function Services() {
     setdisplayService(displayService2);
   };
 
+  // page naimation
+
+  const { ref: serviceRef, inView: isService, entry } = useInView();
   return (
-    <div className="service-main-com">
+    <div
+      ref={serviceRef}
+      className={`${isService ? styles.animate : ""} service-main-com`}
+    >
       <h1 className="what-i-do">SERVICES</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (

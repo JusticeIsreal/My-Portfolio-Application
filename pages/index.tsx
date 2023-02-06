@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from "react";
-
 import Head from "next/head";
-// import  "../styles/Style.css";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 // pages
-import PageTransition from "../components/PageTransition";
 import StartingLoader from "../pages/StartingLoader";
 import HomePage from "./HomePage";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Review from "./Review";
-
-export default function Home() {
-  const [viewLoading, setViewLoading] = useState<boolean>(true);
+// import styles from "../styles/Home.module.css";
+const Home: React.FC = () => {
+  const [viewLoading, setViewLoading] = useState<boolean>(false);
 
   const loadingPageOut = () => {
     setTimeout(() => {
@@ -27,6 +24,8 @@ export default function Home() {
   useEffect(() => {
     loadingPageOut();
   }, []);
+
+ 
   return (
     <>
       <Head>
@@ -42,21 +41,18 @@ export default function Home() {
           </>
         ) : (
           <>
-            <PageTransition>
-              <HomePage />
-            </PageTransition>
-            <PageTransition>
+            <HomePage />
+            <div >
               <Services />
-            </PageTransition>
-            <PageTransition>
-              <Portfolio />
-            </PageTransition>
-            <PageTransition>
-              <Review />
-            </PageTransition>
+            </div>
+
+            <Portfolio />
+
+            <Review />
           </>
         )}
       </main>
     </>
   );
-}
+};
+export default Home;

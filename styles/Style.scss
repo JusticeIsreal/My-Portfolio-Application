@@ -463,10 +463,12 @@ body {
       }
 
       .statistics {
+        // border: 2px solid red;
         @include flexDisplay(space-between, center, column);
         width: 45%;
         margin: 5px;
         position: relative;
+
         @include responsive(bigphone) {
           width: 23%;
         }
@@ -809,7 +811,7 @@ body {
           border-radius: 10px 10px 0 0;
 
           @include responsive(bigphone) {
-            width: 800px;
+            width: 700px;
             height: 400px;
           }
           @include responsive(smallPhone) {

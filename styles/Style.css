@@ -842,7 +842,7 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .project-main-con .general-project-con .project-con .top-project-con .project-img {
-    width: 800px;
+    width: 700px;
     height: 400px;
   }
 }
