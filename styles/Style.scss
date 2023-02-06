@@ -217,7 +217,7 @@ body {
   .navbar-main-con {
     border: #b7e8eb;
     background: #b7e8eb;
-    width: 98%;
+    width: 100%;
     border-radius: $border-radius;
     margin: 0 auto;
     padding: 5px;
@@ -259,13 +259,16 @@ body {
           &:hover {
             transform: scale(1.1);
             background: $card-bg;
+
             a {
+              color: $text-Color;
+            }
+            .menu-icon {
               color: $text-Color;
             }
           }
           a {
             @include flexDisplay(center, center, row);
-
             color: $card-bg;
             font-weight: bolder;
             font-size: 10px;
@@ -953,11 +956,71 @@ body {
     }
   }
 }
-.footer {
-  border: 2px solid red;
-  display: none;
 
-  @include responsive(bigphone) {
-    display: block;
+.footer {
+  // border: 2px solid red;
+  background: $card-bg;
+  .content-cont {
+    // border: 2px solid green;
+    padding: 5px;
+    @include flexDisplay(space-between, center, column);
+    @include responsive(bigphone) {
+      @include flexDisplay(space-between, center, row);
+    }
+
+    .thanks {
+      @include responsive(bigphone) {
+        width: 60%;
+      }
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        color: $text-Color;
+        text-align: center;
+        @include responsive(bigphone) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .socials-location {
+      width: 100%;
+      @include flexDisplay(space-between, center, column);
+
+      @include responsive(bigphone) {
+        width: 40%;
+        // @include flexDisplay(space-between, center, row);
+      }
+      h3 {
+        // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: $text-Color;
+        margin: 20px 0;
+      }
+      .socials {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        span {
+          margin: 5px;
+
+          a {
+            font-size: 25px;
+            color: $text-Color;
+            @include responsive(bigphone) {
+              font-size: 35px;
+            }
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .foot {
+          border: 2px solid red;
+        }
+      }
+    }
   }
 }

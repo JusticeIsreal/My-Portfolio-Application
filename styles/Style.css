@@ -193,7 +193,7 @@ body {
 .Homepage .navbar-main-con {
   border: #b7e8eb;
   background: #b7e8eb;
-  width: 98%;
+  width: 100%;
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
@@ -256,6 +256,9 @@ body {
   background: rgba(0, 91, 96, 0.9019607843);
 }
 .Homepage .navbar-main-con .nav .ul li:hover a {
+  color: #b7e8eb;
+}
+.Homepage .navbar-main-con .nav .ul li:hover .menu-icon {
   color: #b7e8eb;
 }
 .Homepage .navbar-main-con .nav .ul li a {
@@ -985,11 +988,77 @@ body {
 }
 
 .footer {
-  border: 2px solid red;
-  display: none;
+  background: rgba(0, 91, 96, 0.9019607843);
+}
+.footer .content-cont {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 @media only screen and (min-width: 800px) {
-  .footer {
-    display: block;
+  .footer .content-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
+}
+@media only screen and (min-width: 800px) {
+  .footer .content-cont .thanks {
+    width: 60%;
+  }
+}
+.footer .content-cont .thanks p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #b7e8eb;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .footer .content-cont .thanks p {
+    font-size: 18px;
+  }
+}
+.footer .content-cont .socials-location {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 800px) {
+  .footer .content-cont .socials-location {
+    width: 40%;
+  }
+}
+.footer .content-cont .socials-location h3 {
+  color: #b7e8eb;
+  margin: 20px 0;
+}
+.footer .content-cont .socials-location .socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer .content-cont .socials-location .socials span {
+  margin: 5px;
+}
+.footer .content-cont .socials-location .socials span a {
+  font-size: 25px;
+  color: #b7e8eb;
+}
+@media only screen and (min-width: 800px) {
+  .footer .content-cont .socials-location .socials span a {
+    font-size: 35px;
+  }
+}
+.footer .content-cont .socials-location .socials span:hover {
+  transform: scale(1.1);
+}
+.footer .content-cont .socials-location .socials .foot {
+  border: 2px solid red;
 }/*# sourceMappingURL=Style.css.map */

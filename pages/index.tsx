@@ -11,6 +11,7 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Review from "./Review";
 import Contact from "./Contact";
+import Footer from "./Footer";
 // import styles from "../styles/Home.module.css";
 const Home: React.FC = () => {
   const [viewLoading, setViewLoading] = useState<boolean>(false);
@@ -49,6 +50,8 @@ const Home: React.FC = () => {
             <Review />
 
             <Contact />
+
+            <Footer />
           </>
         )}
       </main>
