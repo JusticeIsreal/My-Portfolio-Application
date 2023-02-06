@@ -103,6 +103,7 @@ function StartingLoader(props: StartingLoaderProps) {
               width={500}
               height={500}
               className="my-img"
+              priority
             ></Image>
           </div>
 
