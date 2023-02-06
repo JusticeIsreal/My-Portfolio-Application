@@ -1,7 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useReducer } from "react";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { useInView } from "react-intersection-observer";
+
 // import icons
 import { HiCode } from "react-icons/hi";
 import { SiIbm, SiScrumalliance } from "react-icons/si";
@@ -16,9 +15,6 @@ function Banner() {
   const [countAward, setCountAward] = useState<number>(initialCount);
 
   // LOADING NUMBER
-
-  const { ref: statsRef, inView: isStats, entry } = useInView();
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (countDegree < 1) {
@@ -37,8 +33,8 @@ function Banner() {
       clearInterval(intervalId);
       return;
     }, 50);
-    // return () => clearInterval(intervalId);
-  }, [countAward, countDegree, countExperience, countProject]);
+    return () => clearInterval(intervalId);
+  }, [countDegree, countExperience, countProject, countAward]);
 
   // read more function
   const [readPitch, setReadPitch] = useState<boolean>(false);
@@ -48,9 +44,6 @@ function Banner() {
   const readAll = () => {
     setReadPitch(!readPitch);
   };
-
-  // page naimation
-
   return (
     <div className="Banner-main-con">
       <div className="full-name">
@@ -70,14 +63,14 @@ function Banner() {
 
       <div className="pitch-con">
         <p className="pitch">
-          {"Hi,I am JUSTICE ISREAL AGBONMA ."} <br />
+          {"Hi,I am JUSTICE ISREAL AGBONMA ."} <br/>
           {readPitch ? <>{myPitch}</> : <>{myPitch.substring(0, 320)} ...</>}
           <button className="readMore" onClick={readAll}>
             {readPitch ? "Read less" : "Read more"}
           </button>
         </p>
       </div>
-      <section className="myStaticsCon ">
+      <section className="myStaticsCon">
         <div className="statCard">
           <h1>
             <HiCode />
@@ -110,11 +103,7 @@ function Banner() {
       </div>
 
       {/* statistics section  */}
-
-      <div
-        ref={statsRef}
-        className={`${isStats ? styles.animate2 : " "} statistics-con`}
-      >
+      <div className="statistics-con">
         <div className="statistics">
           <hr className="line" />
           <h1 className="statistis-unmber">0{countDegree}</h1>

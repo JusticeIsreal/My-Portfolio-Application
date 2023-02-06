@@ -890,3 +890,74 @@ body {
     }
   }
 }
+
+// CONTACT
+.contact {
+  // border: 2px solid red;
+  height: 80vh;
+  @include flexDisplay(center, center, column);
+
+  h1 {
+    margin: 50px 0;
+    font-size: 30px;
+    color: $card-bg;
+    text-align: center;
+    // margin-bottom: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+    @include responsive(bigphone) {
+      font-size: 50px;
+    }
+  }
+  //
+
+  form {
+    // border: 2px solid red;
+    margin: 0 auto;
+    width: 90%;
+    @include flexDisplay(space-between, center, column);
+
+    @include responsive(bigphone) {
+      width: 500px;
+    }
+
+    input {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 20px;
+      width: 100%;
+      height: 45px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: $border-radius;
+      border: $border;
+      color: $paragraph-Color;
+      background: whitesmoke;
+    }
+
+    .message {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 20px;
+      border-radius: $border-radius;
+      border: $border;
+      color: $paragraph-Color;
+      background: whitesmoke;
+      width: 100%;
+      margin: 10px;
+      padding: 5px 10px;
+      height: 110px;
+    }
+    .submit {
+      cursor: pointer;
+      background: $card-bg;
+      color: $text-Color;
+    }
+  }
+}
+.footer {
+  border: 2px solid red;
+  display: none;
+
+  @include responsive(bigphone) {
+    display: block;
+  }
+}

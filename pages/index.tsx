@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 // pages
@@ -11,6 +10,7 @@ import HomePage from "./HomePage";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Review from "./Review";
+import Contact from "./Contact";
 // import styles from "../styles/Home.module.css";
 const Home: React.FC = () => {
   const [viewLoading, setViewLoading] = useState<boolean>(false);
@@ -25,7 +25,6 @@ const Home: React.FC = () => {
     loadingPageOut();
   }, []);
 
- 
   return (
     <>
       <Head>
@@ -42,13 +41,14 @@ const Home: React.FC = () => {
         ) : (
           <>
             <HomePage />
-            <div >
-              <Services />
-            </div>
+
+            <Services />
 
             <Portfolio />
 
             <Review />
+
+            <Contact />
           </>
         )}
       </main>
