@@ -121,7 +121,7 @@ function StartingLoader(props: StartingLoaderProps) {
               {...register("name", { required: true })}
               className="username"
             />
-            {errors.name && <span>Kindly enter your name</span>}
+            {errors.name && <span> Kindly enter your name</span>}
 
             <input type="submit" value={"SEND"} className="submit" />
           </form>
