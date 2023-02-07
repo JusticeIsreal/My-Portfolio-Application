@@ -12,7 +12,7 @@ function Portfolio() {
   // read more function
   const [readPitch, setReadPitch] = useState<boolean>(false);
   return (
-    <div className="project-main-con">
+    <div className="project-main-con" id="portfolio">
       <h1 className="projects">PROJECTS</h1>
       <Carousel
         className="general-project-con"

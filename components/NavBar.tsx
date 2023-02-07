@@ -8,20 +8,29 @@ function NavBar() {
     <nav className="nav">
       <ul className="ul">
         <li>
-          <AiFillHome className="menu-icon"/>
-          <a href="">ABOUT</a>
+          <a href="#home">
+            <AiFillHome className="menu-icon" />
+          </a>
+
+          <a href="#home">ABOUT</a>
         </li>
         <li>
-          <RiComputerFill className="menu-icon"/>
-          <a href="">SERVICES</a>
+          <a href="#service">
+            <RiComputerFill className="menu-icon" />
+          </a>
+          <a href="#service">SERVICES</a>
         </li>
         <li>
-          <FaCode className="menu-icon"/>
-          <a href="">PORTFOLIO</a>
+          <a href="#portfolio">
+            <FaCode className="menu-icon" />
+          </a>
+          <a href="#portfolio">PORTFOLIO</a>
         </li>
         <li>
-          <GrMail className="menu-icon"/>
-          <a href="">CONTACT</a>
+          <a href="#contact">
+            <GrMail className="menu-icon" />
+          </a>
+          <a href="#contact">CONTACT</a>
         </li>
       </ul>
     </nav>

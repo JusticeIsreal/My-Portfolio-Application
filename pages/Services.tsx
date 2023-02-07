@@ -60,7 +60,7 @@ function Services() {
   };
 
   return (
-    <div className="service-main-com">
+    <div className="service-main-com" id="service">
       <h1 className="what-i-do">SERVICES</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (

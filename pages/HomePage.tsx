@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 
 function HomePage() {
   return (
-    <div className="Homepage">
+    <div className="Homepage" id="home">
       <div className="navbar-main-con">
         <NavBar />
       </div>

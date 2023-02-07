@@ -20,7 +20,7 @@ function Contact() {
   //   console.log(watch("example")); // watch input value by passing the name of it
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h1>MESSAGE || REVIEW</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* register your input into the hook by invoking the "register" function */}
