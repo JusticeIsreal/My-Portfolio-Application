@@ -30,14 +30,14 @@ function Contact() {
           {...register("username", { required: true })}
           className="username"
         />
-        {errors.username && <span>Kindly enter your name</span>}
+        {errors.username && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>Kindly enter your name</span>}
         <input
           type="email"
           placeholder="Enter Email"
           {...register("email", { required: true })}
           className="email"
         />
-        {errors.email && <span>Kindly enter your email address</span>}
+        {errors.email && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>Kindly enter your email address</span>}
         {/* include validation with required or other standard HTML validation rules */}
         <textarea
           placeholder="Enter message"
@@ -46,7 +46,7 @@ function Contact() {
         ></textarea>
 
         {/* errors will return when field validation fails  */}
-        {errors.message && <span>This field is required</span>}
+        {errors.message && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>This field is required</span>}
 
         <input type="submit" value={"SEND"} className="submit" />
       </form>

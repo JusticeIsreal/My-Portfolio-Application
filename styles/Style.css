@@ -26,6 +26,89 @@ body {
   }
 }
 
+.visitor-starting-page {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+.visitor-starting-page .my-first-img {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.visitor-starting-page .my-first-img .img {
+  width: 400px;
+  height: 400px;
+}
+@media only screen and (min-width: 800px) {
+  .visitor-starting-page .my-first-img .img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.visitor-starting-page .welcome-quote p,
+.visitor-starting-page .welcome-quote i {
+  font-size: 10px;
+  font-style: italic;
+  color: rgba(0, 91, 96, 0.9019607843);
+  text-align: center;
+}
+.visitor-starting-page .welcome-quote p i,
+.visitor-starting-page .welcome-quote i i {
+  font-size: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media only screen and (min-width: 800px) {
+  .visitor-starting-page .welcome-quote p i,
+.visitor-starting-page .welcome-quote i i {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .visitor-starting-page .welcome-quote p,
+.visitor-starting-page .welcome-quote i {
+    font-size: 18px;
+  }
+}
+.visitor-starting-page .visitors-form {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 800px) {
+  .visitor-starting-page .visitors-form {
+    width: 500px;
+  }
+}
+.visitor-starting-page .visitors-form input {
+  width: 100%;
+  height: 40px;
+  margin: 8px;
+  border: 1px solid #015871;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.visitor-starting-page .visitors-form .error-msg {
+  font-size: 15px;
+  font-style: italic;
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.visitor-starting-page .visitors-form .submit {
+  background: #37a1a7;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
 .StartingLoading-main-container {
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
   overflow: hidden;
@@ -1058,7 +1141,4 @@ body {
 }
 .footer .content-cont .socials-location .socials span:hover {
   transform: scale(1.1);
-}
-.footer .content-cont .socials-location .socials .foot {
-  border: 2px solid red;
 }/*# sourceMappingURL=Style.css.map */

@@ -95,36 +95,40 @@ function StartingLoader(props: StartingLoaderProps) {
           </div>
         </div>
       ) : (
-        <div>
-          <div>
+        <div className="visitor-starting-page">
+          <div className="my-first-img">
             <Image
               src={img}
               alt="my-img"
               width={500}
               height={500}
-              className="my-img"
+              className="img"
               priority
             ></Image>
           </div>
 
-          <Blockquote cite="– Justice Isreal Agbonma">
-            Hello ! <br />
-            You are welcome to my website , before you proceed i would like to
-            know your name <br />{" "}
-            <i>{"I promise you'd only have to do this once"}</i>
+          <Blockquote cite="– Justice Isreal Agbonma" className="welcome-quote">
+            <p>
+              Hello ! <br />
+              You are welcome to my website , before you proceed I would like to
+              know your name <br />{" "}
+              <i>{"( You'd only have to do this once )"}</i>
+            </p>
           </Blockquote>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} className="visitors-form">
             {/* register your input into the hook by invoking the "register" function */}
             <input
               type="text"
               placeholder="Enter Name"
               {...register("name", { required: true })}
-              className="username"
+             
             />
-            {errors.name && <span> Kindly enter your name</span>}
+            {errors.name && (
+              <span className="error-msg"> Kindly enter your name</span>
+            )}
 
-            <input type="submit" value={"SEND"} className="submit" />
+            <input type="submit" value={"SUBMIT"} className="submit" />
           </form>
         </div>
       )}

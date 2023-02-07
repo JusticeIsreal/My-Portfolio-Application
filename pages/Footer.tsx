@@ -12,10 +12,10 @@ import {
 } from "react-icons/ai";
 function Footer() {
   // let visitorInfo = JSON.parse(sessionStorage.getItem("visitorInfo")!);
-let visitorInfo =
-  typeof window !== "undefined"
-    ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
-    : {};
+  let visitorInfo =
+    typeof window !== "undefined"
+      ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+      : {};
 
   // console.log(visitorInfo.name);
   return (
@@ -117,7 +117,8 @@ let visitorInfo =
         style={{
           color: "#b7e8eb",
           textAlign: "center",
-          border: "2px solid #b7e8eb",
+          borderTop: "1px solid #b7e8eb",
+          borderBottom: "1px solid #b7e8eb",
           marginTop: "10px",
           padding: "5px",
         }}
