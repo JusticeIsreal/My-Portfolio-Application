@@ -72,6 +72,7 @@ function StartingLoader(props: StartingLoaderProps) {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     data.Date = new Date();
     sessionStorage.setItem("visitorInfo", JSON.stringify(data));
+    localStorage.setItem("visitorInfo", JSON.stringify(data));
     window.location.href = "/";
   };
   let visitorInfo =

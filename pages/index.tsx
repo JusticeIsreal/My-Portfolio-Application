@@ -33,7 +33,8 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const visitorInfo = sessionStorage.getItem("visitorInfo");
-    if (visitorInfo) {
+    const visitorInfolocal = localStorage.getItem("visitorInfo");
+    if (visitorInfo || visitorInfolocal) {
       setUserDetails(true);
     }
   }, [userDetails]);
