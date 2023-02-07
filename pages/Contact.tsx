@@ -1,11 +1,18 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import {
+  addDoc,
+  collection,
+  getFirestore,
+  serverTimestamp,
+  onSnapshot,
+} from "firebase/firestore";
 
 function Contact() {
   type Inputs = {
-    username: string;
+    name: string;
     email: string;
-    message: string;
+    text: string;
   };
 
   const {
@@ -14,10 +21,23 @@ function Contact() {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
+  const { reset } = useForm();
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    // FIREBASE
+    const db = getFirestore();
+    const colRef = collection(db, "visitors");
+    const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+    const person = {
+      ...sessionName,
+      ...data,
+      createdAT: serverTimestamp(),
+    };
+    addDoc(colRef, person);
 
-  //   console.log(watch("example")); // watch input value by passing the name of it
+    // reset the form after successful submission
+    reset();
+  };
 
   return (
     <div className="contact" id="contact">
@@ -27,26 +47,47 @@ function Contact() {
         <input
           type="text"
           placeholder="Enter Name"
-          {...register("username", { required: true })}
+          {...register("name", { required: true })}
           className="username"
         />
-        {errors.username && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>Kindly enter your name</span>}
+        {errors.name && (
+          <span
+            className="errror-msg"
+            style={{ fontSize: "12px", fontStyle: "italic", color: "red" }}
+          >
+            Kindly enter your name
+          </span>
+        )}
         <input
           type="email"
           placeholder="Enter Email"
           {...register("email", { required: true })}
           className="email"
         />
-        {errors.email && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>Kindly enter your email address</span>}
+        {errors.email && (
+          <span
+            className="errror-msg"
+            style={{ fontSize: "12px", fontStyle: "italic", color: "red" }}
+          >
+            Kindly enter your email address
+          </span>
+        )}
         {/* include validation with required or other standard HTML validation rules */}
         <textarea
           placeholder="Enter message"
-          {...register("message", { required: true })}
+          {...register("text", { required: true })}
           className="message"
         ></textarea>
 
         {/* errors will return when field validation fails  */}
-        {errors.message && <span className="errror-msg" style={{fontSize:"12px",fontStyle:"italic",color:"red",}}>This field is required</span>}
+        {errors.text && (
+          <span
+            className="errror-msg"
+            style={{ fontSize: "12px", fontStyle: "italic", color: "red" }}
+          >
+            This field is required
+          </span>
+        )}
 
         <input type="submit" value={"SEND"} className="submit" />
       </form>

@@ -12,8 +12,52 @@ import Portfolio from "./Portfolio";
 import Review from "./Review";
 import Contact from "./Contact";
 import Footer from "./Footer";
+
+// firebase
+import { initializeApp } from "firebase/app";
+import { onSnapshot, collection, getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
+
 // import styles from "../styles/Home.module.css";
 const Home: React.FC = () => {
+  // firebase
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBh-2JN3lsKZNYvPycxEHFFTjxBsG6TNAo",
+    authDomain: "myportfolioapp-a52a1.firebaseapp.com",
+    projectId: "myportfolioapp-a52a1",
+    storageBucket: "myportfolioapp-a52a1.appspot.com",
+    messagingSenderId: "802596668410",
+    appId: "1:802596668410:web:68b4894386224d56099a43",
+    measurementId: "G-Z89ZTM8WR3",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  // const analytics = getAnalytics(app);
+
+  const db = getFirestore(app);
+  const colRef = collection(db, "visitors");
+
+  const getData = () => {
+    onSnapshot(colRef, (snapShot) => {
+      type Person = any;
+      let people: Array<Person> = [];
+      if (snapShot && snapShot.docs) {
+        snapShot.docs.forEach((doc) => {
+          people.unshift({ ...doc.data(), id: doc.id, createdAt: new Date() });
+        });
+      }
+      console.log(people);
+    });
+  };
+
+  // useEffect(() => {
+  //   getData();
+  // }, []);
+
+  // firebaseend
+
   const [viewLoading, setViewLoading] = useState<boolean>(true);
 
   const [userDetails, setUserDetails] = useState<boolean>(false);
