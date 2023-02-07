@@ -38,7 +38,12 @@ function Contact() {
     // reset the form after successful submission
     reset();
   };
-
+  const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
+  const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
+  const db = getFirestore();
+  const colRef = collection(db, "visitors");
+  console.log(colRef);
+  console.log({ ...sessionName });
   return (
     <div className="contact" id="contact">
       <h1>MESSAGE || REVIEW</h1>
@@ -46,6 +51,7 @@ function Contact() {
         {/* register your input into the hook by invoking the "register" function */}
         <input
           type="text"
+          value={sessionN.name || sessionName.name}
           placeholder="Enter Name"
           {...register("name", { required: true })}
           className="username"
