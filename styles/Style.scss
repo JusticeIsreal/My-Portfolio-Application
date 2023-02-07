@@ -163,6 +163,19 @@ body {
   padding: 10px;
   animation: closepage 1s 5s linear;
 
+  .client-name {
+    // border: 2px solid red;
+    margin: 0 auto;
+    margin-top: 5px;
+    @include flexDisplay(center, center, column);
+    h2,
+    p {
+      text-align: center;
+      color: $card-bg;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+  }
+
   @keyframes closepage {
     0% {
       width: 100vw;

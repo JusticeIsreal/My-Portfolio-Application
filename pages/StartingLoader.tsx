@@ -74,10 +74,18 @@ function StartingLoader(props: StartingLoaderProps) {
     sessionStorage.setItem("visitorInfo", JSON.stringify(data));
     window.location.href = "/";
   };
+  let visitorInfo =
+    typeof window !== "undefined"
+      ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+      : {};
   return (
     <>
       {userDetails ? (
         <div className="StartingLoading-main-container">
+          <div className="client-name">
+            <p>Welcome</p>
+            <h2>{visitorInfo.name}</h2>
+          </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>
             <h1 className="loading-skill">
@@ -122,7 +130,6 @@ function StartingLoader(props: StartingLoaderProps) {
               type="text"
               placeholder="Enter Name"
               {...register("name", { required: true })}
-             
             />
             {errors.name && (
               <span className="error-msg"> Kindly enter your name</span>

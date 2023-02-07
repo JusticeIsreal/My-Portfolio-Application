@@ -120,6 +120,20 @@ body {
   -webkit-animation: closepage 1s 5s linear;
           animation: closepage 1s 5s linear;
 }
+.StartingLoading-main-container .client-name {
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.StartingLoading-main-container .client-name h2,
+.StartingLoading-main-container .client-name p {
+  text-align: center;
+  color: rgba(0, 91, 96, 0.9019607843);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 @-webkit-keyframes closepage {
   0% {
     width: 100vw;
