@@ -107,7 +107,7 @@ function StartingLoader(props: StartingLoaderProps) {
         <div className="StartingLoading-main-container">
           <div className="client-name">
             <p>Welcome</p>
-            <h2>{visitorInfo.name || visitorInfo2.name}</h2>
+            <h2>{visitorInfo2.name}</h2>
           </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>

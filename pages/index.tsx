@@ -34,7 +34,6 @@ const Home: React.FC = () => {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
-
   const db = getFirestore(app);
   const colRef = collection(db, "visitors");
 
@@ -55,7 +54,6 @@ const Home: React.FC = () => {
   const [viewLoading, setViewLoading] = useState<boolean>(true);
   const [userDetails, setUserDetails] = useState<boolean>(false);
 
-
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadingPageOut = () => {
     setTimeout(() => {
@@ -74,11 +72,12 @@ const Home: React.FC = () => {
     const visitorInfolocal = localStorage.getItem(
       JSON.stringify("visitorInfo")
     );
-    if (visitorInfo || visitorInfolocal) {
+    if (visitorInfolocal == "") {
+      setUserDetails(false);
+    } else {
       setUserDetails(true);
     }
-    
-  }, [userDetails]);
+  }, []);
 
   return (
     <>

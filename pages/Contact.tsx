@@ -68,7 +68,7 @@ function Contact() {
         {/* register your input into the hook by invoking the "register" function */}
         <input
           type="text"
-          value={visitorInfo.name || visitorInfo2.name}
+          value={visitorInfo2.name}
           placeholder="Enter Name"
           {...register("name", { required: true })}
           className="username"
