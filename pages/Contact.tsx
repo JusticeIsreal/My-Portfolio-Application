@@ -37,17 +37,17 @@ function Contact() {
     };
     await addDoc(colRef, person);
 
-    // let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
-    // alert(
-    //   "Thank you" +
-    //     " " +
-    //     sessionlocal.name +
-    //     " , " +
-    //     " your message is well recieved, I will communicate you as soon as I can"
-    // );
+    let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
+    alert(
+      "Thank you" +
+        " " +
+        sessionlocal.name +
+        " , " +
+        " your message is well recieved, I will communicate you as soon as I can"
+    );
     reset();
   };
-  const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
+  // const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
   const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
 
   return (
@@ -57,7 +57,7 @@ function Contact() {
         {/* register your input into the hook by invoking the "register" function */}
         <input
           type="text"
-          value={sessionN.name || sessionName.name}
+          value={sessionN.name}
           placeholder="Enter Name"
           {...register("name", { required: true })}
           className="username"
