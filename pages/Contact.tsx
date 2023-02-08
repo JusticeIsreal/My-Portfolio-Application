@@ -5,7 +5,6 @@ import {
   collection,
   getFirestore,
   serverTimestamp,
-  onSnapshot,
 } from "firebase/firestore";
 
 function Contact() {
@@ -38,12 +37,22 @@ function Contact() {
     await addDoc(colRef, person);
     let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
     let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
+
+    const name =
+      session && session.name
+        ? session.name
+        : sessionlocal && sessionlocal.name
+        ? sessionlocal.name
+        : "";
+
     alert(
-      "Thank you" + " " + session.name ||
-        sessionlocal.name +
-          " , " +
-          " your message is well recieved, I will communicate you as soon as I can"
+      "Thank you" +
+        " " +
+        name +
+        " , " +
+        " your message is well received, I will communicate you as soon as I can"
     );
+
     reset();
   };
   const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
