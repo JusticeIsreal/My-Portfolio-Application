@@ -35,20 +35,20 @@ function Contact() {
       createdAT: serverTimestamp(),
     };
     await addDoc(colRef, person);
-    let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
+    // let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
     let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
 
-    const name =
-      session && session.name
-        ? session.name
-        : sessionlocal && sessionlocal.name
-        ? sessionlocal.name
-        : "";
+    // const name =
+    //   session && session.name
+    //     ? session.name
+    //     : sessionlocal && sessionlocal.name
+    //     ? sessionlocal.name
+    //     : "";
 
     alert(
       "Thank you" +
         " " +
-        name +
+        sessionlocal.name +
         " , " +
         " your message is well received, I will communicate you as soon as I can"
     );
