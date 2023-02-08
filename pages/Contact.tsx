@@ -45,10 +45,11 @@ function Contact() {
         ? JSON.parse(localStorage.getItem("visitorInfo")!)
         : {};
     alert(
-      "Thank you" + " " + 
+      "Thank you" +
+        " " +
         visitorInfo2.name +
-          " , " +
-          " your message is well recieved, I will communicate you as soon as I can"
+        " , " +
+        " your message is well recieved, I will communicate you as soon as I can"
     );
     reset();
   };
