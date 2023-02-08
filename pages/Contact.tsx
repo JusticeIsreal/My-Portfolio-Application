@@ -5,6 +5,7 @@ import {
   collection,
   getFirestore,
   serverTimestamp,
+  onSnapshot,
 } from "firebase/firestore";
 
 function Contact() {
@@ -21,7 +22,7 @@ function Contact() {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
-  const { sessionStorage } = window;
+
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     // FIREBASE
     const db = getFirestore();
@@ -35,24 +36,15 @@ function Contact() {
       createdAT: serverTimestamp(),
     };
     await addDoc(colRef, person);
-    let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
-    let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
 
-    const name =
-      session && session.name
-        ? session.name
-        : sessionlocal && sessionlocal.name
-        ? sessionlocal.name
-        : "";
-
-    alert(
-      "Thank you" +
-        " " +
-        name +
-        " , " +
-        " your message is well received, I will communicate you as soon as I can"
-    );
-
+    // let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
+    // alert(
+    //   "Thank you" +
+    //     " " +
+    //     sessionlocal.name +
+    //     " , " +
+    //     " your message is well recieved, I will communicate you as soon as I can"
+    // );
     reset();
   };
   const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
