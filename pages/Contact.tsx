@@ -36,23 +36,30 @@ function Contact() {
       createdAT: serverTimestamp(),
     };
     await addDoc(colRef, person);
-    if (typeof window !== "undefined" && window.localStorage) {
-      let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
-      alert(
-        "Thank you" +
-          " " +
-          sessionlocal.name +
+    let visitorInfo =
+      typeof window !== "undefined"
+        ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+        : {};
+    let visitorInfo2 =
+      typeof window !== "undefined"
+        ? JSON.parse(localStorage.getItem("visitorInfo")!)
+        : {};
+    alert(
+      "Thank you" + " " + visitorInfo.name ||
+        visitorInfo2.name +
           " , " +
           " your message is well recieved, I will communicate you as soon as I can"
-      );
-
-      // Your localStorage code here
-    }
-
+    );
     reset();
   };
-  // const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
-  const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
+  let visitorInfo =
+    typeof window !== "undefined"
+      ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+      : {};
+  let visitorInfo2 =
+    typeof window !== "undefined"
+      ? JSON.parse(localStorage.getItem("visitorInfo")!)
+      : {};
 
   return (
     <div className="contact" id="contact">
@@ -61,7 +68,7 @@ function Contact() {
         {/* register your input into the hook by invoking the "register" function */}
         <input
           type="text"
-          value={sessionN.name}
+          value={visitorInfo.name || visitorInfo2.name}
           placeholder="Enter Name"
           {...register("name", { required: true })}
           className="username"
