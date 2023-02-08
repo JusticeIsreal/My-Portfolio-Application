@@ -44,13 +44,13 @@ function Contact() {
       typeof window !== "undefined"
         ? JSON.parse(localStorage.getItem("visitorInfo")!)
         : {};
-    alert(
-      "Thank you" +
-        " " +
-        visitorInfo2.name +
-        " , " +
-        " your message is well recieved, I will communicate you as soon as I can"
-    );
+    // alert(
+    //   "Thank you" +
+    //     " " +
+    //     visitorInfo2.name +
+    //     " , " +
+    //     " your message is well recieved, I will communicate you as soon as I can"
+    // );
     reset();
   };
   // let visitorInfo =
