@@ -23,7 +23,7 @@ function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
     // FIREBASE
     const db = getFirestore();
     const colRef = collection(db, "visitors");
@@ -35,7 +35,7 @@ function Contact() {
       ...data,
       createdAT: serverTimestamp(),
     };
-    await addDoc(colRef, person);
+    addDoc(colRef, person);
     // let visitorInfo =
     //   typeof window !== "undefined"
     //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
@@ -44,13 +44,13 @@ function Contact() {
       typeof window !== "undefined"
         ? JSON.parse(localStorage.getItem("visitorInfo")!)
         : {};
-    // alert(
-    //   "Thank you" +
-    //     " " +
-    //     visitorInfo2.name +
-    //     " , " +
-    //     " your message is well recieved, I will communicate you as soon as I can"
-    // );
+    alert(
+      "Thank you" +
+        " " +
+        visitorInfo2.name +
+        " , " +
+        " your message is well recieved, I will communicate you as soon as I can"
+    );
     reset();
   };
   // let visitorInfo =
