@@ -68,11 +68,19 @@ const Home: React.FC = () => {
   }, [loadingPageOut]);
 
   useEffect(() => {
-    const visitorInfo = sessionStorage.getItem("visitorInfo");
-    const visitorInfolocal = localStorage.getItem(
-      JSON.stringify("visitorInfo")
-    );
-    if (visitorInfolocal == "") {
+    // const visitorInfo = sessionStorage.getItem("visitorInfo");
+    // const visitorInfolocal = localStorage.getItem(
+    //   JSON.stringify("visitorInfo")
+    // );
+    let visitorInfo =
+      typeof window !== "undefined"
+        ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+        : {};
+    let visitorInfolocal =
+      typeof window !== "undefined"
+        ? JSON.parse(localStorage.getItem("visitorInfo")!)
+        : {};
+    if (!visitorInfolocal || !visitorInfo) {
       setUserDetails(false);
     } else {
       setUserDetails(true);
