@@ -12,10 +12,10 @@ import {
 } from "react-icons/ai";
 function Footer() {
   // let visitorInfo = JSON.parse(sessionStorage.getItem("visitorInfo")!);
-  let visitorInfo =
-    typeof window !== "undefined"
-      ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
-      : {};
+  // let visitorInfo =
+  //   typeof window !== "undefined"
+  //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+  //     : {};
   let visitorInfo2 =
     typeof window !== "undefined"
       ? JSON.parse(localStorage.getItem("visitorInfo")!)
@@ -28,11 +28,11 @@ function Footer() {
         <div className="thanks">
           <Blockquote cite="– Justice Isreal Agbonma">
             <p>
-              Dear {visitorInfo2.name || visitorInfo.name}, I would like to
-              extend my sincere gratitude to you for taking the time to explore
-              my portfolio website. Your interest and support means the world to
-              me. I hope you found the information and content impressive.Kindly
-              drop an message or a review. Thank you again for visiting.
+              Dear {visitorInfo2.name}, I would like to extend my sincere
+              gratitude to you for taking the time to explore my portfolio
+              website. Your interest and support means the world to me. I hope
+              you found the information and content impressive.Kindly drop an
+              message or a review. Thank you again for visiting.
             </p>
           </Blockquote>
         </div>

@@ -79,7 +79,7 @@ function StartingLoader(props: StartingLoaderProps) {
   // SAVE INFO IN LOCAL STORAGE
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     data.Date = new Date();
-    sessionStorage.setItem("visitorInfo", JSON.stringify(data));
+    // sessionStorage.setItem("visitorInfo", JSON.stringify(data));
     localStorage.setItem("visitorInfo", JSON.stringify(data));
 
     const db = getFirestore();
@@ -91,10 +91,10 @@ function StartingLoader(props: StartingLoaderProps) {
     await addDoc(colRef, person);
     window.location.href = "/";
   };
-  let visitorInfo =
-    typeof window !== "undefined"
-      ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
-      : {};
+  // let visitorInfo =
+  //   typeof window !== "undefined"
+  //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+  //     : {};
   let visitorInfo2 =
     typeof window !== "undefined"
       ? JSON.parse(localStorage.getItem("visitorInfo")!)
@@ -107,7 +107,7 @@ function StartingLoader(props: StartingLoaderProps) {
         <div className="StartingLoading-main-container">
           <div className="client-name">
             <p>Welcome</p>
-            <h2>{visitorInfo2.name || visitorInfo.name}</h2>
+            <h2>{visitorInfo2.name }</h2>
           </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>
