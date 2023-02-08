@@ -36,15 +36,19 @@ function Contact() {
       createdAT: serverTimestamp(),
     };
     await addDoc(colRef, person);
+    if (typeof window !== "undefined" && window.localStorage) {
+      let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
+      alert(
+        "Thank you" +
+          " " +
+          sessionlocal.name +
+          " , " +
+          " your message is well recieved, I will communicate you as soon as I can"
+      );
 
-    let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
-    alert(
-      "Thank you" +
-        " " +
-        sessionlocal.name +
-        " , " +
-        " your message is well recieved, I will communicate you as soon as I can"
-    );
+      // Your localStorage code here
+    }
+
     reset();
   };
   // const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
