@@ -80,8 +80,8 @@ const Home: React.FC = () => {
     //   typeof window !== "undefined"
     //     ? JSON.parse(localStorage.getItem("visitorInfo")!)
     //     : {};
-    if (visitorInfolocal == "") {
-      setUserDetails(false);
+    if (!visitorInfolocal) {
+      setUserDetails(true);
     } else {
       setUserDetails(true);
     }
