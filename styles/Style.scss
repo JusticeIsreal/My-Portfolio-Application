@@ -150,6 +150,11 @@ body {
       font-weight: bolder;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 20px;
+
+      &:hover {
+        background: $text-Color;
+        color: $card-bg;
+      }
     }
   }
 }
@@ -635,7 +640,7 @@ body {
 
     .service-btn-txt {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      // border-bottom: $border;
+      border-bottom: $border;
       text-transform: uppercase;
       padding: 2px 5px;
       padding: 5px 10px;
@@ -878,10 +883,14 @@ body {
             border-radius: 5px;
             height: 50px;
             width: 40%;
-            // margin-top: 5px;
             color: $text-Color;
             background: $background;
             @include flexDisplay(center, center, row);
+
+            &:hover {
+              background: $text-Color;
+              color: $card-bg;
+            }
           }
 
           span {
@@ -1040,6 +1049,12 @@ body {
       cursor: pointer;
       background: $card-bg;
       color: $text-Color;
+      font-weight: bolder;
+
+      &:hover {
+        background: $text-Color;
+        color: $card-bg;
+      }
     }
   }
 }

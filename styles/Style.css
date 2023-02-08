@@ -108,6 +108,10 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
 }
+.visitor-starting-page .visitors-form .submit:hover {
+  background: #b7e8eb;
+  color: rgba(0, 91, 96, 0.9019607843);
+}
 
 .StartingLoading-main-container {
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
@@ -673,6 +677,7 @@ body {
 }
 .service-main-com .service-btn-con .service-btn-txt {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 1px solid #015871;
   text-transform: uppercase;
   padding: 2px 5px;
   padding: 5px 10px;
@@ -926,6 +931,10 @@ body {
   align-items: center;
   flex-direction: row;
 }
+.project-main-con .general-project-con .project-con .lower-project-con .project-link-con a:hover {
+  background: #b7e8eb;
+  color: rgba(0, 91, 96, 0.9019607843);
+}
 .project-main-con .general-project-con .project-con .lower-project-con .project-link-con span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
@@ -1082,6 +1091,11 @@ body {
   cursor: pointer;
   background: rgba(0, 91, 96, 0.9019607843);
   color: #b7e8eb;
+  font-weight: bolder;
+}
+.contact form .submit:hover {
+  background: #b7e8eb;
+  color: rgba(0, 91, 96, 0.9019607843);
 }
 
 .footer {

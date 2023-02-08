@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Blockquote } from "@mantine/core";
 import { useForm, SubmitHandler } from "react-hook-form";
+import {
+  addDoc,
+  collection,
+  getFirestore,
+  serverTimestamp,
+  onSnapshot,
+} from "firebase/firestore";
 
 // img
 const img =
@@ -56,7 +63,7 @@ function StartingLoader(props: StartingLoaderProps) {
     return () => clearInterval(interval);
   }, [index, displaySkill]);
 
-  // form value type
+  // FORM TYPE
   type Inputs = {
     Date: Date;
     name: string;
@@ -69,23 +76,38 @@ function StartingLoader(props: StartingLoaderProps) {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  // SAVE INFO IN LOCAL STORAGE
+  const onSubmit: SubmitHandler<Inputs> = async(data) => {
     data.Date = new Date();
     sessionStorage.setItem("visitorInfo", JSON.stringify(data));
     localStorage.setItem("visitorInfo", JSON.stringify(data));
+
+    const db = getFirestore();
+    const colRef = collection(db, "firstTimeDetails");
+    const person = {
+      ...data,
+      createdAT: serverTimestamp(),
+    };
+    await addDoc(colRef, person);
     window.location.href = "/";
   };
   let visitorInfo =
     typeof window !== "undefined"
       ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
       : {};
+  let visitorInfo2 =
+    typeof window !== "undefined"
+      ? JSON.parse(localStorage.getItem("visitorInfo")!)
+      : {};
+
+  // APP START
   return (
     <>
       {userDetails ? (
         <div className="StartingLoading-main-container">
           <div className="client-name">
             <p>Welcome</p>
-            <h2>{visitorInfo.name}</h2>
+            <h2>{visitorInfo.name || visitorInfo2.name}</h2>
           </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>

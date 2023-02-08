@@ -16,34 +16,39 @@ function Contact() {
   };
 
   const {
+    reset,
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm<Inputs>();
-  const { reset } = useForm();
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     // FIREBASE
     const db = getFirestore();
     const colRef = collection(db, "visitors");
     const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
-
+    const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
     const person = {
+      ...sessionN,
       ...sessionName,
       ...data,
       createdAT: serverTimestamp(),
     };
-    addDoc(colRef, person);
-
-    // reset the form after successful submission
+    await addDoc(colRef, person);
+    let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
+    let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
+    alert(
+      "Thank you" + " " + sessionN.name ||
+        sessionName.name +
+          " , " +
+          " your message is well recieved, I will communicate you as soon as I can"
+    );
     reset();
   };
   const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
   const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
-  const db = getFirestore();
-  const colRef = collection(db, "visitors");
-  console.log(colRef);
-  console.log({ ...sessionName });
+
   return (
     <div className="contact" id="contact">
       <h1>MESSAGE || REVIEW</h1>

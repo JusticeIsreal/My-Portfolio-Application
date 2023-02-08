@@ -18,7 +18,6 @@ import { initializeApp } from "firebase/app";
 import { onSnapshot, collection, getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
-// import styles from "../styles/Home.module.css";
 const Home: React.FC = () => {
   // firebase
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -34,7 +33,7 @@ const Home: React.FC = () => {
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  // const analytics = getAnalytics(app);
+
 
   const db = getFirestore(app);
   const colRef = collection(db, "visitors");
@@ -52,15 +51,10 @@ const Home: React.FC = () => {
     });
   };
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
-  // firebaseend
-
+  // page render conditions
   const [viewLoading, setViewLoading] = useState<boolean>(true);
-
   const [userDetails, setUserDetails] = useState<boolean>(false);
+
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadingPageOut = () => {
@@ -77,11 +71,15 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const visitorInfo = sessionStorage.getItem("visitorInfo");
-    const visitorInfolocal = localStorage.getItem("visitorInfo");
+    const visitorInfolocal = localStorage.getItem(
+      JSON.stringify("visitorInfo")
+    );
     if (visitorInfo || visitorInfolocal) {
       setUserDetails(true);
     }
+    
   }, [userDetails]);
+
   return (
     <>
       <Head>
