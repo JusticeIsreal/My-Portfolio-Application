@@ -39,8 +39,8 @@ function Contact() {
     let session = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
     let sessionlocal = JSON.parse(localStorage.getItem("visitorInfo") || "");
     alert(
-      "Thank you" + " " + sessionN.name ||
-        sessionName.name +
+      "Thank you" + " " + session.name ||
+        sessionlocal.name +
           " , " +
           " your message is well recieved, I will communicate you as soon as I can"
     );
