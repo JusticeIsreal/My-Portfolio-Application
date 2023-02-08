@@ -40,10 +40,10 @@ function Contact() {
     //   typeof window !== "undefined"
     //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
     //     : {};
-    let visitorInfo2 =
-      typeof window !== "undefined"
-        ? JSON.parse(localStorage.getItem("visitorInfo")!)
-        : {};
+    // let visitorInfo2 =
+    //   typeof window !== "undefined"
+    //     ? JSON.parse(localStorage.getItem("visitorInfo")!)
+    //     : {};
     alert(
       "Thank you your message is well recieved, I will communicate you as soon as I can"
     );
