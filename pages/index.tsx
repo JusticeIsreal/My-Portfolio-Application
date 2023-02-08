@@ -72,10 +72,10 @@ const Home: React.FC = () => {
     // const visitorInfolocal = localStorage.getItem(
     //   JSON.stringify("visitorInfo")
     // );
-    let visitorInfo =
-      typeof window !== "undefined"
-        ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
-        : {};
+    // let visitorInfo =
+    //   typeof window !== "undefined"
+    //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
+    //     : {};
     let visitorInfolocal =
       typeof window !== "undefined"
         ? JSON.parse(localStorage.getItem("visitorInfo")!)
