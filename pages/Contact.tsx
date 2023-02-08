@@ -27,25 +27,24 @@ function Contact() {
     // FIREBASE
     const db = getFirestore();
     const colRef = collection(db, "visitors");
-    // const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
     const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
     const person = {
       ...sessionN,
-      // ...sessionName,
+
       ...data,
       createdAT: serverTimestamp(),
     };
     addDoc(colRef, person);
-    // let visitorInfo =
-    //   typeof window !== "undefined"
-    //     ? JSON.parse(sessionStorage.getItem("visitorInfo")!)
-    //     : {};
-    // let visitorInfo2 =
-    //   typeof window !== "undefined"
-    //     ? JSON.parse(localStorage.getItem("visitorInfo")!)
-    //     : {};
+    let visitorInfo2 =
+      typeof window !== "undefined"
+        ? JSON.parse(localStorage.getItem("visitorInfo")!)
+        : {};
     alert(
-      "Thank you your message is well recieved, I will communicate you as soon as I can"
+      "Thank you" +
+        " " +
+        visitorInfo2.name +
+        " , " +
+        " your message is well recieved, I will communicate you as soon as I can"
     );
     reset();
   };
