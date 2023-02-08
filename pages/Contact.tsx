@@ -27,11 +27,11 @@ function Contact() {
     // FIREBASE
     const db = getFirestore();
     const colRef = collection(db, "visitors");
-    const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
+    // const sessionName = JSON.parse(sessionStorage.getItem("visitorInfo") || "");
     const sessionN = JSON.parse(localStorage.getItem("visitorInfo") || "");
     const person = {
       ...sessionN,
-      ...sessionName,
+      // ...sessionName,
       ...data,
       createdAT: serverTimestamp(),
     };
