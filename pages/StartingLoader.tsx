@@ -77,7 +77,7 @@ function StartingLoader(props: StartingLoaderProps) {
   } = useForm<Inputs>();
 
   // SAVE INFO IN LOCAL STORAGE
-  const onSubmit: SubmitHandler<Inputs> = async(data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     data.Date = new Date();
     sessionStorage.setItem("visitorInfo", JSON.stringify(data));
     localStorage.setItem("visitorInfo", JSON.stringify(data));
