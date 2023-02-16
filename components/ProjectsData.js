@@ -6,7 +6,7 @@ const Projects = [
     img: "https://res.cloudinary.com/isreal/image/upload/v1676589265/My%20portfolio%20Project/Screenshot_2023-02-17_at_00.12.43_ryqcof.png",
     source_code: "https://github.com/JusticeIsreal/facebook-clone",
     live_project: "https://facebookclone-green.vercel.app",
-    Technology: ["HTML", "Tailwind", "Next js", "Firebase"],
+    Technology: ["Tailwind", "Next js", "Next-auth", "Firebase"],
     details:
       "This is a facebook clone application I developed for educational purposes.users can login with their facebook details",
   },
