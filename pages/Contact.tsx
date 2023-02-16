@@ -7,8 +7,12 @@ import {
   serverTimestamp,
   onSnapshot,
 } from "firebase/firestore";
+import { Modal, useMantineTheme } from "@mantine/core";
+import { Button, Group } from "@mantine/core";
 
 function Contact() {
+  const theme = useMantineTheme();
+
   type Inputs = {
     name: string;
     email: string;

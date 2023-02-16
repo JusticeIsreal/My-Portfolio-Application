@@ -1,5 +1,16 @@
 const Projects = [
   {
+    id: 600,
+    project: "FACEBOOK CLONE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1676589265/My%20portfolio%20Project/Screenshot_2023-02-17_at_00.12.43_ryqcof.png",
+    source_code: "https://github.com/JusticeIsreal/facebook-clone",
+    live_project: "https://facebookclone-green.vercel.app",
+    Technology: ["HTML", "Tailwind", "Next js", "Firebase"],
+    details:
+      "This is a facebook clone application I developed for educational purposes.users can login with their facebook details",
+  },
+  {
     id: 60,
     project: "WEB HOSTING",
     role: "Frontend Developer",
@@ -21,24 +32,6 @@ const Projects = [
     details:
       "This is a real estate website where users can buy lands and mak reservations for site inspections",
   },
-  // {
-  //   id: 40,
-  //   project: "CRYPTO",
-  //   role: "Frontend Developer",
-  //   img: "https://res.cloudinary.com/isreal/image/upload/v1675470782/My%20portfolio%20Project/Screenshot_2023-02-04_at_00.59.09_oaceud.png",
-  //   source_code: "",
-  //   live_project: "https://shitcoinaires.com",
-  //   Technology: [
-  //     "HTML",
-  //     "SCSS",
-  //     "JavaScript",
-  //     "Node js",
-  //     "Express js",
-  //     "MySQL",
-  //   ],
-  //   details:
-  //     "On this website, you will find the latest updates, airdrops, trading tutorials, and expert tips to help you be a profitable Shitcoin trader.",
-  // },
   {
     id: 6,
     project: "MOVIE APP",

@@ -69,6 +69,7 @@ function Banner() {
             {readPitch ? "Read less" : "Read more"}
           </button>
         </p>
+        
       </div>
       <section className="myStaticsCon">
         <div className="statCard">
