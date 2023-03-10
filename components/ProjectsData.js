@@ -1,6 +1,17 @@
 const Projects = [
   {
-    id: 600,
+    id: 601,
+    project: "INSTAGRAM CLONE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1678477907/My%20portfolio%20Project/Screenshot_2023-03-10_at_20.46.17_mopu9a.png",
+    source_code: "https://github.com/JusticeIsreal/My-instagram-clone",
+    live_project: "https://ig-clone-by-justice.vercel.app/",
+    Technology: ["Tailwind", "Next js", "Next-auth", "Firebase"],
+    details:
+      "This is aNn Instagram clone application I developed .users can login with their gmail details , create ,comment and like on posts",
+  },
+  {
+    id: 602,
     project: "FACEBOOK CLONE",
     role: "FullStack Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1676589265/My%20portfolio%20Project/Screenshot_2023-02-17_at_00.12.43_ryqcof.png",
@@ -9,6 +20,28 @@ const Projects = [
     Technology: ["Tailwind", "Next js", "Next-auth", "Firebase"],
     details:
       "This is a facebook clone application I developed for educational purposes.users can login with their facebook details",
+  },
+  {
+    id: 603,
+    project: "BOOK RENTALS",
+    role: "Frontend Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1678478100/My%20portfolio%20Project/Screenshot_2023-03-04_at_01.46.47_pdu105.png",
+    source_code: "https://github.com/JusticeIsreal/Book-rentals-clients-side",
+    live_project: "",
+    Technology: ["Sass", "React js"],
+    details:
+      "This is a book rental application consumming the backend API and client side services",
+  },
+  {
+    id: 604,
+    project: "BOOK RENTALS API",
+    role: "Backend Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1678478689/My%20portfolio%20Project/WhatsApp_Image_2023-02-27_at_12.33.06_PM_x1xtfi.jpg",
+    source_code: "https://github.com/JusticeIsreal/book-rental-API",
+    live_project: "",
+    Technology: ["Node js", "express js"],
+    details:
+      "This is a book rental API for users authentication and admin CRUD operation",
   },
   {
     id: 60,
