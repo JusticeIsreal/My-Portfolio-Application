@@ -1,5 +1,16 @@
 const Projects = [
   {
+    id: 621,
+    project: "E-COMMERCE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1683183812/Screenshot_2023-05-02_at_00.23.30_r9z6fu.png",
+    source_code: "",
+    live_project: "https://e-commerce-client-ashen.vercel.app/",
+    Technology: ["Tailwind", "Next js", "Next-auth", "Firebase"],
+    details:
+      "E-commerce store for small scale businesses, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
+  },
+  {
     id: 601,
     project: "INSTAGRAM CLONE",
     role: "FullStack Developer",
