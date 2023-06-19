@@ -1,5 +1,79 @@
 const Projects = [
   {
+    id: 62100998,
+    project: "E-COMMERCE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1687204038/My%20portfolio%20Project/Screenshot_2023-06-19_at_20.40.57_bxfh6q.png",
+    source_code: "",
+    live_project: "https://piuda.store",
+    Technology: [
+      "scss",
+      "Next js",
+      "Node js",
+      "express js",
+      "mongo DB",
+      "cloudnary",
+      "Firebase",
+    ],
+    details:
+      "E-commerce store for small scale businesses, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
+  },
+  {
+    id: 62156,
+    project: "MARINE SERVICING",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1687204042/My%20portfolio%20Project/Screenshot_2023-06-19_at_20.43.04_nxnoz2.png",
+    source_code: "",
+    live_project: "https://calmwatersltd.com/",
+    Technology: [
+      "scss",
+      "Next js",
+      "cloudnary",
+      "Firebase",
+    ],
+    details:
+      "Calm Waters Integrated Services Limited is a Nigerian oil & gas, Maritime support services and Logistics Company.",
+  },
+  {
+    id: 6213453,
+    project: "E-COMMERCE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1687204040/My%20portfolio%20Project/Screenshot_2023-06-19_at_20.42.33_bdrzdi.png",
+    source_code: "",
+    live_project: "https://e-commerce-client-ashen.vercel.app/",
+    Technology: [
+      "scss",
+      "Next js",
+      "Node js",
+      "express js",
+      "mongo DB",
+      "cloudnary",
+      "Firebase",
+    ],
+    details:
+      "E-commerce store for small scale businesses, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
+  },
+  {
+    id: 621543,
+    project: "E-COMMERCE",
+    role: "FullStack Developer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1687204042/My%20portfolio%20Project/Screenshot_2023-06-19_at_20.43.04_nxnoz2.png",
+    source_code: "",
+    live_project: "https://houseofhilda.vercel.app/",
+    Technology: [
+      "scss",
+      "Next js",
+      "Node js",
+      "express js",
+      "mongo DB",
+      "cloudnary",
+      "Firebase",
+    ],
+    details:
+      "E-commerce store for small scale businesses, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
+  },
+
+  {
     id: 621,
     project: "E-COMMERCE",
     role: "FullStack Developer",
