@@ -1,9 +1,10 @@
 import { useEffect, useState, useReducer } from "react";
 import Image from "next/image";
-
+// import CV from "../public/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 // import icons
 import { HiCode } from "react-icons/hi";
 import { SiIbm, SiScrumalliance } from "react-icons/si";
+import { FaFileDownload } from "react-icons/fa";
 const img =
   "https://res.cloudinary.com/isreal/image/upload/v1675285922/My%20portfolio%20Project/1671744344371-removebg-preview_dxwbbb.png";
 function Banner() {
@@ -23,10 +24,10 @@ function Banner() {
       if (countExperience < 2) {
         setCountExperience(countExperience + 1);
       }
-      if (countProject < 35) {
+      if (countProject < 40) {
         setCountProject(countProject + 1);
       }
-      if (countAward < 10) {
+      if (countAward < 5) {
         setCountAward(countAward + 1);
       }
 
@@ -38,8 +39,12 @@ function Banner() {
 
   // read more function
   const [readPitch, setReadPitch] = useState<boolean>(false);
-  const myPitch: string =
-    "I am a graduate of Maritime Academy of Nigeria with a First Class in Marine Engineering. I am a dedicated, results-oriented, and technically-insightful Software Engineer polished in optimizing systems to address dynamic needs. I am a strong Tech enthusiast, and I am currently pursuing my passion in the Tech industry . Over the years, I have honed my analytical thinking skills and collaboration skills, also acquiring certifications as a Project Manager, Scrum master, Full stack web developer, Enterprise thinking Practitioner , amongst others to develope strong relationship-building skills to ensure client satisfaction in the workplace. My goal is to secure a career opportunity that will allow me to expand upon my current skill set while contributing to the success of a  company. I am passionate about learning new things and collaborating with teammates, So, if you would like to know a little more about me feel free to contact me ";
+  const myPitch: string = `As a professional full-stack software developer, I bring a strong academic background and technical expertise to the table. With a First Class in Marine Engineering from the prestigious Maritime Academy of Nigeria, I have honed my analytical thinking and problem-solving skills, which I now apply to the dynamic world of software engineering.\n
+Throughout my career, I have demonstrated dedication and a results-oriented approach in optimizing systems to meet ever-changing needs. I am deeply passionate about technology, and I continuously pursue opportunities to expand my knowledge and skills in the tech industry.\n
+Not only am I well-versed in various software development technologies, but I have also acquired certifications as a Project Manager, Scrum Master, and Enterprise Thinking Practitioner, among others. These certifications have equipped me with the necessary skills to excel in a collaborative and fast-paced development environment.\n
+My strengths lie in my ability to build strong relationships with clients and team members, ensuring their satisfaction with the end product. I believe in integrating my personal views with the vision and mission of the organization to achieve common goals and drive success.\n
+Currently seeking a career opportunity as a full-stack software developer, I am eager to contribute my expertise and passion to a forward-thinking company. With a commitment to continuous learning and professional growth, I am confident in my ability to make meaningful contributions to any software development project.\n
+Let's connect and explore how my skills can contribute to the success of your organization. Together, we can create innovative solutions and deliver exceptional results in the ever-evolving world of technology.`;
 
   const readAll = () => {
     setReadPitch(!readPitch);
@@ -63,13 +68,61 @@ function Banner() {
 
       <div className="pitch-con">
         <p className="pitch">
-          {"Hi,I am JUSTICE ISREAL AGBONMA ."} <br/>
-          {readPitch ? <>{myPitch}</> : <>{myPitch.substring(0, 320)} ...</>}
+          {/* {"Hi,I am JUSTICE ISREAL AGBONMA ."} <br /> */}
+          {readPitch ? (
+            <>
+              As a professional full-stack software developer, I bring a strong
+              academic background and technical expertise to the table. With a
+              First Class in Marine Engineering from the prestigious Maritime
+              Academy of Nigeria, I have honed my analytical thinking and
+              problem-solving skills, which I now apply to the dynamic world of
+              software engineering.
+              <br /> <br /> Throughout my career, I have demonstrated dedication
+              and a results-oriented approach in optimizing systems to meet
+              ever-changing needs. I am deeply passionate about technology, and
+              I continuously pursue opportunities to expand my knowledge and
+              skills in the tech industry.
+              <br /> <br /> Not only am I well-versed in various software
+              development technologies, but I have also acquired certifications
+              as a Project Manager, Scrum Master, and Enterprise Thinking
+              Practitioner, among others. These certifications have equipped me
+              with the necessary skills to excel in a collaborative and
+              fast-paced development environment.
+              <br /> <br /> My strengths lie in my ability to build strong
+              relationships with clients and team members, ensuring their
+              satisfaction with the end product. I believe in integrating my
+              personal views with the vision and mission of the organization to
+              achieve common goals and drive success.
+              <br /> <br /> Currently seeking a career opportunity as a
+              full-stack software developer, I am eager to contribute my
+              expertise and passion to a forward-thinking company. With a
+              commitment to continuous learning and professional growth, I am
+              confident in my ability to make meaningful contributions to any
+              software development project.
+              <br /> <br /> Let's connect and explore how my skills can
+              contribute to the success of your organization. Together, we can
+              create innovative solutions and deliver exceptional results in the
+              ever-evolving world of technology.
+            </>
+          ) : (
+            <>{myPitch.substring(0, 320)} ...</>
+          )}{" "}
           <button className="readMore" onClick={readAll}>
             {readPitch ? "Read less" : "Read more"}
           </button>
         </p>
-        
+        <div className="download-cv">
+          <button>
+            <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
+              {/* <button className="button-29"> */}
+                Download Cv{" "}
+                <span>
+                  <FaFileDownload />
+                </span>
+              {/* </button> */}
+            </a>
+          </button>
+        </div>
       </div>
       <section className="myStaticsCon">
         <div className="statCard">

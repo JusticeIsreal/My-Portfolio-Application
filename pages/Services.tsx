@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import component
 import ServiceData from "../components/ServiceData";
 
@@ -52,19 +52,51 @@ function Services() {
     (item: { category: string }) => item.category === "service"
   );
   const [displayService, setdisplayService] = useState<any>(displayServices);
+  const [activeBt, setActiveBt] = useState<string>();
   const test = (e: any) => {
+    setActiveBt(e.target.innerHTML);
     const displayService2 = categoryBtn.filter(
       (item: { category: Service }) => item.category === e.target.textContent
     );
     setdisplayService(displayService2);
   };
+  const router = useRouter();
+  const [activeBtn, setActiveBtn] = useState("");
+  // const [active, setActive] = useState(category[0]);
 
+  useEffect(() => {
+    switch (activeBt) {
+      case "service":
+        setActiveBt("services");
+        break;
+      case "technology":
+        setActiveBt("technology");
+        break;
+      case "industry":
+        setActiveBt("industry");
+        break;
+      // default:
+      //   setActiveBt("services");
+      //   break;
+    }
+  }, []);
+  console.log(activeBt);
   return (
     <div className="service-main-com" id="service">
-      <h1 className="what-i-do">SERVICES</h1>
+      <h1 className="what-i-do">TECH-SKILL</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (
-          <span key={item} onClick={(e) => test(e)} className="service-btn-txt">
+          <span
+            key={item}
+            onClick={(e) => test(e)}
+            // className="service-btn-txt"
+            className={`${
+              activeBt?.toUpperCase() === item
+                ? "service-btn-txt active-category"
+                : "service-btn-txt"
+            }`}
+          >
+            {/* {activeBt} */}
             {item}
             {/* <div className="hover-line-rule"></div> */}
           </span>
@@ -99,6 +131,7 @@ function Services() {
 }
 
 import React from "react";
+import { useRouter } from "next/router";
 interface ServicesCategoryProps {
   service: string;
   statement: string;

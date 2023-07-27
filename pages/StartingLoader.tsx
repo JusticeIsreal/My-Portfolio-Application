@@ -9,6 +9,7 @@ import {
   serverTimestamp,
   onSnapshot,
 } from "firebase/firestore";
+import { useRouter } from "next/router";
 
 // img
 const img =
@@ -75,9 +76,11 @@ function StartingLoader(props: StartingLoaderProps) {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
-
+  const [btnLoading, setBtnLoading] = useState<boolean>(true);
+  const router = useRouter();
   // SAVE INFO IN LOCAL STORAGE
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    setBtnLoading(false);
     data.Date = new Date();
     // sessionStorage.setItem("visitorInfo", JSON.stringify(data));
     localStorage.setItem("visitorInfo", JSON.stringify(data));
@@ -89,7 +92,10 @@ function StartingLoader(props: StartingLoaderProps) {
       createdAT: serverTimestamp(),
     };
     await addDoc(colRef, person);
-    window.location.href = "/";
+
+    // window.location.href = "/";
+    router.reload();
+    setBtnLoading(true);
   };
   // let visitorInfo =
   //   typeof window !== "undefined"
@@ -107,7 +113,7 @@ function StartingLoader(props: StartingLoaderProps) {
         <div className="StartingLoading-main-container">
           <div className="client-name">
             <p>Welcome</p>
-            <h2>{visitorInfo2.name }</h2>
+            <h2>{visitorInfo2.name}</h2>
           </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>
@@ -158,7 +164,11 @@ function StartingLoader(props: StartingLoaderProps) {
               <span className="error-msg"> Kindly enter your name</span>
             )}
 
-            <input type="submit" value={"SUBMIT"} className="submit" />
+            <input
+              type="submit"
+              value={btnLoading ? "Submit" : "Submiting ..."}
+              className="submit"
+            />
           </form>
         </div>
       )}
