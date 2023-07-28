@@ -789,9 +789,17 @@ body {
   }
 }
 
+.project-main-con {
+  width: 100%;
+  padding: 5px;
+}
+.project-main-con .more-projects {
+  text-align: center;
+  color: #015871;
+}
 .project-main-con .projects {
   font-size: 50px;
-  color: rgba(0, 91, 96, 0.9019607843);
+  color: #015871;
   text-align: center;
   margin: 40px 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -808,30 +816,41 @@ body {
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
   .project-main-con .general-project-con {
     -moz-columns: 2;
          columns: 2;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1750px) {
   .project-main-con .general-project-con {
     -moz-columns: 3;
          columns: 3;
   }
 }
 .project-main-con .general-project-con .project-con {
+  width: 100%;
   position: relative;
-  border: 1px solid #015871;
+  border: 0.5px solid #015871;
   border-radius: 10px;
   width: 100%;
   padding: 5px;
-  margin: 10px;
+  margin: 10px 2px;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
+@media only screen and (min-width: 800px) {
+  .project-main-con .general-project-con .project-con {
+    margin: 20px 0;
+  }
+}
+.project-main-con .general-project-con .project-con:hover .project-link-con {
+  display: block;
+}
 .project-main-con .general-project-con .project-con:hover .lower-project-con {
-  background: rgba(0, 91, 96, 0.9019607843);
+  background: #015871;
 }
 .project-main-con .general-project-con .project-con:hover .lower-project-con .project-name {
   color: #b7e8eb;
@@ -853,11 +872,12 @@ body {
 }
 .project-main-con .general-project-con .project-con .lower-project-con {
   border-radius: 0 0 10px 10px;
+  padding: 5px;
 }
 .project-main-con .general-project-con .project-con .lower-project-con .project-name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
-  color: rgba(0, 91, 96, 0.9019607843);
+  color: #015871;
 }
 @media only screen and (min-width: 800px) {
   .project-main-con .general-project-con .project-con .lower-project-con .project-name {
@@ -867,9 +887,9 @@ body {
 .project-main-con .general-project-con .project-con .lower-project-con .project-role {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #015871;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-bottom: 10px;
-  margin-left: 3px;
+  margin-left: 0px;
 }
 .project-main-con .general-project-con .project-con .lower-project-con .project-role span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -904,7 +924,8 @@ body {
   width: 90%;
   position: absolute;
   right: 6%;
-  bottom: 270px;
+  display: none;
+  top: 230px;
 }
 .project-main-con .general-project-con .project-con .lower-project-con .project-link-con a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -930,6 +951,9 @@ body {
   align-items: center;
   flex-direction: row;
   width: 80px;
+}
+.project-main-con .general-project-con .project-con:hover .project-link-con {
+  display: flex;
 }
 .project-main-con .general-project-con .project-con .top-project-con {
   width: 100%;

@@ -38,18 +38,26 @@ function Portfolio() {
                 ))}
               </div>
               <div className="project-link-con">
-                <a href={item.source_code} className="project-code">
+                <a
+                  href={item.source_code}
+                  target="_blank"
+                  className="project-code"
+                >
                   {item.source_code ? (
                     "Source Code"
                   ) : (
-                    <span style={{ fontSize: "13px" }}>Not avaliable</span>
+                    <span style={{ fontSize: "13px" }}>Private</span>
                   )}
                 </a>
-                <a href={item.live_project} className="project-link">
+                <a
+                  href={item.live_project}
+                  target="_blank"
+                  className="project-link"
+                >
                   {item.live_project ? (
                     "Live Project"
                   ) : (
-                    <span style={{ fontSize: "13px" }}>Not avaliable</span>
+                    <span style={{ fontSize: "13px" }}>Private</span>
                   )}
                 </a>
               </div>
@@ -57,6 +65,8 @@ function Portfolio() {
           </div>
         ))}
       </div>
+      <br /> <br />
+      <p className="more-projects">More avaliable on request</p>
     </div>
   );
 }

@@ -807,9 +807,17 @@ body {
 // PORTFOLIO
 
 .project-main-con {
+  // border: 2px solid red;
+  width: 100%;
+  padding: 5px;
+  .more-projects {
+    // border: 2px solid red;
+    text-align: center;
+    color: $background;
+  }
   .projects {
     font-size: 50px;
-    color: $card-bg;
+    color: $background;
     text-align: center;
     margin: 40px 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -822,23 +830,32 @@ body {
     margin: 0 auto;
     columns: 1;
     column-gap: 10px;
-    @include responsive(bigphone) {
-      columns: 2;
-    }
+
     @include responsive(tablet) {
+      columns: 2;
+      column-gap: 20px;
+    }
+    @include responsive(desktop) {
       columns: 3;
     }
     .project-con {
+      width: 100%;
       position: relative;
-      border: 1px solid $background;
+      border: 0.5px solid $background;
       border-radius: 10px;
       width: 100%;
       padding: 5px;
-      margin: 10px;
+      margin: 10px 2px;
       break-inside: avoid;
+      @include responsive(bigphone) {
+        margin: 20px 0;
+      }
       &:hover {
+        .project-link-con {
+          display: block;
+        }
         .lower-project-con {
-          background: $card-bg;
+          background: $background;
 
           .project-name {
             color: $text-Color;
@@ -863,11 +880,13 @@ body {
 
       .lower-project-con {
         border-radius: 0 0 10px 10px;
+        padding: 5px;
+
         .project-name {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
             sans-serif;
           font-size: 30px;
-          color: $card-bg;
+          color: $background;
 
           @include responsive(bigphone) {
             font-size: 50px;
@@ -877,9 +896,9 @@ body {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
             sans-serif;
           color: $background;
-          margin-top: -5px;
+          margin-top: 0px;
           margin-bottom: 10px;
-          margin-left: 3px;
+          margin-left: 0px;
           span {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
@@ -907,13 +926,12 @@ body {
           }
         }
         .project-link-con {
-          // border: 2px solid blue;
           @include flexDisplay(space-between, center, row);
           width: 90%;
           position: absolute;
           right: 6%;
-
-          bottom: 270px;
+          display: none;
+          top: 230px;
           a {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
@@ -937,6 +955,12 @@ body {
             @include flexDisplay(center, center, row);
             width: 80px;
           }
+        }
+      }
+      &:hover {
+        // border: 2px solid blue;
+        .project-link-con {
+          display: flex;
         }
       }
       .top-project-con {
