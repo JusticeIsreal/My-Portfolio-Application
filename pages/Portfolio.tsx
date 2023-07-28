@@ -41,6 +41,7 @@ function Portfolio() {
                 <a
                   href={item.source_code}
                   target="_blank"
+                  rel="noreferrer"
                   className="project-code"
                 >
                   {item.source_code ? (
@@ -52,6 +53,7 @@ function Portfolio() {
                 <a
                   href={item.live_project}
                   target="_blank"
+                  rel="noreferrer"
                   className="project-link"
                 >
                   {item.live_project ? (
