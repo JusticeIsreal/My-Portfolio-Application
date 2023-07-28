@@ -645,7 +645,7 @@ body {
 }
 .service-main-com .service-btn-con {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   width: 95%;
@@ -671,15 +671,16 @@ body {
   text-align: center;
   color: #37a1a7;
   transition: all 0.5s ease;
-  border: 0.2px solid red;
+  margin: 5px;
+  width: 50%;
+  cursor: pointer;
 }
 .service-main-com .service-btn-con .service-btn-txt .hover-line-rule {
   opacity: 0;
   border: 2px solid #b7e8eb;
 }
 .service-main-com .service-btn-con .service-btn-txt:hover {
-  background: rgba(0, 91, 96, 0.9019607843);
-  color: #b7e8eb;
+  border-bottom: 1px solid #015871;
 }
 .service-main-com .service-btn-con .service-btn-txt:hover .hover-line-rule {
   opacity: 1;
@@ -699,7 +700,8 @@ body {
   }
 }
 .service-main-com .service-btn-con .active-category {
-  background: #ab1b1b;
+  background: #015871;
+  color: #b7e8eb;
 }
 .service-main-com .service-details-com {
   width: 100%;
@@ -718,18 +720,12 @@ body {
 .service-main-com .service-details-com .service-each-box {
   border: 1px solid #015871;
   border: 1px solid #b7e8eb;
-  background: rgba(0, 91, 96, 0.9019607843);
-  width: 50%;
-  height: 180px;
-  overflow-y: scroll;
+  background: #015871;
+  width: 47%;
   text-align: center;
-  padding: 5px;
+  padding: 10px 5px;
   position: relative;
-}
-@media only screen and (min-width: 800px) {
-  .service-main-com .service-details-com .service-each-box {
-    height: 200px;
-  }
+  margin: 5px;
 }
 .service-main-com .service-details-com .service-each-box:hover {
   background: #015871;
@@ -746,17 +742,17 @@ body {
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #b7e8eb;
-  font-size: 15px;
+  font-size: 17px;
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-details-com .service-each-box h3 {
-    font-size: 20px;
+    font-size: 33px;
   }
 }
 .service-main-com .service-details-com .service-each-box p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgba(183, 233, 235, 0.6352941176);
-  font-size: 13px;
+  font-size: 16px;
   height: 82%;
   padding: 0 3px;
   padding-top: 10px;
@@ -764,7 +760,7 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .service-details-com .service-each-box p {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .service-main-com .tech-icons {
@@ -793,9 +789,6 @@ body {
   }
 }
 
-.project-main-con {
-  padding: 0 5px;
-}
 .project-main-con .projects {
   font-size: 50px;
   color: rgba(0, 91, 96, 0.9019607843);
@@ -808,14 +801,34 @@ body {
     font-size: 130px;
   }
 }
+.project-main-con .general-project-con {
+  margin: 0 auto;
+  -moz-columns: 1;
+       columns: 1;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
 @media only screen and (min-width: 800px) {
   .project-main-con .general-project-con {
-    max-width: 1800px;
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .project-main-con .general-project-con {
+    -moz-columns: 3;
+         columns: 3;
   }
 }
 .project-main-con .general-project-con .project-con {
   position: relative;
-  transform: scale(0.9);
+  border: 1px solid #015871;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 .project-main-con .general-project-con .project-con:hover .lower-project-con {
   background: rgba(0, 91, 96, 0.9019607843);
@@ -840,9 +853,6 @@ body {
 }
 .project-main-con .general-project-con .project-con .lower-project-con {
   border-radius: 0 0 10px 10px;
-  border: 1px solid #015871;
-  height: 230px;
-  padding: 5px;
 }
 .project-main-con .general-project-con .project-con .lower-project-con .project-name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -921,23 +931,16 @@ body {
   flex-direction: row;
   width: 80px;
 }
+.project-main-con .general-project-con .project-con .top-project-con {
+  width: 100%;
+  height: 280px;
+}
 .project-main-con .general-project-con .project-con .top-project-con .project-img {
-  width: 100vw;
-  height: 250px;
-  border: 1px solid #015871;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0 0;
-}
-@media only screen and (min-width: 800px) {
-  .project-main-con .general-project-con .project-con .top-project-con .project-img {
-    width: 700px;
-    height: 400px;
-  }
-}
-@media only screen and (max-width: 300px) {
-  .project-main-con .general-project-con .project-con .top-project-con .project-img {
-    width: 100vw;
-    height: 150px;
-  }
 }
 
 .reviews {

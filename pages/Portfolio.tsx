@@ -9,29 +9,12 @@ function Portfolio() {
   const [project, setProject] = useState<any>(ProjectsData);
   const autoplay = useRef(Autoplay({ delay: 2000 }));
 
-  // read more function
-  const [readPitch, setReadPitch] = useState<boolean>(false);
   return (
     <div className="project-main-con" id="portfolio">
       <h1 className="projects">PROJECTS</h1>
-      <Carousel
-        className="general-project-con"
-        loop
-        slideSize="33.33333%"
-        slideGap="md"
-        dragFree
-        breakpoints={[
-          { maxWidth: "md", slideSize: "50%" },
-          { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
-        ]}
-        plugins={[autoplay.current]}
-        onMouseEnter={autoplay.current.stop}
-        onMouseLeave={autoplay.current.reset}
-        // loop
-        align="center"
-      >
+      <div className="general-project-con">
         {project.map((item: any) => (
-          <Carousel.Slide key={item.id} className="project-con">
+          <div key={item.id} className="project-con">
             <div className="top-project-con">
               <Image
                 className="project-img"
@@ -71,9 +54,9 @@ function Portfolio() {
                 </a>
               </div>
             </div>
-          </Carousel.Slide>
+          </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }

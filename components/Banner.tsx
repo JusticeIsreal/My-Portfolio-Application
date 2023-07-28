@@ -175,7 +175,7 @@ Let's connect and explore how my skills can contribute to the success of your or
         </div>
         <div className="statistics">
           <hr className="line" />
-          <h1 className="statistis-unmber">{countAward}</h1>
+          <h1 className="statistis-unmber">0{countAward}</h1>
           <p className="statistics-name">Awards</p>
         </div>
       </div>

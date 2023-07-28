@@ -49,38 +49,33 @@ function Services() {
 
   // creating logic to render services based on category
   const displayServices = categoryBtn.filter(
-    (item: { category: string }) => item.category === "service"
+    (item: { category: string }) => item.category === "skill"
   );
   const [displayService, setdisplayService] = useState<any>(displayServices);
   const [activeBt, setActiveBt] = useState<string>();
   const test = (e: any) => {
     setActiveBt(e.target.innerHTML);
+
     const displayService2 = categoryBtn.filter(
       (item: { category: Service }) => item.category === e.target.textContent
     );
     setdisplayService(displayService2);
   };
-  const router = useRouter();
-  const [activeBtn, setActiveBtn] = useState("");
-  // const [active, setActive] = useState(category[0]);
 
   useEffect(() => {
     switch (activeBt) {
-      case "service":
-        setActiveBt("services");
+      case "skill":
+        setActiveBt("skill");
         break;
-      case "technology":
-        setActiveBt("technology");
+      case "tech-stack":
+        setActiveBt("tech-stack");
         break;
-      case "industry":
-        setActiveBt("industry");
+      default:
+        setActiveBt("skill");
         break;
-      // default:
-      //   setActiveBt("services");
-      //   break;
     }
   }, []);
-  console.log(activeBt);
+
   return (
     <div className="service-main-com" id="service">
       <h1 className="what-i-do">TECH-SKILL</h1>
@@ -91,14 +86,12 @@ function Services() {
             onClick={(e) => test(e)}
             // className="service-btn-txt"
             className={`${
-              activeBt?.toUpperCase() === item
+              activeBt?.toUpperCase() === item?.toUpperCase()
                 ? "service-btn-txt active-category"
                 : "service-btn-txt"
             }`}
           >
-            {/* {activeBt} */}
             {item}
-            {/* <div className="hover-line-rule"></div> */}
           </span>
         ))}
       </div>
