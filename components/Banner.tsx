@@ -95,7 +95,7 @@ function Banner() {
               commitment to continuous learning and professional growth, I am
               confident in my ability to make meaningful contributions to any
               software development project.
-              <br /> <br /> Let's connect and explore how my skills can
+              <br /> <br /> Let&apos;s connect and explore how my skills can
               contribute to the success of your organization. Together, we can
               create innovative solutions and deliver exceptional results in the
               ever-evolving world of technology.
