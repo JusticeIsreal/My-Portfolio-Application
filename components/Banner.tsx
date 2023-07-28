@@ -44,7 +44,7 @@ Throughout my career, I have demonstrated dedication and a results-oriented appr
 Not only am I well-versed in various software development technologies, but I have also acquired certifications as a Project Manager, Scrum Master, and Enterprise Thinking Practitioner, among others. These certifications have equipped me with the necessary skills to excel in a collaborative and fast-paced development environment.\n
 My strengths lie in my ability to build strong relationships with clients and team members, ensuring their satisfaction with the end product. I believe in integrating my personal views with the vision and mission of the organization to achieve common goals and drive success.\n
 Currently seeking a career opportunity as a full-stack software developer, I am eager to contribute my expertise and passion to a forward-thinking company. With a commitment to continuous learning and professional growth, I am confident in my ability to make meaningful contributions to any software development project.\n
-Let's connect and explore how my skills can contribute to the success of your organization. Together, we can create innovative solutions and deliver exceptional results in the ever-evolving world of technology.`;
+Let&apos;s connect and explore how my skills can contribute to the success of your organization. Together, we can create innovative solutions and deliver exceptional results in the ever-evolving world of technology.`;
 
   const readAll = () => {
     setReadPitch(!readPitch);
@@ -115,10 +115,10 @@ Let's connect and explore how my skills can contribute to the success of your or
           <button>
             <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
               {/* <button className="button-29"> */}
-                Download Cv{" "}
-                <span>
-                  <FaFileDownload />
-                </span>
+              Download Cv{" "}
+              <span>
+                <FaFileDownload />
+              </span>
               {/* </button> */}
             </a>
           </button>
