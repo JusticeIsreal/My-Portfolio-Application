@@ -74,7 +74,7 @@ function Services() {
         setActiveBt("skill");
         break;
     }
-  }, []);
+  }, [activeBt]);
 
   return (
     <div className="service-main-com" id="service">
