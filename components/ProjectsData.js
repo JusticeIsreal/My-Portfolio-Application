@@ -87,7 +87,7 @@ const Projects = [
       "Paystack",
     ],
     details:
-      "House of hilda is an on-line store for sales of hand made shoes and bags with a fully functional admin panel for account, staff , finance and inventry management handled by Stripe.",
+      "The empowerment place church is a church website for members and the general public witha full functional admin panel and payment gateway integration for financial donation",
   },
 
   {
@@ -175,14 +175,22 @@ const Projects = [
   // },
   {
     id: 2,
-    project: "E-COMMERCE",
+    project: "E-Resturant",
     role: "Frontend Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1690556060/Screenshot_2023-07-28_at_15.53.00_qpx1ot.png",
-    source_code: "https://github.com/JusticeIsreal/E-commerce.git",
-    live_project: "http://justiceecom.netlify.app",
-    Technology: ["HTML", "CSS", "JavaScript"],
+    source_code: "https://github.com/JusticeIsreal/e-Restaurant",
+    live_project: "https://e-restaurant-app.vercel.app/",
+    Technology: [
+      "scss",
+      "Next js",
+      "Node js",
+      "express js",
+      "mongo DB",
+      "cloudnary",
+      "Paystack",
+    ],
     details:
-      "E-commerce store for small scale businesses, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
+      "E-Resturant store for food vendors, Admin can add product to the store, Pick a category, Pick a class, Select price and quantity. edit existing and delete product from store.",
   },
   // {
   //   id: 3,
