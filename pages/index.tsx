@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { Inter } from "@next/font/google";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,13 @@ const Home: React.FC = () => {
       <div className="linktree-con">
         <div className="top">
           <div className="top-img">
-            <img
+            <Image
+              className="img"
               src="https://res.cloudinary.com/isreal/image/upload/v1690675954/My%20portfolio%20Project/1671744344371-removebg-preview_dxwbbb_Background_Removed_eh44ec.png"
-              alt=""
-            />
+              alt="img"
+              width={800}
+              height={400}
+            ></Image>
           </div>
           <div>
             <h1>JUSTICE ISREAL AGBONMA</h1>
@@ -32,39 +36,27 @@ const Home: React.FC = () => {
 
         <div className="lower">
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>Personal website</p>
           </a>
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>LinkedIn</p>
           </a>
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>Instagram</p>
           </a>
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>Twitter</p>
           </a>
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>Facebook</p>
           </a>
           <a href="" className="single-link">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <div>{/* <img src="" alt="" /> */}</div>
             <p>Whatsapp</p>
           </a>
         </div>
