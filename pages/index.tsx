@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <h1>JUSTICE ISREAL AGBONMA</h1>
-            <p>" If I can conceive it, I can acheive it "</p>
+            <p>&quot; If I can conceive it, I can achieve it &quot;</p>
           </div>
         </div>
 
@@ -64,4 +64,5 @@ const Home: React.FC = () => {
     </div>
   );
 };
+
 export default Home;
