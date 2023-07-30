@@ -36,7 +36,7 @@ const Home: React.FC = () => {
 
         <div className="lower">
           <a
-            href="https://www.justiceagbonma.com/firstpage"
+            href="https://www.justiceagbonma.com/website"
             target="_blank"
             rel="noreferrer"
             className="single-link"
