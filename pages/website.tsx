@@ -5,7 +5,7 @@ import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 // pages
-import StartingLoader from "../pages/StartingLoader";
+import StartingLoader from "./StartingLoader";
 import HomePage from "./HomePage";
 import Services from "./Services";
 import Portfolio from "./Portfolio";

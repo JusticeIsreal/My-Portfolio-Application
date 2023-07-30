@@ -84,7 +84,7 @@ function Footer() {
             </span>
             <span>
               <a
-                href="https://instagram.com/justice_isreall/"
+                href="https://www.instagram.com/reel/Cu6lPUJAQ5N/?igshid=NTc4MTIwNjQ2YQ=="
                 target="_blank"
                 rel="noreferrer"
               >

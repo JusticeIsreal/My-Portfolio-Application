@@ -35,27 +35,57 @@ const Home: React.FC = () => {
         </div>
 
         <div className="lower">
-          <a href="" className="single-link">
+          <a
+            href="https://www.justiceagbonma.com/firstpage"
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>Personal website</p>
           </a>
-          <a href="" className="single-link">
+          <a
+            href="https://www.linkedin.com/in/justice-isreal-agbonma-314bbb188"
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>LinkedIn</p>
           </a>
-          <a href="" className="single-link">
+          <a
+            href="https://www.instagram.com/reel/Cu6lPUJAQ5N/?igshid=NTc4MTIwNjQ2YQ=="
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>Instagram</p>
           </a>
-          <a href="" className="single-link">
+          <a
+            href="https://twitter.com/justice_israell/status/1617871709264281601?s=46&t=UJLePVE0i36jIOrHFk3QzA"
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>Twitter</p>
           </a>
-          <a href="" className="single-link">
+          <a
+            href="https://facebook.com/justice.agbonma"
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>Facebook</p>
           </a>
-          <a href="" className="single-link">
+          <a
+            href="https://wa.me/+2349029356196?text=hello Justice"
+            target="_blank"
+            rel="noreferrer"
+            className="single-link"
+          >
             <div>{/* <img src="" alt="" /> */}</div>
             <p>Whatsapp</p>
           </a>
