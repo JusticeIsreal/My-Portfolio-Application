@@ -175,7 +175,7 @@ const Projects = [
   // },
   {
     id: 2,
-    project: "E-Resturant",
+    project: "E-Restaurant",
     role: "Frontend Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1690556060/Screenshot_2023-07-28_at_15.53.00_qpx1ot.png",
     source_code: "https://github.com/JusticeIsreal/e-Restaurant",

@@ -1183,6 +1183,7 @@ body {
 .linktree-main-con {
   position: absolute;
   padding: 10px 0;
+  padding-bottom: 50px;
   background: url("https://res.cloudinary.com/isreal/image/upload/v1662332718/My%20portfolio%20Project/AJIS_BOARD_hntwt3.png") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
@@ -1200,7 +1201,9 @@ body {
   }
 }
 .linktree-main-con .linktree-con {
+  overflow: scroll;
   max-width: 800px;
+  padding-bottom: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
