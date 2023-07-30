@@ -79,6 +79,27 @@ function StartingLoader(props: StartingLoaderProps) {
   const [btnLoading, setBtnLoading] = useState<boolean>(true);
   const router = useRouter();
   // SAVE INFO IN LOCAL STORAGE
+  const skipName = async () => {
+    setBtnLoading(false);
+    const data = {
+      name: "Visitor",
+    };
+    // data.Date = new Date();
+    // sessionStorage.setItem("visitorInfo", JSON.stringify(data));
+    localStorage.setItem("visitorInfo", JSON.stringify(data));
+
+    const db = getFirestore();
+    const colRef = collection(db, "firstTimeDetails");
+    const person = {
+      ...data,
+      createdAT: serverTimestamp(),
+    };
+    await addDoc(colRef, person);
+
+    // window.location.href = "/";
+    router.reload();
+    setBtnLoading(true);
+  };
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     setBtnLoading(false);
     data.Date = new Date();
@@ -167,6 +188,18 @@ function StartingLoader(props: StartingLoaderProps) {
               value={btnLoading ? "Submit" : "Submiting ..."}
               className="submit"
             />
+
+            <div
+              // className="submit"
+              style={{
+                textAlign: "center",
+                cursor: "pointer",
+                marginTop: "10px",
+              }}
+              onClick={() => skipName()}
+            >
+              {btnLoading ? "Skip" : "Loading ..."}
+            </div>
           </form>
         </div>
       )}

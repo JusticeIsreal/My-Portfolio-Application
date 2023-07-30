@@ -108,16 +108,16 @@ function Banner() {
           </button>
         </p>
         <div className="download-cv">
-          <button>
-            <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
-              {/* <button className="button-29"> */}
+          {/* <button> */}
+          <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
+            <button className="button-29">
               Download Cv{" "}
               <span>
                 <FaFileDownload />
               </span>
-              {/* </button> */}
-            </a>
-          </button>
+            </button>
+          </a>
+          {/* </button> */}
         </div>
       </div>
       <section className="myStaticsCon">
