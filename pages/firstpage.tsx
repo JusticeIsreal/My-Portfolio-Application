@@ -18,7 +18,7 @@ import { initializeApp } from "firebase/app";
 import { onSnapshot, collection, getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
-const firstpage: React.FC = () => {
+const Website: React.FC = () => {
   // firebase
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
@@ -111,4 +111,4 @@ const firstpage: React.FC = () => {
   );
 };
 
-export default firstpage;
+export default Website;
