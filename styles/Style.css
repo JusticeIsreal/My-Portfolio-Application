@@ -1178,15 +1178,22 @@ body {
 
 .linktree-main-con {
   position: absolute;
+  padding: 10px 0;
   background: url("https://res.cloudinary.com/isreal/image/upload/v1662332718/My%20portfolio%20Project/AJIS_BOARD_hntwt3.png") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
+  bottom: 0;
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  overflow: scroll;
+}
+@media only screen and (min-width: 800px) {
+  .linktree-main-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .linktree-main-con .linktree-con {
   max-width: 800px;
@@ -1200,7 +1207,7 @@ body {
   .linktree-main-con .linktree-con {
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
-    border: 1px solid #b7e8eb;
+    border: 0.1px solid #b7e8eb;
     padding: 10px;
     border-radius: 10px;
   }
@@ -1240,7 +1247,8 @@ body {
 .linktree-main-con .linktree-con .lower .single-link {
   margin-top: 15px;
   height: 50px;
-  border: 1px solid #b7e8eb;
+  border: 0.6px solid #b7e8eb;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;

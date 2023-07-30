@@ -1185,24 +1185,26 @@ body {
 // LONK TREE
 .linktree-main-con {
   position: absolute;
-
+  padding: 10px 0;
   background: url("https://res.cloudinary.com/isreal/image/upload/v1662332718/My%20portfolio%20Project/AJIS_BOARD_hntwt3.png")
     no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
+  bottom: 0;
   background-color: black;
-  // overflow: hidden;
-  // border: 2px solid red;
-  @include flexDisplay(center, center, column);
+  overflow: scroll;
 
+  @include responsive(bigphone) {
+    @include flexDisplay(center, center, column);
+  }
   .linktree-con {
     max-width: 800px;
     margin: 0 auto;
     @include flexDisplay(center, center, column);
     @include responsive(bigphone) {
       backdrop-filter: blur(5px);
-      border: 1px solid $text-Color;
+      border: .1px solid $text-Color;
       padding: 10px;
       border-radius: 10px;
     }
@@ -1244,7 +1246,8 @@ body {
       .single-link {
         margin-top: 15px;
         height: 50px;
-        border: 1px solid $text-Color;
+        border: .6px solid $text-Color;
+        border-radius: 5px;
         @include flexDisplay(center, center, row);
 
         &:hover {
