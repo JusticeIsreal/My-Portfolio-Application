@@ -1218,7 +1218,7 @@ body {
 }
 .linktree-main-con .linktree-con .top .top-img {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -1241,10 +1241,12 @@ body {
 .linktree-main-con .linktree-con .lower {
   padding: 5px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   color: #b7e8eb;
 }
 .linktree-main-con .linktree-con .lower .single-link {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 15px;
   height: 50px;
   border: 0.6px solid #b7e8eb;

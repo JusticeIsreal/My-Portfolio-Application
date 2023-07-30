@@ -1204,14 +1204,14 @@ body {
     @include flexDisplay(center, center, column);
     @include responsive(bigphone) {
       backdrop-filter: blur(5px);
-      border: .1px solid $text-Color;
+      border: 0.1px solid $text-Color;
       padding: 10px;
       border-radius: 10px;
     }
     .top {
       .top-img {
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 20px;
         width: 200px;
         height: 200px;
         border-radius: 100%;
@@ -1242,11 +1242,13 @@ body {
       // border: 2px solid red;
       padding: 5px;
       width: 100%;
-      margin-top: 50px;
+      margin-top: 30px;
       .single-link {
+        width: 90%;
+        margin: 0 auto;
         margin-top: 15px;
         height: 50px;
-        border: .6px solid $text-Color;
+        border: 0.6px solid $text-Color;
         border-radius: 5px;
         @include flexDisplay(center, center, row);
 
