@@ -143,7 +143,6 @@ function StartingLoader(props: StartingLoaderProps) {
               priority
             ></Image>
           </div>
-
           <Blockquote cite="– Justice Isreal Agbonma" className="welcome-quote">
             <p>
               Hello ! <br />
@@ -152,7 +151,6 @@ function StartingLoader(props: StartingLoaderProps) {
               <i>{"( You'd only have to do this once )"}</i>
             </p>
           </Blockquote>
-
           <form onSubmit={handleSubmit(onSubmit)} className="visitors-form">
             {/* register your input into the hook by invoking the "register" function */}
             <input

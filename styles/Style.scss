@@ -163,7 +163,7 @@ body {
   overflow: hidden;
   position: absolute;
   z-index: 2;
-  width: 100vw;
+  width: 100vw !important;
   height: 100vh;
   padding: 10px;
   animation: closepage 1s 5s linear;
@@ -195,6 +195,7 @@ body {
 
   .loading-animation {
     margin-top: 45vh;
+
     @include responsive(bigphone) {
       margin-top: 40vh;
     }
@@ -263,15 +264,16 @@ body {
       background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
         repeat-x;
       position: absolute;
-      top: -198px;
+      top: -178px;
       width: 6400px;
+      // border: 2px solid red;
       height: 198px;
       animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
       transform: translate3d(0, 0, 0);
     }
 
     .wave:nth-of-type(2) {
-      top: -175px;
+      top: -155px;
       animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
         swell 7s ease -1.25s infinite;
       opacity: 1;
@@ -1176,6 +1178,84 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+// LONK TREE
+.linktree-main-con {
+  position: absolute;
+
+  background: url("https://res.cloudinary.com/isreal/image/upload/v1662332718/My%20portfolio%20Project/AJIS_BOARD_hntwt3.png")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  // overflow: hidden;
+  // border: 2px solid red;
+  @include flexDisplay(center, center, column);
+
+  .linktree-con {
+    max-width: 800px;
+    margin: 0 auto;
+    @include flexDisplay(center, center, column);
+    @include responsive(bigphone) {
+      backdrop-filter: blur(5px);
+      border: 1px solid $text-Color;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .top {
+      .top-img {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: 2px solid #b7e9eb50;
+        background: #b7e9eb4b;
+        // backdrop-filter: blur(2px);
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          // margin-left: 35px;
+          // margin-top: -30px;
+          object-fit: cover;
+          // border-radius: 100%;
+        }
+      }
+      text-align: center;
+      color: $text-Color;
+      h1 {
+        margin-top: 5px;
+      }
+      p {
+        margin-top: 10px;
+        // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    }
+    .lower {
+      // border: 2px solid red;
+      padding: 5px;
+      width: 100%;
+      margin-top: 50px;
+      .single-link {
+        margin-top: 15px;
+        height: 50px;
+        border: 1px solid $text-Color;
+        @include flexDisplay(center, center, row);
+
+        &:hover {
+          transform: scale(0.95);
+          background: #b7e9eb4b;
+        }
+      }
+      a {
+        color: $text-Color;
+      }
+      color: $text-Color;
     }
   }
 }
