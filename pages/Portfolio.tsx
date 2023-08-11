@@ -68,7 +68,11 @@ function Portfolio() {
         ))}
       </div>
       <br /> <br />
-      <a href="https://github.com/JusticeIsreal" target="_blank">
+      <a
+        href="https://github.com/JusticeIsreal"
+        target="_blank"
+        rel="noreferrer"
+      >
         <p className="more-projects">More avaliable on request</p>
       </a>
     </div>
