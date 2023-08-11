@@ -68,7 +68,9 @@ function Portfolio() {
         ))}
       </div>
       <br /> <br />
-      <p className="more-projects">More avaliable on request</p>
+      <a href="https://github.com/JusticeIsreal" target="_blank">
+        <p className="more-projects">More avaliable on request</p>
+      </a>
     </div>
   );
 }
