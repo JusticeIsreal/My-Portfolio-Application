@@ -73,7 +73,7 @@ function Portfolio() {
         target="_blank"
         rel="noreferrer"
       >
-        <p className="more-projects">More avaliable on request</p>
+        <p className="more-projects">click here to see more</p>
       </a>
     </div>
   );
