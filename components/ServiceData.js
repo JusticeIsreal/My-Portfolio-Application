@@ -1,9 +1,36 @@
 const ServiceData = [
+  //   TECHNOLOGIES
+  {
+    id: 7,
+    service: "FRONTEND DEVELOPMENT",
+    statement:
+      "HTML, CSS, BootStrap, Tailwind, scss, JavaScript, React js, Next js, React Native",
+    category: "tech-stack",
+  },
+  {
+    id: 8,
+    service: "BACKEND \n DEVELOPMENT",
+    statement:
+      "Node js, Express js, Nest js, Firebase, Next js, REST API, OAUTH",
+    category: "tech-stack",
+  },
+  {
+    id: 9,
+    service: "Design",
+    statement: "MicroSoft Visio, Draw.io, Corel Draw",
+    category: "tech-stack",
+  },
+  {
+    id: 10,
+    service: "DATABASE",
+    statement: "MongoDB, MySQL, PostgreSQL, Firebase",
+    category: "tech-stack",
+  },
   // SERVICES
   {
     id: 1,
     service: "WEB DEVELOPMENT",
-    category: "skill",
+    category: "tech-skill",
     statement:
       "I specialize in building captivating websites that drive success. With a focus on user-centric design, responsive layouts, and seamless navigation, I create online experiences that leave a lasting impression.",
     subservice: [
@@ -37,8 +64,8 @@ const ServiceData = [
     id: 2,
     service: "APP DEVELOPMENT",
     statement:
-      "As a mobile app developer, I am dedicated to creating innovative solutions that fuel growth. Whether it's native or hybrid development, I prioritize user-friendly interfaces, secure functionality, and smooth performance to ensure a delightful user experience.",
-    category: "skill",
+      "I create innovative solutions that fuel growth. I prioritize user-friendly interfaces, secure functionality, and smooth performance to ensure a delightful user experience.",
+    category: "tech-skill",
     subservice: [
       {
         subService1: "Native Mobile App Development",
@@ -70,7 +97,7 @@ const ServiceData = [
     service: "TECH FACILITATOR",
     statement:
       "As a facilitator, I play a pivotal role in enabling effective collaboration and seamless project execution. By supporting agile methodologies, promoting clear communication, and fostering a problem-solving mindset, I help teams achieve their goals efficiently.",
-    category: "skill",
+    category: "tech-skill",
     subservice: [
       {
         subService1: "Scaling Velocity",
@@ -105,7 +132,7 @@ const ServiceData = [
     service: "SCRUM MASTER",
     statement:
       "As a Scrum Master, I am committed to ensuring Agile success within development teams. From facilitating sprint planning and retrospectives to maintaining a productive and harmonious work environment, I empower teams to deliver high-quality products consistently.",
-    category: "skill",
+    category: "tech-skill",
     subservice: [
       {
         subService1: "Decade in Design",
@@ -130,137 +157,5 @@ const ServiceData = [
       },
     ],
   },
-  //   TECHNOLOGIES
-  {
-    id: 7,
-    service: "FRONTEND DEVELOPMENT",
-    statement:
-      "HTML, CSS, BootStrap scss, JavaScript, React js, Next js",
-    category: "tech-stack",
-  },
-  {
-    id: 8,
-    service: "BACKEND \n DEVELOPMENT",
-    statement:
-      "Node js, Express js, Nest js, Firebase, Next js, REST API, OAUTH",
-    category: "tech-stack",
-  },
-  {
-    id: 9,
-    service: "Design",
-    statement: "MicroSoft Visio, Draw.io, Corel Draw",
-    category: "tech-stack",
-  },
-  {
-    id: 10,
-    service: "DATABASE",
-    statement: "MongoDB, MySQL, PostgreSQL, Firebase",
-    category: "tech-stack",
-  },
-
-  // {
-  //   id: 12,
-  //   service: "Healthcare",
-  //   statement:
-  //     "Patient-friendly software that empowers healthcare industry workers.",
-  //   category: "industry",
-  //   subservice: [
-  //     {
-  //       subService1: "Management System",
-  //       subStatement1:
-  //         "Our solution allows the client to manage departmental system, Manage task ( assign /  reasign / resolve, etc), Accomplish task, Ensure direct communication among staff.",
-
-  //       subService2: "Clinical Guide system",
-  //       subStatement2:
-  //         "Our solution help our client get a Clinical guide system to enable staff and patient get right prescription and diagnosis at intervals based on calculated analysis.",
-
-  //       subService3: "Antibiotics Guide system",
-  //       subStatement3:
-  //         "Our solution help our client get a Clinical guide system to enable staff and patient get right prescription and diagnosis at intervals based on calculated analysis.",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 13,
-  //   service: "E-Commerce",
-  //   statement:
-  //     "Create new opportunities for your business and for your customers with the help e-commerce. Transform the shopping experience and improve sales with a competitive advantage.",
-  //   category: "industry",
-  //   subservice: [
-  //     {
-  //       subService1: "Marketing Automation",
-  //       subStatement1:
-  //         "Reach out to your customers and drive foot traffic to your store with an engaging branded application made through a low-code mobile platform. Update your app on-the-fly and use comprehensive analytics to learn more about your users, automate your mobile marketing, and engage customers with targeted push notifications.",
-
-  //       subService2: "Engage Mobile Users",
-  //       subStatement2:
-  //         "Merge the best features of your in-store and online shopping experience in one place—your customers' mobile phones. Leverage the latest technological developments to transform the way your customers think about shopping.",
-
-  //       subService3: "Turn Data into Revenue",
-  //       subStatement3:
-  //         "With over a decade of experience in software development, the Intellectsoft team can help you develop a comprehensive software solution that caters to the needs and demands of your business. From warehouse management and logistics suites to POS software—your imagination is the only limit.",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 14,
-  //   service: "FinTech",
-  //   statement:
-  //     "Web application for banking and financial services. Advance your efficiency, customer experience, and business performance.",
-  //   category: "industry",
-  //   subservice: [
-  //     {
-  //       subService1: "Online Banking",
-  //       subStatement1:
-  //         "Architect new experiences with renewed online banking systems. We use a comprehensive set of functionalities to create state-of-the-art solutions for your end-users.",
-
-  //       subService2: "Blockchain & Cryptocurrencies",
-  //       subStatement2:
-  //         "Blockchain solutions and platforms help financial institutions increase services' security, reduce transaction fee costs, and automate operations.",
-
-  //       subService3: "Digital Wallet",
-  //       subStatement3:
-  //         "Well-made wallets apps allow banks to cater to modern customers' demands in high security and tailored promotions.",
-
-  //       subService4: "AI and ML",
-  //       subStatement4:
-  //         "Our financial software development company can help build efficient, automated, and highly accurate systems using emerging AI technology.",
-
-  //       subService5: "Robotic Process Automation",
-  //       subStatement5:
-  //         "RPA enables financial organizations to improve productivity, drive down costs, and streamline compliance. Enhance intelligent automation solutions with our experts.",
-
-  //       subService6: "Trading and Securities",
-  //       subStatement6:
-  //         "Mobile stock tracking, AI-assisted trading automation, and blockchain-based smart contracts — Intellectsoft develops software solutions that cater to your business's individual needs.",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 15,
-  //   service: "socials",
-  //   statement:
-  //     "End-to-End technology solutions for Hospitality, Social Interactions and Event Engagement. from impactful mobile experience to comprehensive custom-made systems.",
-  //   category: "industry",
-  //   subservice: [
-  //     {
-  //       subService1: "Mobile Hotel Applications",
-  //       subStatement1:
-  //         "Surpass your guests’ service expectations by providing a superior mobile experience. Use innovative hospitality software development for room booking, loyalty and personalization engines, amenity services, and smart capabilities.",
-
-  //       subService2: "Contactless Hospitality Solutions",
-  //       subStatement2:
-  //         "Enable contactless hotel operations with Intellectsoft mobile and kiosk solutions. Provide your customers with Intuitive, touchless technology and 24-hour access to amenities and services.",
-
-  //       subService3: "Mobile Kiosk",
-  //       subStatement3:
-  //         "Mobile kiosks enable guests to enjoy their vacation earlier. Our custom software development for travel provides guests with a convenient, hassle-free way to check-in, allowing them to bypass the line at the front desk.",
-
-  //       subService4: "Smart Rooms",
-  //       subStatement4:
-  //         "Impress your clients with personalized IT hospitality solutions, including digital control of room environment and sensors with an in-room tablet, offline and online operation, and preventive maintenance.",
-  //     },
-  //   ],
-  // },
 ];
 export default ServiceData;

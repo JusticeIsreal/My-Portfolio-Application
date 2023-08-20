@@ -21,7 +21,7 @@ function Banner() {
       if (countDegree < 1) {
         setCountDegree(countDegree + 1);
       }
-      if (countExperience < 2) {
+      if (countExperience < 3) {
         setCountExperience(countExperience + 1);
       }
       if (countProject < 40) {
@@ -111,7 +111,7 @@ function Banner() {
           {/* <button> */}
           <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
             <button className="button-29">
-              Download Cv{" "}
+             Click to Download my Cv{" "}
               <span>
                 <FaFileDownload />
               </span>

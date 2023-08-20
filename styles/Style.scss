@@ -650,13 +650,22 @@ body {
   @include responsive(bigphone) {
     margin-top: 100px;
   }
-
+  P {
+    // margin: 30px 0;
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: $background;
+    @include responsive(bigphone) {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
   .what-i-do {
     font-size: 50px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: $background;
     text-align: center;
-    margin: 30px 0;
     @include responsive(bigphone) {
       font-size: 130px;
     }
@@ -821,14 +830,84 @@ body {
     text-align: center;
     color: $background;
   }
+  p {
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: $background;
+    @include responsive(bigphone) {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
   .projects {
     font-size: 50px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: $background;
     text-align: center;
-    margin: 40px 0;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     @include responsive(bigphone) {
       font-size: 130px;
+    }
+  }
+  .service-btn-con {
+    @include flexDisplay(space-evenly, center, row);
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin: 0 auto;
+    // border: 2px solid red;
+    @include responsive(bigphone) {
+      margin-bottom: 50px;
+      width: 700px;
+      max-width: 700px;
+    }
+
+    .service-btn-txt {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      color: $paragraph-Color;
+      transition: all 0.5s ease;
+      margin: 5px;
+      // border: 0.2px solid red;
+      width: 50%;
+      cursor: pointer;
+      .hover-line-rule {
+        opacity: 0;
+        border: 2px solid $text-Color;
+      }
+
+      &:hover {
+        border-bottom: $border;
+
+        .hover-line-rule {
+          opacity: 1;
+          animation: ll 0.3s linear;
+
+          @keyframes ll {
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+      @include responsive(bigphone) {
+        // width: 200px;
+        font-size: 30px;
+      }
+    }
+    .active-category {
+      background: $background;
+      color: $text-Color;
     }
   }
   .general-project-con {

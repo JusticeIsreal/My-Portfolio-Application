@@ -49,10 +49,11 @@ function Services() {
 
   // creating logic to render services based on category
   const displayServices = categoryBtn.filter(
-    (item: { category: string }) => item.category === "skill"
+    (item: { category: string }) => item.category === "tech-stack"
   );
   const [displayService, setdisplayService] = useState<any>(displayServices);
   const [activeBt, setActiveBt] = useState<string>();
+
   const test = (e: any) => {
     setActiveBt(e.target.innerHTML);
 
@@ -64,21 +65,22 @@ function Services() {
 
   useEffect(() => {
     switch (activeBt) {
-      case "skill":
-        setActiveBt("skill");
+      case "tech-skill":
+        setActiveBt("tech-skill");
         break;
       case "tech-stack":
         setActiveBt("tech-stack");
         break;
       default:
-        setActiveBt("skill");
+        setActiveBt("tech-stack");
         break;
     }
   }, [activeBt]);
 
   return (
     <div className="service-main-com" id="service">
-      <h1 className="what-i-do">TECH-SKILL</h1>
+      <p>I work with some very amazing technologies</p>
+      <h1 className="what-i-do">SKILL</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (
           <span
@@ -123,8 +125,7 @@ function Services() {
   );
 }
 
-import React from "react";
-import { useRouter } from "next/router";
+// 
 interface ServicesCategoryProps {
   service: string;
   statement: string;

@@ -635,12 +635,23 @@ body {
     margin-top: 100px;
   }
 }
+.service-main-com P {
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: #015871;
+}
+@media only screen and (min-width: 800px) {
+  .service-main-com P {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
 .service-main-com .what-i-do {
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #015871;
   text-align: center;
-  margin: 30px 0;
 }
 @media only screen and (min-width: 800px) {
   .service-main-com .what-i-do {
@@ -801,17 +812,88 @@ body {
   text-align: center;
   color: #015871;
 }
+.project-main-con p {
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: #015871;
+}
+@media only screen and (min-width: 800px) {
+  .project-main-con p {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
 .project-main-con .projects {
   font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #015871;
   text-align: center;
-  margin: 40px 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media only screen and (min-width: 800px) {
   .project-main-con .projects {
     font-size: 130px;
   }
+}
+.project-main-con .service-btn-con {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 95%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .project-main-con .service-btn-con {
+    margin-bottom: 50px;
+    width: 700px;
+    max-width: 700px;
+  }
+}
+.project-main-con .service-btn-con .service-btn-txt {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #37a1a7;
+  transition: all 0.5s ease;
+  margin: 5px;
+  width: 50%;
+  cursor: pointer;
+}
+.project-main-con .service-btn-con .service-btn-txt .hover-line-rule {
+  opacity: 0;
+  border: 2px solid #b7e8eb;
+}
+.project-main-con .service-btn-con .service-btn-txt:hover {
+  border-bottom: 1px solid #015871;
+}
+.project-main-con .service-btn-con .service-btn-txt:hover .hover-line-rule {
+  opacity: 1;
+  animation: ll 0.3s linear;
+}
+@keyframes ll {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .project-main-con .service-btn-con .service-btn-txt {
+    font-size: 30px;
+  }
+}
+.project-main-con .service-btn-con .active-category {
+  background: #015871;
+  color: #b7e8eb;
 }
 .project-main-con .general-project-con {
   margin: 0 auto;
