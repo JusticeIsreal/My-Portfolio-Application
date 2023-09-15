@@ -1,12 +1,31 @@
 const Projects = [
   {
     id: 62156,
+    project: "MARITIME CADET ARCHIVE",
+    category: "web",
+    role: "FullStack Developer",
+    img: "/readMe.png",
+    source_code: "",
+    live_project: "https://manarchive.com",
+    Technology: [
+      "Next js",
+      "Typesript",
+      "OAuth",
+      "scss",
+      "cloudnary",
+      "Firebase",
+    ],
+    details:
+      "This is a web applcation built for cadets of the maritime academy of nigeria , to share their memories with friends in form of pictures.",
+  },
+  {
+    id: 62156,
     project: "CALM WATERS",
     category: "web",
     role: "FullStack Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1687204042/My%20portfolio%20Project/Screenshot_2023-06-19_at_20.43.04_nxnoz2.png",
     source_code: "",
-    live_project: "https://calmwatersltd.com",
+    live_project: "https://calmwatersltd.vercel.app",
     Technology: ["Next js", "scss", "cloudnary", "Firebase"],
     details:
       "Calm Waters Integrated Services Limited is a Nigerian oil & gas, Maritime support services and Logistics Company.",
