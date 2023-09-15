@@ -4,7 +4,7 @@ const Projects = [
     project: "MARITIME CADET ARCHIVE",
     category: "web",
     role: "FullStack Developer",
-    img: "/readMe.png",
+    img: "/reaMe.png",
     source_code: "https://github.com/JusticeIsreal/Maritime-cadet-memory-app",
     live_project: "https://manarchive.com",
     Technology: [
