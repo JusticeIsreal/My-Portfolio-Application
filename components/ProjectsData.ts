@@ -88,7 +88,7 @@ const Projects = [
   {
     id: 62100998,
     project: "MOVIE APP",
-    category: "mobile",
+    category: "web",
     role: "FullStack Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1692558022/Screenshot_2023-08-20_at_19.26.19_lwkriu.png",
     source_code: "https://github.com/JusticeIsreal/Netflix-mobile-app-clone",
@@ -106,7 +106,7 @@ const Projects = [
   {
     id: 62109,
     project: "JOB FINDER",
-    category: "mobile",
+    category: "web",
     role: "FullStack Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1692558027/Screenshot_2023-08-20_at_19.20.19_icwgah.png",
     source_code: "https://github.com/JusticeIsreal/Job-search-mobile-app",
@@ -118,7 +118,7 @@ const Projects = [
   {
     id: 62222,
     project: "CAR GALLERY",
-    category: "mobile",
+    category: "web",
     role: "Frontend Developer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1692558028/Screenshot_2023-08-20_at_19.14.35_fooeey.png",
     source_code: "https://github.com/JusticeIsreal/car-show-display",
