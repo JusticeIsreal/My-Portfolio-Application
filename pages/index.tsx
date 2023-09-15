@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Image from "next/image";
+import Website from "./website";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
   return (
-    <div className="linktree-main-con">
+    <div className="linktree-main-co">
       <Head>
         <title>JUSTICE ISREAL AGBONMA</title>
         <meta name="description" content="Justice Agbonma" />
@@ -20,7 +21,8 @@ const Home: React.FC = () => {
           href="https://res.cloudinary.com/isreal/image/upload/v1690675954/My%20portfolio%20Project/1671744344371-removebg-preview_dxwbbb_Background_Removed_eh44ec.png"
         />
       </Head>
-      <div className="linktree-con">
+      <Website />
+      {/* <div className="linktree-con">
         <div className="top">
           <div className="top-img">
             <Image
@@ -44,7 +46,6 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>Personal website</p>
           </a>
           <a
@@ -53,7 +54,6 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>LinkedIn</p>
           </a>
           <a
@@ -62,7 +62,6 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>Instagram</p>
           </a>
           <a
@@ -71,7 +70,6 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>Twitter</p>
           </a>
           <a
@@ -80,7 +78,6 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>Facebook</p>
           </a>
           <a
@@ -89,11 +86,10 @@ const Home: React.FC = () => {
             rel="noreferrer"
             className="single-link"
           >
-            <div>{/* <img src="" alt="" /> */}</div>
             <p>Whatsapp</p>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
