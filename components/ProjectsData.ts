@@ -5,7 +5,7 @@ const Projects = [
     category: "web",
     role: "FullStack Developer",
     img: "/readMe.png",
-    source_code: "",
+    source_code: "https://github.com/JusticeIsreal/Maritime-cadet-memory-app",
     live_project: "https://manarchive.com",
     Technology: [
       "Next js",
