@@ -1,37 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JUSTICE ISREAL AGBONMA's Portfolio
 
-## Getting Started
+![Portfolio](public/readMe.png)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Welcome to my portfolio, a showcase of my work and accomplishments as a software engineer. This portfolio provides an overview of my skills, projects, and experiences in the IT industry.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+I am a passionate and dedicated Software engineer with a strong background in frontend developement. My journey in software engineering has been defined by a commitment to excellence and a drive to innovate. Through this portfolio, I aim to share my journey and the projects that reflect my expertise and creative vision.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Key Highlights
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Project Showcase**: Explore a curated selection of projects that demonstrate my skills and capabilities.
+- **Skills**: Discover the skills and technologies I excel in within the software engineering domain.
+- **Achievements**: Learn about my notable accomplishments and contributions in [www.justiceagbonma.com].
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Mission
 
-## Learn More
+My mission is to , "leverage technology to solve real-world problems," "inspire creativity through design," etc. This portfolio serves as a testament to my dedication to this mission, showcasing how I have made a difference in the world of [Your Field].
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I'm always open to new opportunities and collaborations. Feel free to reach out to me at justiceyba@gmail.com to discuss potential projects, partnerships, or just to say hello!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Portfolio Website
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# My-Portfolio-Application
+You can explore my full portfolio and learn more about me at [www.justiceagbonma.com](https://www.justiceagbonma.com). Thank you for visiting and taking the time to get to know me and my work.
