@@ -115,6 +115,7 @@ const Projects = [
     details:
       "This is a job search mobile application developed using React native , users can search for jobs based on name and category, job details are fetched using the google job search api",
   },
+  // nknjk
   {
     id: 62222,
     project: "CAR GALLERY",
