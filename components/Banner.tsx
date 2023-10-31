@@ -21,13 +21,13 @@ function Banner() {
       if (countDegree < 1) {
         setCountDegree(countDegree + 1);
       }
-      if (countExperience < 3) {
+      if (countExperience < 5) {
         setCountExperience(countExperience + 1);
       }
       if (countProject < 40) {
         setCountProject(countProject + 1);
       }
-      if (countAward < 5) {
+      if (countAward < 7) {
         setCountAward(countAward + 1);
       }
 
