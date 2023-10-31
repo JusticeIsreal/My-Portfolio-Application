@@ -20,7 +20,7 @@ body {
   background: radial-gradient(ellipse at center, rgb(255, 254, 234) 0%, rgb(255, 254, 234) 35%, #b7e8eb 100%);
   padding-bottom: 60px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   body {
     padding-bottom: 0;
   }
@@ -43,7 +43,7 @@ body {
   width: 400px;
   height: 400px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .visitor-starting-page .my-first-img .img {
     width: 500px;
     height: 500px;
@@ -61,13 +61,13 @@ body {
   font-size: 12px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .visitor-starting-page .welcome-quote p i,
   .visitor-starting-page .welcome-quote i i {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .visitor-starting-page .welcome-quote p,
   .visitor-starting-page .welcome-quote i {
     font-size: 18px;
@@ -81,7 +81,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .visitor-starting-page .visitors-form {
     width: 500px;
   }
@@ -152,7 +152,7 @@ body {
 .StartingLoading-main-container .loading-animation {
   margin-top: 45vh;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .StartingLoading-main-container .loading-animation {
     margin-top: 40vh;
   }
@@ -162,7 +162,7 @@ body {
   font-size: 100px;
   color: #015871;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .StartingLoading-main-container .loading-animation .loading-number {
     font-size: 200px;
   }
@@ -174,7 +174,7 @@ body {
   height: 30px;
   margin-bottom: 10px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .StartingLoading-main-container .loading-animation .loading-skill {
     font-size: 30px;
   }
@@ -268,7 +268,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .navbar-main-con {
     display: flex;
     justify-content: center;
@@ -289,7 +289,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .navbar-main-con .nav .ul {
     display: flex;
     justify-content: center;
@@ -307,7 +307,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .navbar-main-con .nav .ul li {
     width: 120px;
     height: 50px;
@@ -335,7 +335,7 @@ body {
   width: 100%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .navbar-main-con .nav .ul li a {
     font-size: 20px;
   }
@@ -344,7 +344,7 @@ body {
   font-size: 30px;
   color: rgba(0, 91, 96, 0.9019607843);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .navbar-main-con .nav .ul li .menu-icon {
     display: none;
   }
@@ -364,7 +364,7 @@ body {
   font-size: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .full-name h3 {
     font-size: 50px;
     margin-bottom: -20px;
@@ -377,7 +377,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .full-name h1 {
     font-size: 100px;
   }
@@ -391,7 +391,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .banner-img {
     margin-top: -20px;
   }
@@ -400,7 +400,7 @@ body {
   margin-top: 0;
   margin-right: 25px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .banner-img .my-img {
     font-size: 50px;
   }
@@ -413,7 +413,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .pitch-con {
     width: 90%;
     max-width: 1000px;
@@ -433,7 +433,7 @@ body {
   cursor: pointer;
   font-weight: bolder;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .pitch-con .pitch {
     font-size: 17px;
   }
@@ -474,7 +474,7 @@ body {
   margin-top: 30px;
   width: 97%;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .myStaticsCon {
     width: 90%;
     margin-top: 50px;
@@ -494,7 +494,7 @@ body {
   text-align: center;
   padding: 5px 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .myStaticsCon .statCard {
     height: 170px;
     border-radius: 10px;
@@ -505,7 +505,7 @@ body {
   font-size: 50px;
   color: rgba(0, 91, 96, 0.9019607843);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .myStaticsCon .statCard h1 {
     font-size: 100px;
   }
@@ -515,7 +515,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #37a1a7;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .myStaticsCon .statCard p {
     font-size: 20px;
   }
@@ -527,7 +527,7 @@ body {
   width: 85%;
   z-index: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .pun {
     width: 85%;
     max-width: 1200px;
@@ -543,7 +543,7 @@ body {
   letter-spacing: 1px;
   margin-top: 2px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .pun .scrolling-text {
     font-size: 13px;
     letter-spacing: 3px;
@@ -569,7 +569,7 @@ body {
   width: 100%;
   max-width: 1500px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .statistics-con {
     margin-top: 50px;
   }
@@ -585,7 +585,7 @@ body {
   background: #015871;
   padding: 10px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .statistics-con .statistics {
     width: 23%;
   }
@@ -596,7 +596,7 @@ body {
   position: absolute;
   border: 1px solid #015871;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .statistics-con .statistics .line {
     top: 50%;
     width: 100%;
@@ -607,7 +607,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #b7e8eb;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .statistics-con .statistics .statistis-unmber {
     font-size: 160px;
   }
@@ -618,7 +618,7 @@ body {
   margin-top: -19px;
   color: #37a1a7;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .Homepage .Banner-main-con .statistics-con .statistics .statistics-name {
     font-size: 20px;
   }
@@ -630,7 +630,7 @@ body {
   padding: 5px;
   padding-bottom: 10px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com {
     margin-top: 100px;
   }
@@ -641,7 +641,7 @@ body {
   text-align: center;
   color: #015871;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com P {
     font-size: 20px;
     margin-top: 40px;
@@ -653,7 +653,7 @@ body {
   color: #015871;
   text-align: center;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .what-i-do {
     font-size: 130px;
   }
@@ -668,7 +668,7 @@ body {
   margin: 0 auto;
   margin-top: 20px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .service-btn-con {
     margin-top: 50px;
     width: 700px;
@@ -709,7 +709,7 @@ body {
     transform: scale(1);
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .service-btn-con .service-btn-txt {
     font-size: 30px;
   }
@@ -725,7 +725,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .service-details-com {
     width: 700px;
     max-width: 700px;
@@ -759,7 +759,7 @@ body {
   color: #b7e8eb;
   font-size: 17px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .service-details-com .service-each-box h3 {
     font-size: 33px;
   }
@@ -773,7 +773,7 @@ body {
   padding-top: 10px;
   bottom: 0px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .service-details-com .service-each-box p {
     font-size: 20px;
   }
@@ -790,7 +790,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .tech-icons {
     margin-top: 80px;
   }
@@ -798,7 +798,7 @@ body {
 .service-main-com .tech-icons .icon {
   color: #37a1a7;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .service-main-com .tech-icons .icon {
     font-size: 50px;
   }
@@ -818,7 +818,7 @@ body {
   text-align: center;
   color: #015871;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con p {
     font-size: 20px;
     margin-top: 40px;
@@ -830,7 +830,7 @@ body {
   color: #015871;
   text-align: center;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .projects {
     font-size: 130px;
   }
@@ -846,7 +846,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .service-btn-con {
     margin-bottom: 50px;
     width: 700px;
@@ -886,7 +886,7 @@ body {
     transform: scale(1);
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .service-btn-con .service-btn-txt {
     font-size: 30px;
   }
@@ -896,40 +896,30 @@ body {
   color: #b7e8eb;
 }
 .project-main-con .general-project-con {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  -moz-columns: 1;
-       columns: 1;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-@media only screen and (min-width: 850px) {
-  .project-main-con .general-project-con {
-    -moz-columns: 2;
-         columns: 2;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-}
-@media only screen and (min-width: 1750px) {
-  .project-main-con .general-project-con {
-    -moz-columns: 3;
-         columns: 3;
-  }
 }
 .project-main-con .general-project-con .project-con {
+  border-radius: 10px 10px 0 0;
   width: 100%;
-  position: relative;
   border: 0.5px solid #015871;
-  border-radius: 10px;
-  width: 100%;
-  padding: 5px;
   margin: 10px 2px;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .general-project-con .project-con {
-    margin: 20px 0;
+    height: 450px;
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .project-main-con .general-project-con .project-con {
+    height: 480px;
+    width: 45%;
   }
 }
 .project-main-con .general-project-con .project-con:hover .project-link-con {
@@ -951,7 +941,7 @@ body {
   color: #015871;
   background: #b7e8eb;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .general-project-con .project-con {
     transform: scale(1);
   }
@@ -965,7 +955,7 @@ body {
   font-size: 30px;
   color: #015871;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .project-main-con .general-project-con .project-con .lower-project-con .project-name {
     font-size: 40px;
   }
@@ -1046,7 +1036,7 @@ body {
 }
 .project-main-con .general-project-con .project-con .top-project-con {
   width: 100%;
-  height: 280px;
+  height: 200px;
 }
 .project-main-con .general-project-con .project-con .top-project-con .project-img {
   width: 100%;
@@ -1084,7 +1074,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .reviews .review-container .carousel {
     transform: scale(1);
   }
@@ -1117,7 +1107,7 @@ body {
   font-size: 13px;
   margin-top: 20px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .reviews .review-container .carousel p {
     font-size: 17px;
   }
@@ -1137,7 +1127,7 @@ body {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .contact h1 {
     font-size: 50px;
   }
@@ -1150,7 +1140,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .contact form {
     width: 500px;
   }
@@ -1200,7 +1190,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .footer .content-cont {
     display: flex;
     justify-content: space-between;
@@ -1208,7 +1198,7 @@ body {
     flex-direction: row;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .footer .content-cont .thanks {
     width: 60%;
   }
@@ -1220,7 +1210,7 @@ body {
   color: #b7e8eb;
   text-align: center;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .footer .content-cont .thanks p {
     font-size: 18px;
   }
@@ -1232,7 +1222,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .footer .content-cont .socials-location {
     width: 40%;
   }
@@ -1254,7 +1244,7 @@ body {
   font-size: 25px;
   color: #b7e8eb;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .footer .content-cont .socials-location .socials span a {
     font-size: 35px;
   }
@@ -1275,7 +1265,7 @@ body {
   background-color: black;
   overflow: scroll;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .linktree-main-con {
     display: flex;
     justify-content: center;
@@ -1293,7 +1283,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .linktree-main-con .linktree-con {
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);

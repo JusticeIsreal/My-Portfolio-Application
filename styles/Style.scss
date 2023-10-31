@@ -48,13 +48,13 @@ $paragraph-Color: #37a1a7;
   }
 
   @if $breakpoint==tablet {
-    @media only screen and (min-width: 850px) {
+    @media only screen and (min-width: 820px) {
       @content;
     }
   }
 
   @if $breakpoint==bigphone {
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 750px) {
       @content;
     }
   }
@@ -911,30 +911,42 @@ body {
     }
   }
   .general-project-con {
-    // border: 2px solid rgb(0, 255, 115);
+    // border: 2px solid red;
+    @include flexDisplay(space-evenly, center, row);
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    columns: 1;
-    column-gap: 10px;
+    // columns: 1;
+    // column-gap: 10px;
 
     @include responsive(tablet) {
-      columns: 2;
-      column-gap: 20px;
+      // columns: 2;
+      // column-gap: 20px;
     }
     @include responsive(desktop) {
-      columns: 3;
+      // columns: 3;
     }
     .project-con {
+      border-radius: 10px 10px 0 0;
       width: 100%;
-      position: relative;
+
+      // position: relative;
       border: 0.5px solid $background;
-      border-radius: 10px;
-      width: 100%;
-      padding: 5px;
+      // border-radius: 10px;
+      // width: 100%;
+      // padding: 5px;
       margin: 10px 2px;
-      break-inside: avoid;
+      // break-inside: avoid;
 
       @include responsive(bigphone) {
-        margin: 20px 0;
+        // margin: 20px 0;
+        height: 450px;
+        width: 45%;
+      }
+      @include responsive(tablet) {
+        // margin: 20px 0;
+        height: 480px;
+        width: 45%;
       }
       &:hover {
         .project-link-con {
@@ -1055,7 +1067,7 @@ body {
       .top-project-con {
         // border: 2px solid red;
         width: 100%;
-        height: 280px;
+        height: 200px;
         .project-img {
           width: 100%;
           height: 100%;

@@ -57,7 +57,7 @@ function Portfolio() {
   }, [activeBt]);
   return (
     <div className="project-main-con" id="portfolio">
-      <p>some of my voluntary</p>
+      <p>some of my</p>
       <h1 className="projects">PROJECTS</h1>
       <div className="service-btn-con">
         {category.map((item: any) => (
@@ -71,7 +71,7 @@ function Portfolio() {
                 : "service-btn-txt"
             }`}
           >
-            {item}
+            WEB / MOBILE
           </span>
         ))}
       </div>
