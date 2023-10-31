@@ -7,7 +7,7 @@ const Projects = [
     img: "https://res.cloudinary.com/isreal/image/upload/v1698729302/My%20portfolio%20Project/Screenshot_2023-10-31_at_01.00.49_iuvrud.png",
     source_code: "",
     live_project: "https://ziplyr.com",
-    Technology: ["Nextjs", "TailwindCSS", "Mantine UI", "Typescript", "PHP"],
+    Technology: ["Nextjs", "Tailwind", "Mantine UI", "Typescript", "PHP"],
     details:
       "Ziply is a multi-vendor e-commere store for whole and retailers to publish their merchansdise for potential buyers.",
   },
@@ -31,14 +31,7 @@ const Projects = [
     img: "https://res.cloudinary.com/isreal/image/upload/v1698729855/My%20portfolio%20Project/Screenshot_2023-10-31_at_01.06.42_eghy2o.png",
     source_code: "",
     live_project: "http://mybetoracle.com",
-    Technology: [
-      "Nextjs",
-      "TailwindCSS",
-      "Mantine UI",
-      "Typescript",
-      "Node js",
-      "Firebase",
-    ],
+    Technology: ["Nextjs", "Tailwind", "Mantine UI", "Typescript", "Node js"],
     details:
       "Mybet Oracle is a sport prediction web application for lovers of sports betting, users get great predictions and stakes.",
   },
@@ -53,7 +46,7 @@ const Projects = [
     live_project: "https://myjara.store",
     Technology: ["Next js", "scss", "cloudnary", "Node js"],
     details:
-      "My jara is an online store for sales and purchase of digital assets.",
+      "My jara is an online store for sales and purchase of digital assets like songs, softwares and e-books.",
   },
   {
     id: 6213453,
@@ -70,7 +63,6 @@ const Projects = [
       "mongo DB",
       "cloudnary",
       "Firebase",
-      "Paystack",
     ],
     details:
       "Ajis store is an E-commerce store for sales of assessories with a fully functional account, staff ,finance and inventry management.",
@@ -109,7 +101,6 @@ const Projects = [
       "express js",
       "mongo DB",
       "cloudnary",
-      "Paystack",
     ],
     details:
       "The empowerment place church is a church website for members with payment gateway integration for financial donation",
@@ -187,7 +178,6 @@ const Projects = [
       "express js",
       "mongo DB",
       "cloudnary",
-      "Paystack",
     ],
     details:
       "E-Resturant store for food vendors, Admin can add product to the store, Select price, edit existing and delete product.",
@@ -202,7 +192,6 @@ const Projects = [
     source_code: "/",
     live_project: "https://brilliant-beijinho-78dad5.netlify.app/",
     Technology: [
-      "HTML",
       "SCSS",
       "Next js",
       "TypeScript",

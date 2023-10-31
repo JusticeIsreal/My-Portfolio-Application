@@ -60,7 +60,7 @@ $paragraph-Color: #37a1a7;
   }
 
   @if $breakpoint==desktop {
-    @media only screen and (min-width: 1750px) {
+    @media only screen and (min-width: 1250px) {
       @content;
     }
   }
@@ -912,10 +912,11 @@ body {
   }
   .general-project-con {
     // border: 2px solid red;
-    @include flexDisplay(space-evenly, center, row);
+    @include flexDisplay(space-around, flex-start, row);
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    // max-width: 1700px;
     // columns: 1;
     // column-gap: 10px;
 
@@ -935,18 +936,18 @@ body {
       // border-radius: 10px;
       // width: 100%;
       // padding: 5px;
-      margin: 10px 2px;
+      margin: 10px 0px;
       // break-inside: avoid;
 
       @include responsive(bigphone) {
         // margin: 20px 0;
-        height: 450px;
+        // height: 450px;
         width: 45%;
       }
-      @include responsive(tablet) {
+      @include responsive(desktop) {
         // margin: 20px 0;
-        height: 480px;
-        width: 45%;
+        // height: 400px;
+        width: 31%;
       }
       &:hover {
         .project-link-con {
@@ -1028,11 +1029,14 @@ body {
         }
         .project-link-con {
           @include flexDisplay(space-between, center, row);
-          width: 90%;
-          position: absolute;
+          width: 100%;
+          // position: absolute;
           right: 6%;
           display: none;
-          top: 230px;
+          top: 180px;
+          // border: 2px solid red;
+          background: #4ec6cd;
+          padding: 3px;
           a {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
@@ -1068,6 +1072,9 @@ body {
         // border: 2px solid red;
         width: 100%;
         height: 200px;
+        @include responsive(bigphone) {
+          height: 250px;
+        }
         .project-img {
           width: 100%;
           height: 100%;
