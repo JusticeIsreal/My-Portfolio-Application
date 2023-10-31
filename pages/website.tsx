@@ -167,9 +167,9 @@ const Website: React.FC = () => {
             <div ref={myRefPortfolio}>
               <Portfolio />
             </div>
-            <div ref={myRefReview}>
+            {/* <div ref={myRefReview}> */}
               <Review />
-            </div>
+            {/* </div> */}
             <div ref={myRefContact}>
               <Contact />
             </div>
