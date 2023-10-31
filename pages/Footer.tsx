@@ -40,12 +40,12 @@ function Footer() {
         <div className="socials-location">
           <h3>Contact me :</h3>
           <div className="socials">
-            <span>
+            {/* <span>
               <a href="tel:08104015180" target="_blank" rel="noreferrer">
                 {" "}
                 <AiFillPhone />
               </a>
-            </span>
+            </span> */}
             <span>
               <a
                 href="https://www.linkedin.com/in/justice-isreal-agbonma-314bbb188"
@@ -73,7 +73,7 @@ function Footer() {
                 <SiGmail />
               </a>
             </span>
-            <span>
+            {/* <span>
               <a
                 href="https://facebook.com/justice.agbonma"
                 target="_blank"
@@ -81,8 +81,8 @@ function Footer() {
               >
                 <BsFacebook />
               </a>
-            </span>
-            <span>
+            </span> */}
+            {/* <span>
               <a
                 href="https://www.instagram.com/reel/Cu6lPUJAQ5N/?igshid=NTc4MTIwNjQ2YQ=="
                 target="_blank"
@@ -90,8 +90,8 @@ function Footer() {
               >
                 <AiFillInstagram />
               </a>
-            </span>
-            <span>
+            </span> */}
+            {/* <span>
               <a
                 href="https://wa.me/+2349029356196?text=hello"
                 target="_blank"
@@ -99,7 +99,7 @@ function Footer() {
               >
                 <IoLogoWhatsapp />
               </a>
-            </span>
+            </span> */}
           </div>
           <div
             className="locato"
@@ -112,7 +112,7 @@ function Footer() {
             <span style={{ fontSize: "25px" }}>
               <ImLocation2 />
             </span>
-            <p>Port harcourt, Nigeria</p>
+            <p>United States of America</p>
           </div>
         </div>
       </div>

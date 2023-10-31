@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useEffect, useRef } from "react";
+import axios from "axios";
 import {
   addDoc,
   collection,
@@ -27,7 +28,7 @@ function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     // FIREBASE
     const db = getFirestore();
     const colRef = collection(db, "visitors");
@@ -51,6 +52,28 @@ function Contact() {
         " your message is well recieved, I will communicate you as soon as I can"
     );
     reset();
+
+    // SEND TO EMAIL
+    try {
+      const response = await axios.post("/api/sendEmail", {
+        companyEmail: data.email,
+        number: data.name,
+        email: data.email,
+        message: data.text,
+      });
+
+      if (response.status === 200) {
+        // Email sent successfully
+        console.log("Email sent successfully");
+
+        // alert("Email sent successfully");
+      } else {
+        // Failed to send email
+        console.log("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error occurred while sending the email:", error);
+    }
   };
   // let visitorInfo =
   //   typeof window !== "undefined"

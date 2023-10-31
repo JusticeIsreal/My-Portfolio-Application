@@ -916,7 +916,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    // max-width: 1700px;
+    max-width: 1600px;
     // columns: 1;
     // column-gap: 10px;
 
@@ -1256,6 +1256,7 @@ body {
 
       @include responsive(bigphone) {
         width: 40%;
+        // border: 2px solid red;
         // @include flexDisplay(space-between, center, row);
       }
       h3 {
@@ -1268,6 +1269,11 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        @include responsive(bigphone) {
+          width: 40%;
+          border: 2px solid red;
+          // @include flexDisplay(space-between, center, row);
+        }
 
         span {
           margin: 5px;

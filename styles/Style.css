@@ -903,6 +903,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  max-width: 1600px;
 }
 .project-main-con .general-project-con .project-con {
   border-radius: 10px 10px 0 0;
@@ -1240,6 +1241,12 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+@media only screen and (min-width: 750px) {
+  .footer .content-cont .socials-location .socials {
+    width: 40%;
+    border: 2px solid red;
+  }
 }
 .footer .content-cont .socials-location .socials span {
   margin: 5px;
