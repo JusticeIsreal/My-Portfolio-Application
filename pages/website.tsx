@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 
@@ -78,6 +79,67 @@ const Website: React.FC = () => {
       setUserDetails(true);
     }
   }, []);
+
+  // display animation
+  const myRefService = useRef<HTMLDivElement | null>(null);
+  const myRefPortfolio = useRef<HTMLDivElement | null>(null);
+  const myRefReview = useRef<HTMLDivElement | null>(null);
+  const myRefContact = useRef<HTMLDivElement | null>(null);
+  const myRefFooter = useRef<HTMLDivElement | null>(null);
+  // const myRef = useRef<HTMLDivElement | null>(null);
+
+  // Function to handle scrolling
+  const handleScroll = () => {
+    // Get the height of the screen
+    const screenHeight = window.innerHeight;
+
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    if (myRefService.current) {
+      const rectTop = myRefService.current.getBoundingClientRect().top;
+      if (rectTop < screenHeight) {
+        myRefService.current.className = "active";
+      } else {
+        myRefService.current.className = "hide";
+      }
+    }
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    if (myRefFooter.current) {
+      const rectTop = myRefFooter.current.getBoundingClientRect().top;
+      if (rectTop < screenHeight) {
+        myRefFooter.current.className = "active";
+      } else {
+        myRefFooter.current.className = "hide";
+      }
+    }
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    if (myRefReview.current) {
+      const rectTop = myRefReview.current.getBoundingClientRect().top;
+      if (rectTop < screenHeight) {
+        myRefReview.current.className = "active";
+      } else {
+        myRefReview.current.className = "hide";
+      }
+    }
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    if (myRefContact.current) {
+      const rectTop = myRefContact.current.getBoundingClientRect().top;
+      if (rectTop < screenHeight) {
+        myRefContact.current.className = "active";
+      } else {
+        myRefContact.current.className = "hide";
+      }
+    }
+  };
+
+  // Add an event listener for scrolling when the component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Remove the event listener when the component unmounts
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -96,17 +158,24 @@ const Website: React.FC = () => {
           </>
         ) : (
           <>
+            {/* <div ref={myRef}> */}
             <HomePage />
-
-            <Services />
-
-            <Portfolio />
-
-            <Review />
-
-            <Contact />
-
-            <Footer />
+            {/* </div> */}
+            <div ref={myRefService}>
+              <Services />
+            </div>
+            <div ref={myRefPortfolio}>
+              <Portfolio />
+            </div>
+            <div ref={myRefReview}>
+              <Review />
+            </div>
+            <div ref={myRefContact}>
+              <Contact />
+            </div>
+            <div ref={myRefFooter}>
+              <Footer />
+            </div>
           </>
         )}
       </main>

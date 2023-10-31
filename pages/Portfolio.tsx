@@ -59,7 +59,7 @@ function Portfolio() {
     <div className="project-main-con" id="portfolio">
       <p>some of my</p>
       <h1 className="projects">PROJECTS</h1>
-      <div className="service-btn-con">
+      {/* <div className="service-btn-con">
         {category.map((item: any) => (
           <span
             key={item}
@@ -74,7 +74,7 @@ function Portfolio() {
             WEB / MOBILE
           </span>
         ))}
-      </div>
+      </div> */}
       <div className="general-project-con">
         {displayService.map((item: any) => (
           <ServicesCategory key={item.id} {...item} />
@@ -118,6 +118,33 @@ function ServicesCategory({
   source_code,
   live_project,
 }: ServicesCategoryProps) {
+  // display animation
+  const myRefc = useRef<HTMLDivElement | null>(null);
+
+  // Function to handle scrolling
+  const handleScroll = () => {
+    // Get the height of the screen
+    const screenHeight = window.innerHeight;
+
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    // if (myRefc.current) {
+    //   const rectTop = myRefc.current.getBoundingClientRect().top;
+    //   if (rectTop < screenHeight) {
+    //     myRefc.current.className = "project-con project-active";
+    //   } else {
+    //     myRefc.current.className = "project-hide";
+    //   }
+    // }
+  };
+
+  // Add an event listener for scrolling when the component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Remove the event listener when the component unmounts
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="project-con">
       <div className="top-project-con">

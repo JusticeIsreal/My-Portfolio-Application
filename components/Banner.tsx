@@ -1,4 +1,4 @@
-import { useEffect, useState, useReducer } from "react";
+import { useEffect, useState, useReducer, useRef } from "react";
 import Image from "next/image";
 // import CV from "../public/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 // import icons
@@ -45,6 +45,34 @@ function Banner() {
   const readAll = () => {
     setReadPitch(!readPitch);
   };
+
+  // display animation
+  const myRef = useRef<HTMLDivElement | null>(null);
+
+  // Function to handle scrolling
+  const handleScroll = () => {
+    // Get the height of the screen
+    const screenHeight = window.innerHeight;
+
+    // Get the clientTop and getBoundingClientRect().top of the myRef div
+    if (myRef.current) {
+      const rectTop = myRef.current.getBoundingClientRect().top;
+      if (rectTop < screenHeight) {
+        myRef.current.className = "statistics-con active";
+      } else {
+        myRef.current.className = "hide";
+      }
+    }
+  };
+
+  // Add an event listener for scrolling when the component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Remove the event listener when the component unmounts
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="Banner-main-con">
       <div className="full-name">
@@ -111,7 +139,7 @@ function Banner() {
           {/* <button> */}
           <a href="/JUSTICE_ISREAL_AGBONMA_CV.pdf" download>
             <button className="button-29">
-             Click to Download my Cv{" "}
+              Click to Download my Cv{" "}
               <span>
                 <FaFileDownload />
               </span>
@@ -153,7 +181,7 @@ function Banner() {
       </div>
 
       {/* statistics section  */}
-      <div className="statistics-con">
+      <div className="statistics-con" ref={myRef}>
         <div className="statistics">
           <hr className="line" />
           <h1 className="statistis-unmber">0{countDegree}</h1>
