@@ -4,26 +4,27 @@ const ServiceData = [
     id: 7,
     service: "FRONTEND DEVELOPMENT",
     statement:
-      "HTML, CSS, BootStrap, Tailwind, scss, JavaScript, React js, Next js, React Native",
+      "HTML, CSS, BootStrap, Tailwind, scss, JavaScript,TypeScript , React js, Next js, React Native",
     category: "tech-stack",
   },
   {
     id: 8,
     service: "BACKEND \n DEVELOPMENT",
     statement:
-      "Node js, Express js, Nest js, Firebase, Next js, REST API, OAUTH",
+      "Node js, Express js, Nest js,TypeScript, Firebase, REST API, OAUTH",
     category: "tech-stack",
   },
   {
     id: 9,
     service: "Design",
-    statement: "MicroSoft Visio, Draw.io, Corel Draw",
+    statement: "MicroSoft Visio, Draw.io, Corel Draw, MS Excel,MS Word, Canva",
     category: "tech-stack",
   },
   {
     id: 10,
     service: "DATABASE",
-    statement: "MongoDB, MySQL, PostgreSQL, Firebase",
+    statement:
+      "MongoDB, MySQL, PostgreSQL, Firebase, Cloudinary, Prisma, Redis",
     category: "tech-stack",
   },
   // SERVICES
