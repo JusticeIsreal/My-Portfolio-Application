@@ -130,11 +130,11 @@ function StartingLoader(props: StartingLoaderProps) {
   // APP START
   return (
     <>
-      {userDetails ? (
+      {/* {userDetails ? ( */}
         <div className="StartingLoading-main-container">
           <div className="client-name">
             <p>Welcome</p>
-            <h2>{visitorInfo2.name}</h2>
+            {/* <h2>{visitorInfo2.name}</h2> */}
           </div>
           <div className="loading-animation">
             <h1 className="loading-number">{count} %</h1>
@@ -152,8 +152,8 @@ function StartingLoader(props: StartingLoaderProps) {
             <div className="wave"></div>
           </div>
         </div>
-      ) : (
-        <div className="visitor-starting-page">
+      {/* ) : ( */}
+        {/* <div className="visitor-starting-page">
           <div className="my-first-img">
             <Image
               src={img}
@@ -173,7 +173,6 @@ function StartingLoader(props: StartingLoaderProps) {
             </p>
           </Blockquote>
           <form onSubmit={handleSubmit(onSubmit)} className="visitors-form">
-            {/* register your input into the hook by invoking the "register" function */}
             <input
               type="text"
               placeholder="Enter Name"
@@ -190,8 +189,7 @@ function StartingLoader(props: StartingLoaderProps) {
             />
 
             <div
-              // className="submit"
-              style={{
+             style={{
                 textAlign: "center",
                 cursor: "pointer",
                 marginTop: "10px",
@@ -201,8 +199,8 @@ function StartingLoader(props: StartingLoaderProps) {
               {btnLoading ? "Skip" : "Loading ..."}
             </div>
           </form>
-        </div>
-      )}
+        </div> */}
+      {/* )} */}
     </>
   );
 }

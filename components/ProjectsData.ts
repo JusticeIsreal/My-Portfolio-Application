@@ -12,6 +12,30 @@ const Projects = [
       "Ziply is a multi-vendor e-commere store for whole and retailers to publish their merchansdise for potential buyers.",
   },
   {
+    id: 62156899875,
+    project: "Workfynder",
+    category: "web",
+    role: "Frontend Engineer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1699969173/Screenshot_2023-11-14_at_08.37.50_dap8vs.png",
+    source_code: "",
+    live_project: "https://www.workfynder.com",
+    Technology: ["Nextjs", "Tailwind", "Mantine UI", "Typescript"],
+    details:
+      "the world’s fastest growing community of artisans. Connect with employers to find work.",
+  },
+  {
+    id: 62156899875567,
+    project: "Glumia Solutions",
+    category: "web",
+    role: "Frontend Engineer",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1699969175/Screenshot_2023-11-14_at_08.38.39_teqoqr.png",
+    source_code: "",
+    live_project: "https://www.workfynder.com",
+    Technology: ["React js","TypeScript","PWA", "Tailwind", "Mantine UI"],
+    details:
+      "the ever-evolving world of technology, empowering businesses of all sizes to thrive through innovative IT solutions",
+  },
+  {
     id: 62156,
     project: "CALM WATERS",
     category: "web",
@@ -135,7 +159,7 @@ const Projects = [
       "Sripe",
     ],
     details:
-      "This is a movie mobile application with stripe was integrated for payment. the movies are fetched using the movieDB API",
+      "This is a movie mobile application with stripe was integrated for payment. the movies fetched from movieDB",
   },
   {
     id: 62109,
@@ -160,7 +184,7 @@ const Projects = [
     live_project: "",
     Technology: ["React Native", "Firebase", "Expo"],
     details:
-      "This is a car sales gallery mobile application developed using React native , users can search for cars based on the car name or description",
+      "A car sales gallery mobile application developed using React native , users search for cars based on the car name or description",
   },
 
   {

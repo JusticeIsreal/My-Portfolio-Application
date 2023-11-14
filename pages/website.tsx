@@ -74,7 +74,7 @@ const Website: React.FC = () => {
         ? JSON.parse(localStorage.getItem("visitorInfo")!)
         : {};
     if (!visitorInfolocal) {
-      setUserDetails(false);
+      setUserDetails(true);
     } else {
       setUserDetails(true);
     }

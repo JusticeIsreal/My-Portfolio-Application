@@ -28,7 +28,7 @@ function Footer() {
         <div className="thanks">
           <Blockquote cite="– Justice Isreal Agbonma">
             <p>
-              Dear {visitorInfo2.name}, I would like to extend my sincere
+              Hello, I would like to extend my sincere
               gratitude to you for taking the time to explore my portfolio
               website. Your interest and support means the world to me. I hope
               you found the information and content impressive.Kindly drop an
