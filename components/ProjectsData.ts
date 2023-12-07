@@ -30,8 +30,8 @@ const Projects = [
     role: "Frontend Engineer",
     img: "https://res.cloudinary.com/isreal/image/upload/v1699969175/Screenshot_2023-11-14_at_08.38.39_teqoqr.png",
     source_code: "",
-    live_project: "https://www.workfynder.com",
-    Technology: ["React js","TypeScript","PWA", "Tailwind", "Mantine UI"],
+    live_project: "https://glumia.ng",
+    Technology: ["React js", "TypeScript", "PWA", "Tailwind", "Mantine UI"],
     details:
       "the ever-evolving world of technology, empowering businesses of all sizes to thrive through innovative IT solutions",
   },
