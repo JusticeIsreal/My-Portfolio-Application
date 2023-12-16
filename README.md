@@ -1,5 +1,5 @@
 
-<img src='https://res.cloudinary.com/isreal/image/upload/v1683629482/yleqg3mdurtvamjmjn61.png' />
+<!-- <img src='https://res.cloudinary.com/isreal/image/upload/v1683629482/yleqg3mdurtvamjmjn61.png' /> -->
 
 # Project Description 📝
 This is my personal portfolio website. <br/>
